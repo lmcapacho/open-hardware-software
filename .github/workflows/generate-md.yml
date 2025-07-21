@@ -5,7 +5,8 @@ on:
     paths:
       - 'index.json'
       - 'generate_markdown.py'
-
+  workflow_dispatch:
+  
 jobs:
   build:
     runs-on: ubuntu-latest
