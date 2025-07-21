@@ -2,10 +2,10 @@
 
 ![KiCad Logo](https://www.kicad.org/img/kicad_logo_small.png)
 
-**Version:** 9.0.3
-**Release Date:** 2025-07-07
-**License:** [GPLv3](https://www.kicad.org/about/licenses/)
-**Platforms:** Windows, macOS, Linux, Docker
+**Version:** 9.0.3  
+**Release Date:** 2025-07-07  
+**License:** [GPLv3](https://www.kicad.org/about/licenses/)  
+**Platforms:** Windows, macOS, Linux, Docker  
 
 ---
 
