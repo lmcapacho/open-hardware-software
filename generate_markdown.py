@@ -115,19 +115,21 @@ def main():
 
         if os.path.exists(markdown_path):
             with open(markdown_path, "r", encoding="utf-8") as f:
-                content = f.read()
-            updated_content = update_features_section(content, features_block)
-            print(f"Updated features in {markdown_path}")
-        else:
-            # Create full content if file doesn't exist
-            updated_content = f"""# {tool["name"]}
+                current_content = f.read()
+
+            # Generate full content for comparison
+            full_generated_content = f"""# {tool["name"]}
 
 ![{tool["name"]} Logo]({tool["logo_url"]})
 
-**Version:** {tool["version"]} \
-**Release Date:** {tool["release_date"]} \
-**License:** [{tool["license"]}]({tool["license_url"]}) \
-**Platforms:** {", ".join(tool["platforms"])}
+**Version:** {tool["version"]}  \
+
+**Release Date:** {tool["release_date"]}  \
+
+**License:** [{tool["license"]}]({tool["license_url"]})  \
+
+**Platforms:** {", ".join(tool["platforms"])}  \
+
 
 ---
 
@@ -171,8 +173,13 @@ def main():
 - **Status:** {tool["status"]}
 """
 
-        with open(markdown_path, "w", encoding="utf-8") as f:
-            f.write(updated_content)
+            # Compare entire content
+            if current_content.strip() != full_generated_content.strip():
+                with open(markdown_path, "w", encoding="utf-8") as f:
+                    f.write(full_generated_content)
+                print(f"Updated {markdown_path}")
+            else:
+                print(f"No changes in {markdown_path} — skipped.")
 
 
 if __name__ == "__main__":
