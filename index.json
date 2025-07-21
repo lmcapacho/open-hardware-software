@@ -4,7 +4,7 @@
     "slug": "kicad",
     "description": "A Cross Platform and Open Source Electronics Design Automation Suite",
     "version": "9.0.3",
-    "release_date": "2025-07-01",
+    "release_date": "2025-07-07",
     "platforms": ["Windows", "macOS", "Linux", "Docker"],
     "license": "GPLv3",
     "license_url": "https://www.kicad.org/about/licenses/",
@@ -18,6 +18,15 @@
     "tags": ["EDA", "electronics", "PCB", "schematics", "3D Viewer"],
     "language": ["C++", "Python"],
     "markdown_file": "tools/kicad.md",
-    "status": "active"
+    "status": "active",
+    "features": [
+      "Advanced schematic editor",
+      "Professional PCB layout with design rule checks",
+      "3D PCB viewer",
+      "SPICE simulation support",
+      "Customizable symbol and footprint libraries",
+      "Cross-platform support, including Docker",
+      "Python scripting support"
+    ]
   }
 ]
