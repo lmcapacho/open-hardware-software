@@ -1,0 +1,23 @@
+[
+  {
+    "name": "KiCad",
+    "slug": "kicad",
+    "description": "A Cross Platform and Open Source Electronics Design Automation Suite",
+    "version": "9.0.3",
+    "release_date": "2025-07-01",
+    "platforms": ["Windows", "macOS", "Linux", "Docker"],
+    "license": "GPLv3",
+    "license_url": "https://www.kicad.org/about/licenses/",
+    "category": "PCB Design",
+    "website": "https://www.kicad.org",
+    "download_url": "https://www.kicad.org/download",
+    "repository_url": "https://gitlab.com/kicad/code/kicad/",
+    "documentation_url": "https://docs.kicad.org/",
+    "screenshot_url": "https://www.kicad.org/img/banner.jpg",
+    "logo_url": "https://www.kicad.org/img/kicad_logo_small.png",
+    "tags": ["EDA", "electronics", "PCB", "schematics", "3D Viewer"],
+    "language": ["C++", "Python"],
+    "markdown_file": "tools/kicad.md",
+    "status": "active"
+  }
+]
