@@ -124,9 +124,9 @@ def main():
 
 ![{tool["name"]} Logo]({tool["logo_url"]})
 
-**Version:** {tool["version"]}
-**Release Date:** {tool["release_date"]}
-**License:** [{tool["license"]}]({tool["license_url"]})
+**Version:** {tool["version"]} \
+**Release Date:** {tool["release_date"]} \
+**License:** [{tool["license"]}]({tool["license_url"]}) \
 **Platforms:** {", ".join(tool["platforms"])}
 
 ---
