@@ -18,6 +18,9 @@ Each tool includes:
 ## 🛠 Tool List
 
 <!-- TOOLLIST:START -->
+| Tool | Category | Platforms | License | Details |
+|------|----------|-----------|---------|---------|
+| KiCad | PCB Design | Windows, macOS, Linux, Docker | GPLv3 | [Website](https://www.kicad.org) |
 <!-- TOOLLIST:END -->
 
 ## 🤖 GitHub Pages (Coming Soon)
