@@ -94,7 +94,9 @@ def format_tool_list(tools):
         platforms = ", ".join(tool["platforms"])
         license_ = tool["license"]
         link = f"[Website]({tool['website']})"
-        rows.append(f"| {name} | {category} | {platforms} | {license_} | {link} |")
+        md_link = f"[{name}](tools/{tool['slug']}.md)"
+        rows.append(f"| {md_link} | {category} | {platforms} | {license_} | {link} |")
+
     return (
         "<!-- TOOLLIST:START -->\n"
         + header
