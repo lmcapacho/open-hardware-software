@@ -2,7 +2,7 @@
   {
     "name": "KiCad",
     "slug": "kicad",
-    "description": "A Cross Platform and Open Source Electronics Design Automation Suite",
+    "description": "A Cross Platform and Open Source Electronics Design Automation Suite. It includes a schematic editor, PCB layout editor, and a 3D viewer.",
     "version": "9.0.3",
     "release_date": "2025-07-07",
     "platforms": ["Windows", "macOS", "Linux", "Docker"],
@@ -27,6 +27,35 @@
       "Customizable symbol and footprint libraries",
       "Cross-platform support, including Docker",
       "Python scripting support"
+    ]
+  },
+  {
+    "name": "Icestudio",
+    "slug": "icestudio",
+    "description": "A real gamechanger in the world of Open Source FPGAs. Icestudio is a visual programming environment for FPGAs, allowing users to design circuits using a drag-and-drop interface.",
+    "version": "0.12",
+    "release_date": "2024-06-21",
+    "platforms": ["Windows", "Linux", "macOS"],
+    "license": "GPLv2",
+    "license_url": "https://github.com/FPGAwars/icestudio/blob/develop/LICENSE",
+    "category": "Digital Design",
+    "website": "https://icestudio.io",
+    "download_url": "https://icestudio.io/#lk-download",
+    "repository_url": "https://github.com/FPGAwars/icestudio",
+    "documentation_url": "https://github.com/FPGAwars/icestudio/wiki",
+    "screenshot_url": "https://icestudio.io/images/img-01.png",
+    "logo_url": "https://icestudio.io/images/icestudio-logo.svg",
+    "tags": ["FPGA", "visual programming", "digital design", "open-source"],
+    "language": ["JavaScript", "Electron", "Node.js"],
+    "markdown_file": "tools/icestudio.md",
+    "status": "active",
+    "features": [
+      "Visual drag-and-drop circuit editor",
+      "FPGA programming using open tools like Yosys and NextPNR",
+      "Support for iCE40 FPGAs",
+      "Modular design with reusable blocks",
+      "Cross-platform GUI (Electron-based)",
+      "Ideal for beginners and educational use"
     ]
   }
 ]
