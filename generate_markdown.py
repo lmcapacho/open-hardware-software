@@ -12,6 +12,7 @@ import re
 FEATURES_START = "<!-- FEATURES:START -->"
 FEATURES_END = "<!-- FEATURES:END -->"
 
+
 def format_features(features):
     """
     Formats a list of features into a Markdown block with start and end markers.
@@ -73,6 +74,67 @@ def validate_tool(tool, required_fields):
             raise ValueError(
                 f"Missing required field '{field}' in tool: {tool.get('name', '[unknown]')}"
             )
+
+
+def format_tool_list(tools):
+    """
+    Generates a Markdown table from the tools list for the README.
+    Args:
+        tools (list): List of tool dictionaries.
+
+    Returns:
+        str: Markdown formatted table of tools.
+    """
+    header = "| Tool | Category | Platforms | License | Details |\n"
+    divider = "|------|----------|-----------|---------|---------|\n"
+    rows = []
+    for tool in tools:
+        name = tool["name"]
+        category = tool["category"]
+        platforms = ", ".join(tool["platforms"])
+        license_ = tool["license"]
+        link = f"[Website]({tool['website']})"
+        rows.append(f"| {name} | {category} | {platforms} | {license_} | {link} |")
+    return (
+        "<!-- TOOLLIST:START -->\n"
+        + header
+        + divider
+        + "\n".join(rows)
+        + "\n<!-- TOOLLIST:END -->"
+    )
+
+def update_tool_list_in_readme(tools, readme_path="README.md"):
+    """
+    Updates the Tool List section in README.md if it exists and differs.
+    Args:
+        tools (list): List of tool dictionaries.
+        readme_path (str): Path to the README.md file.
+    Raises:
+        FileNotFoundError: If the README.md file does not exist.
+    Raises:
+        ValueError: If the tools list is empty or not provided.
+    """
+    if not os.path.exists(readme_path):
+        print("README.md not found — skipping Tool List update.")
+        return
+
+    with open(readme_path, "r", encoding="utf-8") as f:
+        content = f.read()
+
+    new_table = format_tool_list(tools)
+    pattern = re.compile(r"<!-- TOOLLIST:START -->.*?<!-- TOOLLIST:END -->", re.DOTALL)
+
+    if pattern.search(content):
+        updated_content = pattern.sub(new_table, content)
+        if content.strip() != updated_content.strip():
+            with open(readme_path, "w", encoding="utf-8") as f:
+                f.write(updated_content)
+            print("Updated Tool List in README.md")
+        else:
+            print("Tool List in README.md is up to date.")
+    else:
+        print("TOOLLIST markers not found in README.md — skipping update.")
+
 
 def main():
     """
@@ -181,6 +243,7 @@ def main():
             else:
                 print(f"No changes in {markdown_path} — skipped.")
 
+    update_tool_list_in_readme(tools)
 
 if __name__ == "__main__":
     main()
