@@ -17,9 +17,8 @@ Each tool includes:
 
 ## 🛠 Tool List
 
-| Tool        | Category      | Platforms              | License | Details |
-|-------------|---------------|-------------------------|---------|---------|
-| [KiCad](tools/kicad.md) | PCB Design     | Windows, macOS, Linux | GPLv3   | [Website](https://www.kicad.org) |
+<!-- TOOLLIST:START -->
+<!-- TOOLLIST:END -->
 
 ## 🤖 GitHub Pages (Coming Soon)
 
@@ -34,8 +33,7 @@ Want to add a tool or improve descriptions?
 
 1. Fork this repository.
 2. Add a new entry in `index.json`.
-3. Create a Markdown file in `tools/` with details.
-4. Open a Pull Request.
+3. Open a Pull Request.
 
 Or open an [Issue](https://github.com/lmcapacho/open-hardware-software/issues) to suggest a tool.
 
