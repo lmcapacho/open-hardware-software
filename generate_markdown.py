@@ -75,6 +75,71 @@ def validate_tool(tool, required_fields):
                 f"Missing required field '{field}' in tool: {tool.get('name', '[unknown]')}"
             )
 
+def generate_full_content(tool, features_block):
+    """
+    Generates the full Markdown content for a tool based on its data.
+
+    Args:
+        tool (dict): The tool data containing all necessary fields.
+        features_block (str): The formatted features block to include.
+
+    Returns:
+        str: The complete Markdown content for the tool.
+    """
+    return f"""# {tool["name"]}
+
+![{tool["name"]} Logo]({tool["logo_url"]})
+
+**Version:** {tool["version"]}  \
+
+**Release Date:** {tool["release_date"]}  \
+
+**License:** [{tool["license"]}]({tool["license_url"]})  \
+
+**Platforms:** {", ".join(tool["platforms"])}  \
+
+
+---
+
+## 🧩 Description
+
+{tool["description"]}
+
+---
+
+## 🚀 Key Features
+
+{features_block}
+
+---
+
+## 🌐 Official Links
+
+- 🔗 Website: [{tool["website"]}]({tool["website"]})
+- 📥 Download: [{tool["download_url"]}]({tool["download_url"]})
+- 📚 Documentation: [{tool["documentation_url"]}]({tool["documentation_url"]})
+- 💻 Source Code: [{tool["repository_url"]}]({tool["repository_url"]})
+
+---
+
+## 🖼️ Screenshot
+
+![Screenshot]({tool["screenshot_url"]})
+
+---
+
+## 🏷️ Tags
+
+{", ".join(tool["tags"])}
+
+---
+
+## 🔧 Tech Stack
+
+- **Languages:** {", ".join(tool["language"])}
+- **License:** {tool["license"]}
+- **Status:** {tool["status"]}
+"""
 
 def format_tool_list(tools):
     """
@@ -177,65 +242,12 @@ def main():
         features_block = format_features(tool["features"])
         markdown_path = tool["markdown_file"]
 
+        # Generate full content
+        full_generated_content = generate_full_content(tool, features_block)
+
         if os.path.exists(markdown_path):
             with open(markdown_path, "r", encoding="utf-8") as f:
                 current_content = f.read()
-
-            # Generate full content for comparison
-            full_generated_content = f"""# {tool["name"]}
-
-![{tool["name"]} Logo]({tool["logo_url"]})
-
-**Version:** {tool["version"]}  \
-
-**Release Date:** {tool["release_date"]}  \
-
-**License:** [{tool["license"]}]({tool["license_url"]})  \
-
-**Platforms:** {", ".join(tool["platforms"])}  \
-
-
----
-
-## 🧩 Description
-
-{tool["description"]}
-
----
-
-## 🚀 Key Features
-
-{features_block}
-
----
-
-## 🌐 Official Links
-
-- 🔗 Website: [{tool["website"]}]({tool["website"]})
-- 📥 Download: [{tool["download_url"]}]({tool["download_url"]})
-- 📚 Documentation: [{tool["documentation_url"]}]({tool["documentation_url"]})
-- 💻 Source Code: [{tool["repository_url"]}]({tool["repository_url"]})
-
----
-
-## 🖼️ Screenshot
-
-![Screenshot]({tool["screenshot_url"]})
-
----
-
-## 🏷️ Tags
-
-{", ".join(tool["tags"])}
-
----
-
-## 🔧 Tech Stack
-
-- **Languages:** {", ".join(tool["language"])}
-- **License:** {tool["license"]}
-- **Status:** {tool["status"]}
-"""
 
             # Compare entire content
             if current_content.strip() != full_generated_content.strip():
@@ -244,6 +256,10 @@ def main():
                 print(f"Updated {markdown_path}")
             else:
                 print(f"No changes in {markdown_path} — skipped.")
+        else:
+            with open(markdown_path, "w", encoding="utf-8") as f:
+                f.write(full_generated_content)
+            print(f"Created {markdown_path}")
 
     update_tool_list_in_readme(tools)
 
