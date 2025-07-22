@@ -11,7 +11,7 @@
 
 ## 🧩 Description
 
-A Cross Platform and Open Source Electronics Design Automation Suite
+A Cross Platform and Open Source Electronics Design Automation Suite. It includes a schematic editor, PCB layout editor, and a 3D viewer.
 
 ---
 
