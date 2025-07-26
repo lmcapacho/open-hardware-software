@@ -20,8 +20,8 @@ Each tool includes:
 <!-- TOOLLIST:START -->
 | Tool | Category | Platforms | License | Details |
 |------|----------|-----------|---------|---------|
-| [KiCad](tools/kicad.md) | PCB Design | Windows, macOS, Linux, Docker | GPLv3 | [Website](https://www.kicad.org) |
-| [Icestudio](tools/icestudio.md) | Digital Design | Windows, Linux, macOS | GPLv2 | [Website](https://icestudio.io) |
+| [KiCad](docs/tools/kicad.md) | PCB Design | Windows, macOS, Linux, Docker | GPLv3 | [Website](https://www.kicad.org) |
+| [Icestudio](docs/tools/icestudio.md) | Digital Design | Windows, Linux, macOS | GPLv2 | [Website](https://icestudio.io) |
 <!-- TOOLLIST:END -->
 
 ## 🤖 GitHub Pages (Coming Soon)
