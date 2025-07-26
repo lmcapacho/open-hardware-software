@@ -13,9 +13,21 @@
     <h1 class="title">Open Hardware & Software Tools</h1>
 
     <!-- Search -->
-    <div class="field mb-5">
-      <div class="control">
+    <div class="columns is-variable is-4 mb-5">
+      <!-- Search box -->
+      <div class="column is-two-thirds">
         <input class="input" type="text" placeholder="Search tools..." x-model="query" />
+      </div>
+
+      <!-- Category filter -->
+      <div class="column">
+        <div class="select is-fullwidth">
+          <select x-model="selectedCategory">
+            <template x-for="category in categories" :key="category">
+              <option x-text="category"></option>
+            </template>
+          </select>
+        </div>
       </div>
     </div>
 
@@ -43,14 +55,23 @@
     document.addEventListener('alpine:init', () => {
       Alpine.data('app', () => ({
         query: '',
+        selectedCategory: 'All',
         tools: [],
+        get categories() {
+          const allCategories = this.tools.map(tool => tool.category);
+          return ['All', ...new Set(allCategories)];
+        },
         get filteredTools() {
           const q = this.query.toLowerCase();
-          return this.tools.filter(tool =>
-            tool.name.toLowerCase().includes(q) ||
-            tool.description.toLowerCase().includes(q) ||
-            tool.tags.some(tag => tag.toLowerCase().includes(q))
-          );
+          return this.tools.filter(tool => {
+            const matchesText =
+              tool.name.toLowerCase().includes(q) ||
+              tool.description.toLowerCase().includes(q) ||
+              tool.tags.some(tag => tag.toLowerCase().includes(q));
+            const matchesCategory =
+              this.selectedCategory === 'All' || tool.category === this.selectedCategory;
+            return matchesText && matchesCategory;
+          });
         },
         async init() {
           const res = await fetch('index.json');
