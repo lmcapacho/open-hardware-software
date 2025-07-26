@@ -24,12 +24,13 @@ Each tool includes:
 | [Icestudio](docs/tools/icestudio.md) | Digital Design | Windows, Linux, macOS | GPLv2 | [Website](https://icestudio.io) |
 <!-- TOOLLIST:END -->
 
-## 🤖 GitHub Pages (Coming Soon)
+## 🌐 GitHub Pages
 
-This repository is also a web-based catalog.  
-You will soon be able to explore and search tools visually at:
-
+This repository also includes a visual, searchable catalog:  
+**Explore the tools online at:**  
 `https://lmcapacho.github.io/open-hardware-software/`
+
+Use the search bar to filter tools, and click "View details" to read full descriptions.
 
 ## 🤝 Contributing
 
