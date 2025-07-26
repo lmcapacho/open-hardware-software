@@ -21,7 +21,7 @@
 
     <!-- Tool list -->
     <div class="columns is-multiline">
-      <template x-for="tool in filteredTools" :key="tool.id">
+      <template x-for="tool in filteredTools" :key="tool.slug">
         <div class="column is-one-third">
           <div class="card">
             <div class="card-content">
@@ -30,7 +30,7 @@
               <p x-text="tool.description"></p>
             </div>
             <footer class="card-footer">
-              <a class="card-footer-item" :href="tool.link" target="_blank">Website</a>
+              <a class="card-footer-item" :href="tool.website" target="_blank">Website</a>
               <a class="card-footer-item" :href="`tool.html?tool=${tool.slug}`">View details</a>
             </footer>
           </div>
