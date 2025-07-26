@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Open Hardware & Software Repository</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css" />
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+<body class="section" x-data="app">
+
+  <div class="container">
+    <h1 class="title">Open Hardware & Software Repository</h1>
+
+    <!-- Search -->
+    <div class="field mb-5">
+      <div class="control">
+        <input class="input" type="text" placeholder="Search tools..." x-model="query" />
+      </div>
+    </div>
+
+    <!-- Tool list -->
+    <div class="columns is-multiline">
+      <template x-for="tool in filteredTools" :key="tool.id">
+        <div class="column is-one-third">
+          <div class="card">
+            <div class="card-content">
+              <p class="title is-5" x-text="tool.name"></p>
+              <p class="subtitle is-6" x-text="tool.category"></p>
+              <p x-text="tool.description"></p>
+            </div>
+            <footer class="card-footer">
+              <a class="card-footer-item" :href="tool.link" target="_blank">Website</a>
+              <a class="card-footer-item" :href="`tool.html?tool=${tool.slug}`">View details</a>
+            </footer>
+          </div>
+        </div>
+      </template>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener('alpine:init', () => {
+      Alpine.data('app', () => ({
+        query: '',
+        tools: [],
+        get filteredTools() {
+          return this.tools.filter(tool =>
+            tool.name.toLowerCase().includes(this.query.toLowerCase()) ||
+            tool.description.toLowerCase().includes(this.query.toLowerCase())
+          );
+        },
+        async init() {
+          const res = await fetch('index.json');
+          this.tools = await res.json();
+        }
+      }));
+    });
+  </script>
+</body>
+</html>

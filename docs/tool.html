@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Tool Viewer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body class="section">
+
+  <div class="container">
+    <a href="index.html" class="button is-light mb-4">← Back to list</a>
+    <div id="content" class="content"></div>
+  </div>
+
+  <script type="module">
+    import { renderMarkdownFile } from "./js/markdown.js";
+
+    const params = new URLSearchParams(window.location.search);
+    const toolId = params.get('tool');
+    const path = `tools/${toolId}.md`;
+
+    renderMarkdownFile("content", path);
+  </script>
+
+</body>
+</html>
