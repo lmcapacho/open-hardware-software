@@ -10,7 +10,7 @@
 <body class="section" x-data="app">
 
   <div class="container">
-    <h1 class="title">Open Hardware & Software Repository</h1>
+    <h1 class="title">Open Hardware & Software Tools</h1>
 
     <!-- Search -->
     <div class="field mb-5">
@@ -45,9 +45,11 @@
         query: '',
         tools: [],
         get filteredTools() {
+          const q = this.query.toLowerCase();
           return this.tools.filter(tool =>
-            tool.name.toLowerCase().includes(this.query.toLowerCase()) ||
-            tool.description.toLowerCase().includes(this.query.toLowerCase())
+            tool.name.toLowerCase().includes(q) ||
+            tool.description.toLowerCase().includes(q) ||
+            tool.tags.some(tag => tag.toLowerCase().includes(q))
           );
         },
         async init() {
