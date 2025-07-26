@@ -17,7 +17,7 @@
     "logo_url": "https://www.kicad.org/img/kicad_logo_small.png",
     "tags": ["EDA", "electronics", "PCB", "schematics", "3D Viewer"],
     "language": ["C++", "Python"],
-    "markdown_file": "tools/kicad.md",
+    "markdown_file": "docs/tools/kicad.md",
     "status": "active",
     "features": [
       "Advanced schematic editor",
@@ -47,7 +47,7 @@
     "logo_url": "https://icestudio.io/images/icestudio-logo.svg",
     "tags": ["FPGA", "visual programming", "digital design", "open-source"],
     "language": ["JavaScript", "Electron", "Node.js"],
-    "markdown_file": "tools/icestudio.md",
+    "markdown_file": "docs/tools/icestudio.md",
     "status": "active",
     "features": [
       "Visual drag-and-drop circuit editor",

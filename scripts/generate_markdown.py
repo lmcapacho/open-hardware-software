@@ -8,6 +8,7 @@ a new Markdown file with the full content.
 import json
 import os
 import re
+import shutil
 
 FEATURES_START = "<!-- FEATURES:START -->"
 FEATURES_END = "<!-- FEATURES:END -->"
@@ -159,7 +160,7 @@ def format_tool_list(tools):
         platforms = ", ".join(tool["platforms"])
         license_ = tool["license"]
         link = f"[Website]({tool['website']})"
-        md_link = f"[{name}](tools/{tool['slug']}.md)"
+        md_link = f"[{name}](docs/tools/{tool['slug']}.md)"
         rows.append(f"| {md_link} | {category} | {platforms} | {license_} | {link} |")
 
     return (
@@ -234,7 +235,7 @@ def main():
     with open("index.json", "r", encoding="utf-8") as f:
         tools = json.load(f)
 
-    os.makedirs("tools", exist_ok=True)
+    os.makedirs("docs/tools", exist_ok=True)
 
     for tool in tools:
         validate_tool(tool, required_fields)
@@ -262,6 +263,8 @@ def main():
             print(f"Created {markdown_path}")
 
     update_tool_list_in_readme(tools)
+    shutil.copyfile("index.json", "docs/index.json")
+    print("Copied index.json to docs/index.json")
 
 if __name__ == "__main__":
     main()
