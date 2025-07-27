@@ -1,6 +1,6 @@
 # Icestudio
 
-![Icestudio Logo](https://icestudio.io/images/icestudio-logo.svg)
+<img src="https://icestudio.io/images/icestudio-logo.svg" alt="Icestudio Logo" style="height: 96px;" />
 
 **Version:** 0.12  
 **Release Date:** 2024-06-21  
