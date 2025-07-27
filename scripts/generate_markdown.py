@@ -249,7 +249,6 @@ def main():
         "logo_url",
         "tags",
         "language",
-        "markdown_file",
         "status",
         "features",
     ]
