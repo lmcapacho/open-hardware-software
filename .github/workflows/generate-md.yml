@@ -3,7 +3,7 @@ name: Generate Markdown Files
 on:
   push:
     paths:
-      - 'docs/index.json'
+      - 'index.json'
       - 'scripts/generate_markdown.py'
   workflow_dispatch:
 
@@ -31,6 +31,6 @@ jobs:
       run: |
         git config user.name "github-actions"
         git config user.email "actions@github.com"
-        git add docs/tools/*.md README.md
+        git add docs/tools/*.md README.md index.json docs/index.json
         git diff --cached --quiet || git commit -m "Auto-generate or update Markdown files and README tool list"
         git push
