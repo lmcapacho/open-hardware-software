@@ -241,7 +241,7 @@ def main():
         validate_tool(tool, required_fields)
 
         features_block = format_features(tool["features"])
-        markdown_path = tool["markdown_file"]
+        markdown_path = f"docs/tools/{tool['slug']}.md"
 
         # Generate full content
         full_generated_content = generate_full_content(tool, features_block)

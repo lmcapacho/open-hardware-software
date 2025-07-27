@@ -17,7 +17,6 @@
     "logo_url": "https://librepcb.org/img/librepcb.png",
     "tags": ["pcb", "schematic", "eda", "electronics"],
     "language": ["C++", "Qt"],
-    "markdown_file": "docs/tools/librepcb.md",
     "status": "active",
     "features": [
       "Modern and intuitive GUI",
@@ -46,7 +45,6 @@
     "logo_url": "https://www.arduino.cc/wiki/370832ed4114dd35d498f2f449b4781e/arduino.svg",
     "tags": ["microcontroller", "arduino", "embedded", "education"],
     "language": ["JavaScript", "TypeScript", "Electron"],
-    "markdown_file": "docs/tools/arduino-ide.md",
     "status": "active",
     "features": [
       "Support for Arduino and compatible boards",
@@ -75,7 +73,6 @@
     "logo_url": "https://commons.wikimedia.org/wiki/File:Gtkwave_256x256x32.png",
     "tags": ["simulation", "waveform", "verilog", "testbench", "EDA"],
     "language": ["C"],
-    "markdown_file": "docs/tools/gtkwave.md",
     "status": "active",
     "features": [
       "View waveforms from VCD, LXT, FST, and other formats",
@@ -103,7 +100,6 @@
     "logo_url": "hhttps://www.freecad.org/svg/logo-freecad.svg",
     "tags": ["CAD", "3D modeling", "mechanical design", "parametric"],
     "language": ["C++", "Python"],
-    "markdown_file": "docs/tools/freecad.md",
     "status": "active",
     "features": [
       "Parametric 3D modeling",
@@ -132,7 +128,6 @@
     "logo_url": "https://www.kicad.org/img/kicad_logo_small.png",
     "tags": ["EDA", "electronics", "PCB", "schematics", "3D Viewer"],
     "language": ["C++", "Python"],
-    "markdown_file": "docs/tools/kicad.md",
     "status": "active",
     "features": [
       "Advanced schematic editor",
@@ -162,7 +157,6 @@
     "logo_url": "https://icestudio.io/images/icestudio-logo.svg",
     "tags": ["FPGA", "visual programming", "digital design", "open-source"],
     "language": ["JavaScript", "Electron", "Node.js"],
-    "markdown_file": "docs/tools/icestudio.md",
     "status": "active",
     "features": [
       "Visual drag-and-drop circuit editor",
