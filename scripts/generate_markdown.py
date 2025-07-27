@@ -253,8 +253,7 @@ def main():
         "features",
     ]
 
-    with open("index.json", "r", encoding="utf-8") as f:
-        tools = json.load(f)
+    tools = update_index()
 
     os.makedirs("docs/tools", exist_ok=True)
 
@@ -283,9 +282,12 @@ def main():
                 f.write(full_generated_content)
             print(f"Created {markdown_path}")
 
-    tools = update_index()
     update_tool_list_in_readme(tools)
-    shutil.copyfile("index.json", "docs/index.json")
+    root_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    shutil.copyfile(
+        os.path.join(root_dir, "index.json"),
+        os.path.join(root_dir, "docs", "index.json")
+    )
     print("Copied index.json to docs/index.json")
 
 if __name__ == "__main__":
