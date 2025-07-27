@@ -203,6 +203,28 @@ def update_tool_list_in_readme(tools, readme_path="README.md"):
     else:
         print("TOOLLIST markers not found in README.md — skipping update.")
 
+def update_index():
+    """
+    Reads the index.json file, removes duplicates by slug, sorts by name,
+    and writes the updated list back to index.json.
+    """
+    # Read the index.json file
+    with open("index.json", "r", encoding="utf-8") as f:
+        tools = json.load(f)
+
+    # Remove duplicates by slug
+    seen = set()
+    tools = [t for t in tools if not (t["slug"] in seen or seen.add(t["slug"]))]
+
+    # Sort alphabetically by name
+    tools.sort(key=lambda t: t["name"].lower())
+
+    # Write the updated list back to index.json
+    with open("index.json", "w", encoding="utf-8") as f:
+        json.dump(tools, f, indent=2, ensure_ascii=False)
+
+    print("Sorted and updated index.json")
+    return tools
 
 def main():
     """
@@ -262,6 +284,7 @@ def main():
                 f.write(full_generated_content)
             print(f"Created {markdown_path}")
 
+    tools = update_index()
     update_tool_list_in_readme(tools)
     shutil.copyfile("index.json", "docs/index.json")
     print("Copied index.json to docs/index.json")
