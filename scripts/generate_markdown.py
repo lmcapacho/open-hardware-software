@@ -89,7 +89,7 @@ def generate_full_content(tool, features_block):
     """
     return f"""# {tool["name"]}
 
-![{tool["name"]} Logo]({tool["logo_url"]})
+<img src="{tool['logo_url']}" alt="{tool['name']} Logo" style="height: 96px;" />
 
 **Version:** {tool["version"]}  \
 
