@@ -37,8 +37,18 @@
         <div class="column is-one-third">
           <div class="card">
             <div class="card-content">
-              <p class="title is-5" x-text="tool.name"></p>
-              <p class="subtitle is-6" x-text="tool.category"></p>
+              <div class="level is-mobile">
+                <div class="level-left">
+                  <p class="title is-5 mb-1" x-text="tool.name"></p>
+                </div>
+                <div class="level-right">
+                  <figure class="image is-32x32 ml-2">
+                    <img :src="tool.logo_url" :alt="tool.name + ' logo'" style="max-height: 32px; object-fit: contain;">
+                  </figure>
+                </div>
+              </div>
+
+              <p class="subtitle is-6 mb-2" x-text="tool.category"></p>
               <p x-text="tool.description"></p>
             </div>
             <footer class="card-footer">
