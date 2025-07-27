@@ -59,7 +59,7 @@
     "repository_url": "https://github.com/FreeCAD/FreeCAD",
     "documentation_url": "https://wiki.freecad.org/",
     "screenshot_url": "https://www.freecad.org/images/cover-photo.avif",
-    "logo_url": "hhttps://www.freecad.org/svg/logo-freecad.svg",
+    "logo_url": "https://www.freecad.org/svg/logo-freecad.svg",
     "tags": [
       "CAD",
       "3D modeling",
@@ -99,7 +99,7 @@
     "repository_url": "https://github.com/gtkwave/gtkwave",
     "documentation_url": "https://gtkwave.github.io/gtkwave/",
     "screenshot_url": "https://gtkwave.github.io/gtkwave/_images/gtkwave.png",
-    "logo_url": "https://commons.wikimedia.org/wiki/File:Gtkwave_256x256x32.png",
+    "logo_url": "https://upload.wikimedia.org/wikipedia/commons/6/68/Gtkwave_256x256x32.png?20120203052022",
     "tags": [
       "simulation",
       "waveform",

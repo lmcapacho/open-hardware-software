@@ -1,6 +1,6 @@
 # FreeCAD
 
-<img src="hhttps://www.freecad.org/svg/logo-freecad.svg" alt="FreeCAD Logo" style="height: 96px;" />
+<img src="https://www.freecad.org/svg/logo-freecad.svg" alt="FreeCAD Logo" style="height: 96px;" />
 
 **Version:** 1.0.1  
 **Release Date:** 2024-11-18  

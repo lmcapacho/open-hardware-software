@@ -1,6 +1,6 @@
 # GTKWave
 
-<img src="https://commons.wikimedia.org/wiki/File:Gtkwave_256x256x32.png" alt="GTKWave Logo" style="height: 96px;" />
+<img src="https://upload.wikimedia.org/wikipedia/commons/6/68/Gtkwave_256x256x32.png?20120203052022" alt="GTKWave Logo" style="height: 96px;" />
 
 **Version:** 3.3.116  
 **Release Date:** 2023-07-22  
