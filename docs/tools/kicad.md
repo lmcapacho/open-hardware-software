@@ -1,6 +1,6 @@
 # KiCad
 
-![KiCad Logo](https://www.kicad.org/img/kicad_logo_small.png)
+<img src="https://www.kicad.org/img/kicad_logo_small.png" alt="KiCad Logo" style="height: 96px;" />
 
 **Version:** 9.0.3  
 **Release Date:** 2025-07-07  
