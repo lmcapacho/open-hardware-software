@@ -32,7 +32,8 @@ Each tool includes:
 
 This repository also includes a visual, searchable catalog:  
 **Explore the tools online at:**  
-`https://lmcapacho.github.io/open-hardware-software/`
+
+[https://lmcapacho.github.io/open-hardware-software](https://lmcapacho.github.io/open-hardware-software)
 
 Use the search bar to filter tools, and click "View details" to read full descriptions.
 
