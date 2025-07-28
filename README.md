@@ -13,20 +13,7 @@ Each tool includes:
 - Key features
 - Current version
 - Download and documentation links
-- Full detail pages in Markdown (`/tools/*.md`)
-
-## 🛠 Tool List
-
-<!-- TOOLLIST:START -->
-| Tool | Category | Platforms | License | Details |
-|------|----------|-----------|---------|---------|
-| [Arduino IDE](docs/tools/arduino-ide.md) | Embedded Development | Windows, Linux, macOS | AGPL-3.0 | [Website](https://www.arduino.cc/en/software/) |
-| [FreeCAD](docs/tools/freecad.md) | 3D CAD | Windows, Linux, macOS | LGPLv2+ | [Website](https://www.freecad.org/) |
-| [GTKWave](docs/tools/gtkwave.md) | Digital Simulation | Windows, Linux, macOS | GPLv2 | [Website](https://gtkwave.github.io/gtkwave/) |
-| [Icestudio](docs/tools/icestudio.md) | Digital Design | Windows, Linux, macOS | GPLv2 | [Website](https://icestudio.io) |
-| [KiCad](docs/tools/kicad.md) | PCB Design | Windows, macOS, Linux, Docker | GPLv3 | [Website](https://www.kicad.org) |
-| [LibrePCB](docs/tools/librepcb.md) | PCB Design | Windows, Linux, macOS | GPLv3 | [Website](https://librepcb.org/) |
-<!-- TOOLLIST:END -->
+- Full detail pages in Markdown (`/docs/tools/*.md`)
 
 ## 🌐 GitHub Pages
 
@@ -46,6 +33,19 @@ Want to add a tool or improve descriptions?
 3. Open a Pull Request.
 
 Or open an [Issue](https://github.com/lmcapacho/open-hardware-software/issues) to suggest a tool.
+
+## 🛠 Tool List
+
+<!-- TOOLLIST:START -->
+| Tool | Category | Platforms | License | Details |
+|------|----------|-----------|---------|---------|
+| [Arduino IDE](docs/tools/arduino-ide.md) | Embedded Development | Windows, Linux, macOS | AGPL-3.0 | [Website](https://www.arduino.cc/en/software/) |
+| [FreeCAD](docs/tools/freecad.md) | 3D CAD | Windows, Linux, macOS | LGPLv2+ | [Website](https://www.freecad.org/) |
+| [GTKWave](docs/tools/gtkwave.md) | Digital Simulation | Windows, Linux, macOS | GPLv2 | [Website](https://gtkwave.github.io/gtkwave/) |
+| [Icestudio](docs/tools/icestudio.md) | Digital Design | Windows, Linux, macOS | GPLv2 | [Website](https://icestudio.io) |
+| [KiCad](docs/tools/kicad.md) | PCB Design | Windows, macOS, Linux, Docker | GPLv3 | [Website](https://www.kicad.org) |
+| [LibrePCB](docs/tools/librepcb.md) | PCB Design | Windows, Linux, macOS | GPLv3 | [Website](https://librepcb.org/) |
+<!-- TOOLLIST:END -->
 
 ## 📜 License
 
