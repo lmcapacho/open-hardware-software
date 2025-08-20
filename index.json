@@ -1,4 +1,32 @@
 [
+    {
+    "name": "Thonny",
+    "slug": "thonny",
+    "description": "A beginner-friendly Python IDE with simple interface, integrated debugger, and REPL. Ideal for learning Python and programming microcontrollers.",
+    "version": "4.1.4",
+    "release_date": "2024-12-16",
+    "platforms": ["Windows", "Linux", "macOS", "Raspberry Pi"],
+    "license": "MIT",
+    "license_url": "https://github.com/thonny/thonny/blob/master/LICENSE.txt",
+    "category": "IDE",
+    "website": "https://thonny.org/",
+    "download_url": "https://thonny.org/",
+    "repository_url": "https://github.com/thonny/thonny",
+    "documentation_url": "https://thonny.org/",
+    "screenshot_url": "https://thonny.org/img/screenshot.png",
+    "logo_url": "https://upload.wikimedia.org/wikipedia/commons/e/e2/Thonny_logo.png?20181127113433",
+    "tags": ["python", "ide", "education", "debugger", "repl", "microcontrollers"],
+    "language": ["Python"],
+    "status": "active",
+    "features": [
+      "Simple and clean interface for beginners",
+      "Integrated debugger with step-by-step execution",
+      "Support for REPL and variable inspection",
+      "Good for teaching and learning Python",
+      "Includes MicroPython and CircuitPython support",
+      "Cross-platform compatibility"
+    ]
+  },
   {
     "name": "Arduino IDE",
     "slug": "arduino-ide",
