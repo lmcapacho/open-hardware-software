@@ -1,6 +1,6 @@
 # Arduino IDE
 
-<img src="https://www.arduino.cc/wiki/370832ed4114dd35d498f2f449b4781e/arduino.svg" alt="Arduino IDE Logo" style="height: 96px;" />
+<img src="https://upload.wikimedia.org/wikipedia/commons/7/73/Arduino_IDE_logo.svg" alt="Arduino IDE Logo" style="height: 96px;" />
 
 **Version:** 2.3.6  
 **Release Date:** 2025-04-09  
