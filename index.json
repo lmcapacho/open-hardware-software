@@ -1,5 +1,89 @@
 [
   {
+  "name": "Xschem",
+  "slug": "xschem",
+  "description": "A fast and lightweight schematic capture program designed for VLSI and integrated circuit design workflows, supporting hierarchical schematics and seamless integration with tools like ngspice and Xyce.",
+  "version": "3.4.7",
+  "release_date": "2025-05-23",
+  "platforms": [
+    "Linux",
+    "macOS",
+    "Windows"
+  ],
+  "license": "GPL-2.0",
+  "license_url": "http://github.com/StefanSchippers/xschem/blob/master/LICENSE",
+  "category": "Electronics Design",
+  "website": "https://xschem.sourceforge.io/stefan/index.html",
+  "download_url": "https://sourceforge.net/projects/xschem/files/",
+  "repository_url": "https://sourceforge.net/p/xschem/code/",
+  "documentation_url": "https://xschem.sourceforge.io/stefan/xschem_man/xschem_man.html",
+  "screenshot_url": "https://xschem.sourceforge.io/stefan/xschem1.png",
+  "logo_url": "https://xschem.sourceforge.io/stefan/xschem_man/xschem_logo.png",
+  "tags": [
+    "eda",
+    "schematic-capture",
+    "vlsi",
+    "open-source",
+    "circuit-design"
+  ],
+  "language": [
+    "C",
+    "Tcl/Tk"
+  ],
+  "status": "active",
+  "features": [
+    "Fast and hierarchical schematic capture",
+    "Integration with SPICE simulators like ngspice and Xyce",
+    "Lightweight UI based on Tcl/Tk",
+    "Symbol and library creation tools",
+    "Open-source and extensible architecture",
+    "Ideal for analog, digital, and mixed-signal IC design projects"
+  ]
+},
+
+{
+  "name": "Ngspice",
+  "slug": "ngspice",
+  "description": "An open-source mixed-level/mixed-signal electronic circuit simulator derived from SPICE3, XSPICE, and Cider. Widely used in education, research, and professional circuit analysis.",
+  "version": "45",
+  "release_date": "2025-09-06",
+  "platforms": [
+    "Linux",
+    "Windows",
+    "macOS"
+  ],
+  "license": "BSD-3-Clause",
+  "license_url": "https://sourceforge.net/p/ngspice/ngspice/ci/master/tree/COPYING",
+  "category": "Circuit Simulation",
+  "website": "https://ngspice.sourceforge.io/",
+  "download_url": "https://sourceforge.net/projects/ngspice/files/",
+  "repository_url": "https://sourceforge.net/p/ngspice/ngspice/ci/master/tree/",
+  "documentation_url": "https://ngspice.sourceforge.io/docs.html",
+  "screenshot_url": "https://sourceforge.net/p/ngspice/screenshot/ro.jpg",
+  "logo_url": "https://ngspice.sourceforge.io/images/nglogo.jpg",
+  "tags": [
+    "spice",
+    "circuit-simulation",
+    "mixed-signal",
+    "analog",
+    "open-source"
+  ],
+  "language": [
+    "C"
+  ],
+  "status": "active",
+  "features": [
+    "Mixed-level and mixed-signal simulation",
+    "Behavioral modeling with XSPICE",
+    "Device modeling with Cider integration",
+    "Post-processing and plotting capabilities",
+    "Integration with GNUplot, KiCad, and Xschem",
+    "Cross-platform and open-source"
+  ]
+},
+
+
+  {
     "name": "Arduino IDE",
     "slug": "arduino-ide",
     "description": "The open-source development environment for Arduino boards and compatible hardware.",
