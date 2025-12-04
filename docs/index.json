@@ -323,6 +323,90 @@
     ]
   },
   {
+    "name": "PulseView",
+    "slug": "pulseview",
+    "description": "Graphical user interface of the Sigrok project used for visualizing and analyzing signals from logic analyzers, oscilloscopes, multimeters, and protocol decoders.",
+    "version": "0.4.2",
+    "release_date": "2023-12-15",
+    "platforms": [
+      "Windows",
+      "Linux",
+      "macOS"
+    ],
+    "license": "GPL-3.0",
+    "license_url": "https://github.com/sigrokproject/pulseview/blob/master/COPYING",
+    "category": "Signal Analysis",
+    "website": "https://sigrok.org/wiki/PulseView",
+    "download_url": "https://sigrok.org/wiki/Downloads",
+    "repository_url": "https://github.com/sigrokproject/pulseview",
+    "documentation_url": "https://sigrok.org/wiki/PulseView",
+    "screenshot_url": "https://sigrok.org/wimg/e/ee/PulseView_I2C_DS1307_Decode.png",
+    "logo_url": "https://sigrok.org/w/resources/assets/sigrok_logo.png?5fcfb",
+    "tags": [
+      "logic-analyzer",
+      "gui",
+      "signal-analysis",
+      "oscilloscope",
+      "protocol-decoding",
+      "open-source"
+    ],
+    "language": [
+      "C",
+      "C++",
+      "Qt"
+    ],
+    "status": "active",
+    "features": [
+      "Waveform visualization for digital and analog signals",
+      "Support for a wide range of hardware through libsigrok",
+      "Integrated protocol decoders for UART, SPI, I2C, CAN, and more",
+      "Zoom, pan, cursors, and measurement tools",
+      "Export data to VCD, CSV, and other formats",
+      "Cross-platform graphical interface built using Qt"
+    ]
+  },
+  {
+    "name": "sigrok-cli",
+    "slug": "sigrok-cli",
+    "description": "Command-line interface tool from the Sigrok project for capturing, decoding, and analyzing signals from logic analyzers, oscilloscopes, multimeters, and other test instruments.",
+    "version": "0.7.2",
+    "release_date": "2023-12-15",
+    "platforms": [
+      "Linux",
+      "macOS",
+      "Windows"
+    ],
+    "license": "GPL-3.0",
+    "license_url": "https://github.com/sigrokproject/sigrok-cli/blob/master/COPYING",
+    "category": "Signal Analysis",
+    "website": "https://sigrok.org/wiki/Sigrok-cli",
+    "download_url": "https://sigrok.org/wiki/Downloads",
+    "repository_url": "https://github.com/sigrokproject/sigrok-cli",
+    "documentation_url": "https://sigrok.org/wiki/Sigrok-cli",
+    "screenshot_url": "https://sigrok.org/wiki/File:Sigrok-cli-screenshot-1.png",
+    "logo_url": "https://sigrok.org/w/resources/assets/sigrok_logo.png?5fcfb",
+    "tags": [
+      "logic-analyzer",
+      "signal-analysis",
+      "cli",
+      "protocol-decoding",
+      "open-source"
+    ],
+    "language": [
+      "C",
+      "C++"
+    ],
+    "status": "active",
+    "features": [
+      "Capture signals from a wide range of supported hardware",
+      "Apply protocol decoders such as UART, I2C, SPI, CAN, and more",
+      "Export data to formats like VCD, CSV, and SRF",
+      "Command-line interface suitable for scripting and automation",
+      "Cross-platform with unified backend infrastructure",
+      "Works with PulseView for visual front-end interaction"
+    ]
+  },
+  {
     "name": "Thonny",
     "slug": "thonny",
     "description": "A beginner-friendly Python IDE with simple interface, integrated debugger, and REPL. Ideal for learning Python and programming microcontrollers.",
