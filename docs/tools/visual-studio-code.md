@@ -1,6 +1,6 @@
 # Visual Studio Code
 
-<img src="https://code.visualstudio.com/assets/images/code-stable.png" alt="Visual Studio Code Logo" style="height: 96px;" />
+<img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Visual_Studio_Code_1.35_icon.svg" alt="Visual Studio Code Logo" style="height: 96px;" />
 
 **Version:** 1.102  
 **Release Date:** 2025-07-09  

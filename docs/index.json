@@ -467,7 +467,7 @@
     "repository_url": "https://github.com/microsoft/vscode",
     "documentation_url": "https://code.visualstudio.com/docs",
     "screenshot_url": "https://code.visualstudio.com/assets/home/swimlane-anywhere.png",
-    "logo_url": "https://code.visualstudio.com/assets/images/code-stable.png",
+    "logo_url": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Visual_Studio_Code_1.35_icon.svg",
     "tags": [
       "ide",
       "code editor",
