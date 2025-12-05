@@ -1,47 +1,5 @@
 [
   {
-  "name": "Qucs",
-  "slug": "qucs",
-  "description": "Qucs (Quite Universal Circuit Simulator) is an open-source circuit simulation and analysis software with a graphical user interface, supporting DC, AC, S-parameter, harmonic balance, noise analysis, and more.",
-  "version": "0.0.20",
-  "release_date": "2024-06-09",
-  "platforms": [
-    "Linux",
-    "Windows",
-    "macOS"
-  ],
-  "license": "GPL-2.0",
-  "license_url": "https://www.gnu.org/licenses/old-licenses/gpl-2.0.html",
-  "category": "Circuit Simulation",
-  "website": "https://qucs.sourceforge.net/",
-  "download_url": "https://sourceforge.net/projects/qucs/files/",
-  "repository_url": "https://github.com/Qucs/qucs",
-  "documentation_url": "https://qucs.sourceforge.net/docs.html",
-  "screenshot_url": "https://qucs.sourceforge.net/images/qucs-qt4.png",
-  "logo_url": "https://github.com/Qucs/qucs/wiki/images/qucs.png",
-  "tags": [
-    "circuit-simulation",
-    "analog",
-    "rf",
-    "gui",
-    "open-source"
-  ],
-  "language": [
-    "C++",
-    "Qt"
-  ],
-  "status": "active",
-  "features": [
-    "Graphical user interface for circuit design and simulation",
-    "DC, AC, transient, S-parameter, and noise analysis",
-    "Harmonic balance for RF applications",
-    "Component library with schematic capture",
-    "Integrated equation solver and data display",
-    "Open-source and cross-platform"
-  ]
-},
-
-  {
     "name": "Arduino IDE",
     "slug": "arduino-ide",
     "description": "The open-source development environment for Arduino boards and compatible hardware.",
@@ -445,6 +403,47 @@
       "Zoom, pan, cursors, and measurement tools",
       "Export data to VCD, CSV, and other formats",
       "Cross-platform graphical interface built using Qt"
+    ]
+  },
+  {
+    "name": "Qucs",
+    "slug": "qucs",
+    "description": "Qucs (Quite Universal Circuit Simulator) is an open-source circuit simulation and analysis software with a graphical user interface, supporting DC, AC, S-parameter, harmonic balance, noise analysis, and more.",
+    "version": "0.0.20",
+    "release_date": "2024-06-09",
+    "platforms": [
+      "Linux",
+      "Windows",
+      "macOS"
+    ],
+    "license": "GPL-2.0",
+    "license_url": "https://www.gnu.org/licenses/old-licenses/gpl-2.0.html",
+    "category": "Circuit Simulation",
+    "website": "https://qucs.sourceforge.net/",
+    "download_url": "https://sourceforge.net/projects/qucs/files/",
+    "repository_url": "https://github.com/Qucs/qucs",
+    "documentation_url": "https://qucs.sourceforge.net/docs.html",
+    "screenshot_url": "https://qucs.sourceforge.net/images/qucs-qt4.png",
+    "logo_url": "https://github.com/Qucs/qucs/wiki/images/qucs.png",
+    "tags": [
+      "circuit-simulation",
+      "analog",
+      "rf",
+      "gui",
+      "open-source"
+    ],
+    "language": [
+      "C++",
+      "Qt"
+    ],
+    "status": "active",
+    "features": [
+      "Graphical user interface for circuit design and simulation",
+      "DC, AC, transient, S-parameter, and noise analysis",
+      "Harmonic balance for RF applications",
+      "Component library with schematic capture",
+      "Integrated equation solver and data display",
+      "Open-source and cross-platform"
     ]
   },
   {

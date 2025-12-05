@@ -49,6 +49,7 @@ Or open an [Issue](https://github.com/lmcapacho/open-hardware-software/issues) t
 | [Mu Editor](docs/tools/mu-editor.md) | Code IDE | Windows, Linux, macOS, Raspberry Pi | GPL-3.0 | [Website](https://codewith.mu/) |
 | [Ngspice](docs/tools/ngspice.md) | Circuit Simulation | Linux, Windows, macOS | BSD-3-Clause | [Website](https://ngspice.sourceforge.io/) |
 | [PulseView](docs/tools/pulseview.md) | Signal Analysis | Windows, Linux, macOS | GPL-3.0 | [Website](https://sigrok.org/wiki/PulseView) |
+| [Qucs](docs/tools/qucs.md) | Circuit Simulation | Linux, Windows, macOS | GPL-2.0 | [Website](https://qucs.sourceforge.net/) |
 | [sigrok-cli](docs/tools/sigrok-cli.md) | Signal Analysis | Linux, macOS, Windows | GPL-3.0 | [Website](https://sigrok.org/wiki/Sigrok-cli) |
 | [Thonny](docs/tools/thonny.md) | IDE | Windows, Linux, macOS, Raspberry Pi | MIT | [Website](https://thonny.org/) |
 | [Visual Studio Code](docs/tools/visual-studio-code.md) | Code Editor | Windows, Linux, macOS | MIT | [Website](https://code.visualstudio.com/) |
