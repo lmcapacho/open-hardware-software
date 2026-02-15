@@ -420,7 +420,7 @@
     "repository_url": "https://github.com/openocd-org/openocd",
     "documentation_url": "https://openocd.org/doc-release/html/index.html",
     "screenshot_url": "https://upload.wikimedia.org/wikipedia/commons/1/1a/OpenOCD_console_example.png",
-    "logo_url": "https://raw.githubusercontent.com/openocd-org/openocd/master/contrib/logo/openocd-logo.svg",
+    "logo_url": "https://github.com/openocd-org.png",
     "tags": [
       "jtag",
       "swd",
@@ -459,7 +459,7 @@
     "repository_url": "https://github.com/The-OpenROAD-Project/OpenROAD",
     "documentation_url": "https://openroad.readthedocs.io/",
     "screenshot_url": "https://openroad.readthedocs.io/en/latest/_images/gui.webp",
-    "logo_url": "https://theopenroadproject.org/wp-content/uploads/2021/03/OpenROAD_logo.png",
+    "logo_url": "https://github.com/The-OpenROAD-Project.png",
     "tags": [
       "asic",
       "physical-design",
@@ -499,7 +499,7 @@
     "repository_url": "https://github.com/platformio/platformio-core",
     "documentation_url": "https://docs.platformio.org/",
     "screenshot_url": "https://docs.platformio.org/en/latest/_images/pio-home-ide.png",
-    "logo_url": "https://upload.wikimedia.org/wikipedia/commons/c/cd/PlatformIO_logo.svg",
+    "logo_url": "https://github.com/platformio.png",
     "tags": [
       "embedded",
       "firmware",
@@ -622,7 +622,7 @@
     "repository_url": "https://github.com/renode/renode",
     "documentation_url": "https://renode.readthedocs.io/",
     "screenshot_url": "https://renode.io/images/renode-main-window.png",
-    "logo_url": "https://renode.io/images/renode-logo.svg",
+    "logo_url": "https://github.com/renode.png",
     "tags": [
       "emulation",
       "embedded",
@@ -745,7 +745,7 @@
     "repository_url": "https://github.com/verilator/verilator",
     "documentation_url": "https://verilator.org/guide/latest/",
     "screenshot_url": "https://verilator.org/guide/latest/_static/verilator.png",
-    "logo_url": "https://avatars.githubusercontent.com/u/8874357?s=200&v=4",
+    "logo_url": "https://github.com/verilator.png",
     "tags": [
       "systemverilog",
       "simulation",
@@ -865,7 +865,7 @@
     "repository_url": "https://github.com/YosysHQ/yosys",
     "documentation_url": "https://yosyshq.readthedocs.io/projects/yosys/en/latest/",
     "screenshot_url": "https://yosyshq.readthedocs.io/projects/yosys/en/latest/_images/yosys_flow.svg",
-    "logo_url": "https://yosyshq.net/images/yosys-logo.png",
+    "logo_url": "https://github.com/YosysHQ.png",
     "tags": [
       "rtl",
       "synthesis",

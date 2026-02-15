@@ -1,6 +1,6 @@
 # Verilator
 
-<img src="https://avatars.githubusercontent.com/u/8874357?s=200&v=4" alt="Verilator Logo" style="height: 96px;" />
+<img src="https://github.com/verilator.png" alt="Verilator Logo" style="height: 96px;" />
 
 **Version:** 5.042  
 **Release Date:** 2025-11-02  

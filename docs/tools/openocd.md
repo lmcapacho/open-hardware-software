@@ -1,6 +1,6 @@
 # OpenOCD
 
-<img src="https://raw.githubusercontent.com/openocd-org/openocd/master/contrib/logo/openocd-logo.svg" alt="OpenOCD Logo" style="height: 96px;" />
+<img src="https://github.com/openocd-org.png" alt="OpenOCD Logo" style="height: 96px;" />
 
 **Version:** 0.12.0  
 **Release Date:** 2023-01-30  

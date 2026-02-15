@@ -1,6 +1,6 @@
 # PlatformIO
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/c/cd/PlatformIO_logo.svg" alt="PlatformIO Logo" style="height: 96px;" />
+<img src="https://github.com/platformio.png" alt="PlatformIO Logo" style="height: 96px;" />
 
 **Version:** 6.1.19  
 **Release Date:** 2026-02-04  

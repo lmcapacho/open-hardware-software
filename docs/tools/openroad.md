@@ -1,6 +1,6 @@
 # OpenROAD
 
-<img src="https://theopenroadproject.org/wp-content/uploads/2021/03/OpenROAD_logo.png" alt="OpenROAD Logo" style="height: 96px;" />
+<img src="https://github.com/The-OpenROAD-Project.png" alt="OpenROAD Logo" style="height: 96px;" />
 
 **Version:** v0.9.0-beta  
 **Release Date:** 2025-07-06  

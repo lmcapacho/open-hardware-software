@@ -1,6 +1,6 @@
 # Renode
 
-<img src="https://renode.io/images/renode-logo.svg" alt="Renode Logo" style="height: 96px;" />
+<img src="https://github.com/renode.png" alt="Renode Logo" style="height: 96px;" />
 
 **Version:** 1.16.0  
 **Release Date:** 2025-08-03  

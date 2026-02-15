@@ -1,6 +1,6 @@
 # Yosys
 
-<img src="https://yosyshq.net/images/yosys-logo.png" alt="Yosys Logo" style="height: 96px;" />
+<img src="https://github.com/YosysHQ.png" alt="Yosys Logo" style="height: 96px;" />
 
 **Version:** 0.59.1  
 **Release Date:** 2025-11-11  
