@@ -120,6 +120,45 @@
     ]
   },
   {
+    "name": "GHDL",
+    "slug": "ghdl",
+    "description": "An open-source VHDL simulator and synthesis frontend used for verification and digital design workflows.",
+    "version": "5.1.1",
+    "release_date": "2025-06-18",
+    "platforms": [
+      "Linux",
+      "Windows",
+      "macOS"
+    ],
+    "license": "GPL-2.0",
+    "license_url": "https://github.com/ghdl/ghdl/blob/master/LICENSE",
+    "category": "Digital Simulation",
+    "website": "https://ghdl.github.io/ghdl/",
+    "download_url": "https://github.com/ghdl/ghdl/releases",
+    "repository_url": "https://github.com/ghdl/ghdl",
+    "documentation_url": "https://ghdl.github.io/ghdl/using/",
+    "screenshot_url": "https://ghdl.github.io/ghdl/_static/ghdl-logo.png",
+    "logo_url": "https://ghdl.github.io/ghdl/_static/logo.png",
+    "tags": [
+      "vhdl",
+      "simulation",
+      "verification",
+      "hdl"
+    ],
+    "language": [
+      "Ada",
+      "VHDL"
+    ],
+    "status": "active",
+    "features": [
+      "VHDL-87/93/2008 support for simulation",
+      "CLI-based flow ideal for CI and automation",
+      "Can integrate with GTKWave for waveform viewing",
+      "Supports multiple backends for analysis and execution",
+      "Useful for both learning and professional verification workflows"
+    ]
+  },
+  {
     "name": "GTKWave",
     "slug": "gtkwave",
     "description": "A wave viewer for VCD and LXT2 trace files used in digital design simulation.",
@@ -363,293 +402,6 @@
     ]
   },
   {
-    "name": "PulseView",
-    "slug": "pulseview",
-    "description": "Graphical user interface of the Sigrok project used for visualizing and analyzing signals from logic analyzers, oscilloscopes, multimeters, and protocol decoders.",
-    "version": "0.4.2",
-    "release_date": "2023-12-15",
-    "platforms": [
-      "Windows",
-      "Linux",
-      "macOS"
-    ],
-    "license": "GPL-3.0",
-    "license_url": "https://github.com/sigrokproject/pulseview/blob/master/COPYING",
-    "category": "Signal Analysis",
-    "website": "https://sigrok.org/wiki/PulseView",
-    "download_url": "https://sigrok.org/wiki/Downloads",
-    "repository_url": "https://github.com/sigrokproject/pulseview",
-    "documentation_url": "https://sigrok.org/wiki/PulseView",
-    "screenshot_url": "https://sigrok.org/wimg/e/ee/PulseView_I2C_DS1307_Decode.png",
-    "logo_url": "https://sigrok.org/w/resources/assets/sigrok_logo.png?5fcfb",
-    "tags": [
-      "logic-analyzer",
-      "gui",
-      "signal-analysis",
-      "oscilloscope",
-      "protocol-decoding",
-      "open-source"
-    ],
-    "language": [
-      "C",
-      "C++",
-      "Qt"
-    ],
-    "status": "active",
-    "features": [
-      "Waveform visualization for digital and analog signals",
-      "Support for a wide range of hardware through libsigrok",
-      "Integrated protocol decoders for UART, SPI, I2C, CAN, and more",
-      "Zoom, pan, cursors, and measurement tools",
-      "Export data to VCD, CSV, and other formats",
-      "Cross-platform graphical interface built using Qt"
-    ]
-  },
-  {
-    "name": "Qucs",
-    "slug": "qucs",
-    "description": "Qucs (Quite Universal Circuit Simulator) is an open-source circuit simulation and analysis software with a graphical user interface, supporting DC, AC, S-parameter, harmonic balance, noise analysis, and more.",
-    "version": "0.0.20",
-    "release_date": "2024-06-09",
-    "platforms": [
-      "Linux",
-      "Windows",
-      "macOS"
-    ],
-    "license": "GPL-2.0",
-    "license_url": "https://www.gnu.org/licenses/old-licenses/gpl-2.0.html",
-    "category": "Circuit Simulation",
-    "website": "https://qucs.sourceforge.net/",
-    "download_url": "https://sourceforge.net/projects/qucs/files/",
-    "repository_url": "https://github.com/Qucs/qucs",
-    "documentation_url": "https://qucs.sourceforge.net/docs.html",
-    "screenshot_url": "https://qucs.sourceforge.net/images/qucs-qt4.png",
-    "logo_url": "https://github.com/Qucs/qucs/wiki/images/qucs.png",
-    "tags": [
-      "circuit-simulation",
-      "analog",
-      "rf",
-      "gui",
-      "open-source"
-    ],
-    "language": [
-      "C++",
-      "Qt"
-    ],
-    "status": "active",
-    "features": [
-      "Graphical user interface for circuit design and simulation",
-      "DC, AC, transient, S-parameter, and noise analysis",
-      "Harmonic balance for RF applications",
-      "Component library with schematic capture",
-      "Integrated equation solver and data display",
-      "Open-source and cross-platform"
-    ]
-  },
-  {
-    "name": "sigrok-cli",
-    "slug": "sigrok-cli",
-    "description": "Command-line interface tool from the Sigrok project for capturing, decoding, and analyzing signals from logic analyzers, oscilloscopes, multimeters, and other test instruments.",
-    "version": "0.7.2",
-    "release_date": "2023-12-15",
-    "platforms": [
-      "Linux",
-      "macOS",
-      "Windows"
-    ],
-    "license": "GPL-3.0",
-    "license_url": "https://github.com/sigrokproject/sigrok-cli/blob/master/COPYING",
-    "category": "Signal Analysis",
-    "website": "https://sigrok.org/wiki/Sigrok-cli",
-    "download_url": "https://sigrok.org/wiki/Downloads",
-    "repository_url": "https://github.com/sigrokproject/sigrok-cli",
-    "documentation_url": "https://sigrok.org/wiki/Sigrok-cli",
-    "screenshot_url": "https://sigrok.org/wiki/File:Sigrok-cli-screenshot-1.png",
-    "logo_url": "https://sigrok.org/w/resources/assets/sigrok_logo.png?5fcfb",
-    "tags": [
-      "logic-analyzer",
-      "signal-analysis",
-      "cli",
-      "protocol-decoding",
-      "open-source"
-    ],
-    "language": [
-      "C",
-      "C++"
-    ],
-    "status": "active",
-    "features": [
-      "Capture signals from a wide range of supported hardware",
-      "Apply protocol decoders such as UART, I2C, SPI, CAN, and more",
-      "Export data to formats like VCD, CSV, and SRF",
-      "Command-line interface suitable for scripting and automation",
-      "Cross-platform with unified backend infrastructure",
-      "Works with PulseView for visual front-end interaction"
-    ]
-  },
-  {
-    "name": "Thonny",
-    "slug": "thonny",
-    "description": "A beginner-friendly Python IDE with simple interface, integrated debugger, and REPL. Ideal for learning Python and programming microcontrollers.",
-    "version": "4.1.4",
-    "release_date": "2024-12-16",
-    "platforms": [
-      "Windows",
-      "Linux",
-      "macOS",
-      "Raspberry Pi"
-    ],
-    "license": "MIT",
-    "license_url": "https://github.com/thonny/thonny/blob/master/LICENSE.txt",
-    "category": "IDE",
-    "website": "https://thonny.org/",
-    "download_url": "https://thonny.org/",
-    "repository_url": "https://github.com/thonny/thonny",
-    "documentation_url": "https://thonny.org/",
-    "screenshot_url": "https://thonny.org/img/screenshot.png",
-    "logo_url": "https://upload.wikimedia.org/wikipedia/commons/e/e2/Thonny_logo.png?20181127113433",
-    "tags": [
-      "python",
-      "ide",
-      "education",
-      "debugger",
-      "repl",
-      "microcontrollers"
-    ],
-    "language": [
-      "Python"
-    ],
-    "status": "active",
-    "features": [
-      "Simple and clean interface for beginners",
-      "Integrated debugger with step-by-step execution",
-      "Support for REPL and variable inspection",
-      "Good for teaching and learning Python",
-      "Includes MicroPython and CircuitPython support",
-      "Cross-platform compatibility"
-    ]
-  },
-  {
-    "name": "Visual Studio Code",
-    "slug": "visual-studio-code",
-    "description": "A lightweight but powerful open‑source code editor and development environment that runs on your desktop.",
-    "version": "1.102",
-    "release_date": "2025-07-09",
-    "platforms": [
-      "Windows",
-      "Linux",
-      "macOS"
-    ],
-    "license": "MIT",
-    "license_url": "https://github.com/microsoft/vscode/blob/main/LICENSE.txt",
-    "category": "Code Editor",
-    "website": "https://code.visualstudio.com/",
-    "download_url": "https://code.visualstudio.com/download",
-    "repository_url": "https://github.com/microsoft/vscode",
-    "documentation_url": "https://code.visualstudio.com/docs",
-    "screenshot_url": "https://code.visualstudio.com/assets/home/swimlane-anywhere.png",
-    "logo_url": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Visual_Studio_Code_1.35_icon.svg",
-    "tags": [
-      "ide",
-      "code editor",
-      "developer",
-      "text editor"
-    ],
-    "language": [
-      "TypeScript",
-      "JavaScript",
-      "C++"
-    ],
-    "status": "active",
-    "features": [
-      "Cross‑platform editor running on Windows, macOS and Linux",
-      "Built‑in debugging, Git version control and terminal integration",
-      "Extensible via a rich marketplace of extensions",
-      "IntelliSense and code completion for many languages",
-      "Support for remote development and containerized workflows"
-    ]
-  },
-  {
-    "name": "Xschem",
-    "slug": "xschem",
-    "description": "A fast and lightweight schematic capture program designed for VLSI and integrated circuit design workflows, supporting hierarchical schematics and seamless integration with tools like ngspice and Xyce.",
-    "version": "3.4.7",
-    "release_date": "2025-05-23",
-    "platforms": [
-      "Linux",
-      "macOS",
-      "Windows"
-    ],
-    "license": "GPL-2.0",
-    "license_url": "http://github.com/StefanSchippers/xschem/blob/master/LICENSE",
-    "category": "Electronics Design",
-    "website": "https://xschem.sourceforge.io/stefan/index.html",
-    "download_url": "https://sourceforge.net/projects/xschem/files/",
-    "repository_url": "https://sourceforge.net/p/xschem/code/",
-    "documentation_url": "https://xschem.sourceforge.io/stefan/xschem_man/xschem_man.html",
-    "screenshot_url": "https://xschem.sourceforge.io/stefan/xschem1.png",
-    "logo_url": "https://xschem.sourceforge.io/stefan/xschem_man/xschem_logo.png",
-    "tags": [
-      "eda",
-      "schematic-capture",
-      "vlsi",
-      "open-source",
-      "circuit-design"
-    ],
-    "language": [
-      "C",
-      "Tcl/Tk"
-    ],
-    "status": "active",
-    "features": [
-      "Fast and hierarchical schematic capture",
-      "Integration with SPICE simulators like ngspice and Xyce",
-      "Lightweight UI based on Tcl/Tk",
-      "Symbol and library creation tools",
-      "Open-source and extensible architecture",
-      "Ideal for analog, digital, and mixed-signal IC design projects"
-    ]
-  },
-  {
-    "name": "GHDL",
-    "slug": "ghdl",
-    "description": "An open-source VHDL simulator and synthesis frontend used for verification and digital design workflows.",
-    "version": "5.1.1",
-    "release_date": "2025-06-18",
-    "platforms": [
-      "Linux",
-      "Windows",
-      "macOS"
-    ],
-    "license": "GPL-2.0",
-    "license_url": "https://github.com/ghdl/ghdl/blob/master/LICENSE",
-    "category": "Digital Simulation",
-    "website": "https://ghdl.github.io/ghdl/",
-    "download_url": "https://github.com/ghdl/ghdl/releases",
-    "repository_url": "https://github.com/ghdl/ghdl",
-    "documentation_url": "https://ghdl.github.io/ghdl/using/",
-    "screenshot_url": "https://ghdl.github.io/ghdl/_static/ghdl-logo.png",
-    "logo_url": "https://ghdl.github.io/ghdl/_static/logo.png",
-    "tags": [
-      "vhdl",
-      "simulation",
-      "verification",
-      "hdl"
-    ],
-    "language": [
-      "Ada",
-      "VHDL"
-    ],
-    "status": "active",
-    "features": [
-      "VHDL-87/93/2008 support for simulation",
-      "CLI-based flow ideal for CI and automation",
-      "Can integrate with GTKWave for waveform viewing",
-      "Supports multiple backends for analysis and execution",
-      "Useful for both learning and professional verification workflows"
-    ]
-  },
-  {
     "name": "OpenOCD",
     "slug": "openocd",
     "description": "A debugger and in-system programmer for embedded targets using JTAG and SWD interfaces.",
@@ -768,6 +520,90 @@
     ]
   },
   {
+    "name": "PulseView",
+    "slug": "pulseview",
+    "description": "Graphical user interface of the Sigrok project used for visualizing and analyzing signals from logic analyzers, oscilloscopes, multimeters, and protocol decoders.",
+    "version": "0.4.2",
+    "release_date": "2023-12-15",
+    "platforms": [
+      "Windows",
+      "Linux",
+      "macOS"
+    ],
+    "license": "GPL-3.0",
+    "license_url": "https://github.com/sigrokproject/pulseview/blob/master/COPYING",
+    "category": "Signal Analysis",
+    "website": "https://sigrok.org/wiki/PulseView",
+    "download_url": "https://sigrok.org/wiki/Downloads",
+    "repository_url": "https://github.com/sigrokproject/pulseview",
+    "documentation_url": "https://sigrok.org/wiki/PulseView",
+    "screenshot_url": "https://sigrok.org/wimg/e/ee/PulseView_I2C_DS1307_Decode.png",
+    "logo_url": "https://sigrok.org/w/resources/assets/sigrok_logo.png?5fcfb",
+    "tags": [
+      "logic-analyzer",
+      "gui",
+      "signal-analysis",
+      "oscilloscope",
+      "protocol-decoding",
+      "open-source"
+    ],
+    "language": [
+      "C",
+      "C++",
+      "Qt"
+    ],
+    "status": "active",
+    "features": [
+      "Waveform visualization for digital and analog signals",
+      "Support for a wide range of hardware through libsigrok",
+      "Integrated protocol decoders for UART, SPI, I2C, CAN, and more",
+      "Zoom, pan, cursors, and measurement tools",
+      "Export data to VCD, CSV, and other formats",
+      "Cross-platform graphical interface built using Qt"
+    ]
+  },
+  {
+    "name": "Qucs",
+    "slug": "qucs",
+    "description": "Qucs (Quite Universal Circuit Simulator) is an open-source circuit simulation and analysis software with a graphical user interface, supporting DC, AC, S-parameter, harmonic balance, noise analysis, and more.",
+    "version": "0.0.20",
+    "release_date": "2024-06-09",
+    "platforms": [
+      "Linux",
+      "Windows",
+      "macOS"
+    ],
+    "license": "GPL-2.0",
+    "license_url": "https://www.gnu.org/licenses/old-licenses/gpl-2.0.html",
+    "category": "Circuit Simulation",
+    "website": "https://qucs.sourceforge.net/",
+    "download_url": "https://sourceforge.net/projects/qucs/files/",
+    "repository_url": "https://github.com/Qucs/qucs",
+    "documentation_url": "https://qucs.sourceforge.net/docs.html",
+    "screenshot_url": "https://qucs.sourceforge.net/images/qucs-qt4.png",
+    "logo_url": "https://github.com/Qucs/qucs/wiki/images/qucs.png",
+    "tags": [
+      "circuit-simulation",
+      "analog",
+      "rf",
+      "gui",
+      "open-source"
+    ],
+    "language": [
+      "C++",
+      "Qt"
+    ],
+    "status": "active",
+    "features": [
+      "Graphical user interface for circuit design and simulation",
+      "DC, AC, transient, S-parameter, and noise analysis",
+      "Harmonic balance for RF applications",
+      "Component library with schematic capture",
+      "Integrated equation solver and data display",
+      "Open-source and cross-platform"
+    ]
+  },
+  {
     "name": "Renode",
     "slug": "renode",
     "description": "A development framework for multi-node embedded systems that enables hardware emulation for firmware testing.",
@@ -808,6 +644,89 @@
     ]
   },
   {
+    "name": "sigrok-cli",
+    "slug": "sigrok-cli",
+    "description": "Command-line interface tool from the Sigrok project for capturing, decoding, and analyzing signals from logic analyzers, oscilloscopes, multimeters, and other test instruments.",
+    "version": "0.7.2",
+    "release_date": "2023-12-15",
+    "platforms": [
+      "Linux",
+      "macOS",
+      "Windows"
+    ],
+    "license": "GPL-3.0",
+    "license_url": "https://github.com/sigrokproject/sigrok-cli/blob/master/COPYING",
+    "category": "Signal Analysis",
+    "website": "https://sigrok.org/wiki/Sigrok-cli",
+    "download_url": "https://sigrok.org/wiki/Downloads",
+    "repository_url": "https://github.com/sigrokproject/sigrok-cli",
+    "documentation_url": "https://sigrok.org/wiki/Sigrok-cli",
+    "screenshot_url": "https://sigrok.org/wiki/File:Sigrok-cli-screenshot-1.png",
+    "logo_url": "https://sigrok.org/w/resources/assets/sigrok_logo.png?5fcfb",
+    "tags": [
+      "logic-analyzer",
+      "signal-analysis",
+      "cli",
+      "protocol-decoding",
+      "open-source"
+    ],
+    "language": [
+      "C",
+      "C++"
+    ],
+    "status": "active",
+    "features": [
+      "Capture signals from a wide range of supported hardware",
+      "Apply protocol decoders such as UART, I2C, SPI, CAN, and more",
+      "Export data to formats like VCD, CSV, and SRF",
+      "Command-line interface suitable for scripting and automation",
+      "Cross-platform with unified backend infrastructure",
+      "Works with PulseView for visual front-end interaction"
+    ]
+  },
+  {
+    "name": "Thonny",
+    "slug": "thonny",
+    "description": "A beginner-friendly Python IDE with simple interface, integrated debugger, and REPL. Ideal for learning Python and programming microcontrollers.",
+    "version": "4.1.4",
+    "release_date": "2024-12-16",
+    "platforms": [
+      "Windows",
+      "Linux",
+      "macOS",
+      "Raspberry Pi"
+    ],
+    "license": "MIT",
+    "license_url": "https://github.com/thonny/thonny/blob/master/LICENSE.txt",
+    "category": "IDE",
+    "website": "https://thonny.org/",
+    "download_url": "https://thonny.org/",
+    "repository_url": "https://github.com/thonny/thonny",
+    "documentation_url": "https://thonny.org/",
+    "screenshot_url": "https://thonny.org/img/screenshot.png",
+    "logo_url": "https://upload.wikimedia.org/wikipedia/commons/e/e2/Thonny_logo.png?20181127113433",
+    "tags": [
+      "python",
+      "ide",
+      "education",
+      "debugger",
+      "repl",
+      "microcontrollers"
+    ],
+    "language": [
+      "Python"
+    ],
+    "status": "active",
+    "features": [
+      "Simple and clean interface for beginners",
+      "Integrated debugger with step-by-step execution",
+      "Support for REPL and variable inspection",
+      "Good for teaching and learning Python",
+      "Includes MicroPython and CircuitPython support",
+      "Cross-platform compatibility"
+    ]
+  },
+  {
     "name": "Verilator",
     "slug": "verilator",
     "description": "A fast open-source SystemVerilog simulator and lint tool that compiles HDL models into C++ or SystemC.",
@@ -844,6 +763,87 @@
       "Generates C++/SystemC models",
       "Widely used in open-source and industry flows",
       "Works well with waveform and test frameworks"
+    ]
+  },
+  {
+    "name": "Visual Studio Code",
+    "slug": "visual-studio-code",
+    "description": "A lightweight but powerful open‑source code editor and development environment that runs on your desktop.",
+    "version": "1.102",
+    "release_date": "2025-07-09",
+    "platforms": [
+      "Windows",
+      "Linux",
+      "macOS"
+    ],
+    "license": "MIT",
+    "license_url": "https://github.com/microsoft/vscode/blob/main/LICENSE.txt",
+    "category": "Code Editor",
+    "website": "https://code.visualstudio.com/",
+    "download_url": "https://code.visualstudio.com/download",
+    "repository_url": "https://github.com/microsoft/vscode",
+    "documentation_url": "https://code.visualstudio.com/docs",
+    "screenshot_url": "https://code.visualstudio.com/assets/home/swimlane-anywhere.png",
+    "logo_url": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Visual_Studio_Code_1.35_icon.svg",
+    "tags": [
+      "ide",
+      "code editor",
+      "developer",
+      "text editor"
+    ],
+    "language": [
+      "TypeScript",
+      "JavaScript",
+      "C++"
+    ],
+    "status": "active",
+    "features": [
+      "Cross‑platform editor running on Windows, macOS and Linux",
+      "Built‑in debugging, Git version control and terminal integration",
+      "Extensible via a rich marketplace of extensions",
+      "IntelliSense and code completion for many languages",
+      "Support for remote development and containerized workflows"
+    ]
+  },
+  {
+    "name": "Xschem",
+    "slug": "xschem",
+    "description": "A fast and lightweight schematic capture program designed for VLSI and integrated circuit design workflows, supporting hierarchical schematics and seamless integration with tools like ngspice and Xyce.",
+    "version": "3.4.7",
+    "release_date": "2025-05-23",
+    "platforms": [
+      "Linux",
+      "macOS",
+      "Windows"
+    ],
+    "license": "GPL-2.0",
+    "license_url": "http://github.com/StefanSchippers/xschem/blob/master/LICENSE",
+    "category": "Electronics Design",
+    "website": "https://xschem.sourceforge.io/stefan/index.html",
+    "download_url": "https://sourceforge.net/projects/xschem/files/",
+    "repository_url": "https://sourceforge.net/p/xschem/code/",
+    "documentation_url": "https://xschem.sourceforge.io/stefan/xschem_man/xschem_man.html",
+    "screenshot_url": "https://xschem.sourceforge.io/stefan/xschem1.png",
+    "logo_url": "https://xschem.sourceforge.io/stefan/xschem_man/xschem_logo.png",
+    "tags": [
+      "eda",
+      "schematic-capture",
+      "vlsi",
+      "open-source",
+      "circuit-design"
+    ],
+    "language": [
+      "C",
+      "Tcl/Tk"
+    ],
+    "status": "active",
+    "features": [
+      "Fast and hierarchical schematic capture",
+      "Integration with SPICE simulators like ngspice and Xyce",
+      "Lightweight UI based on Tcl/Tk",
+      "Symbol and library creation tools",
+      "Open-source and extensible architecture",
+      "Ideal for analog, digital, and mixed-signal IC design projects"
     ]
   },
   {
