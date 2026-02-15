@@ -42,18 +42,25 @@ Or open an [Issue](https://github.com/lmcapacho/open-hardware-software/issues) t
 | [Arduino IDE](docs/tools/arduino-ide.md) | Embedded Development | Windows, Linux, macOS | AGPL-3.0 | [Website](https://www.arduino.cc/en/software/) |
 | [FreeCAD](docs/tools/freecad.md) | 3D CAD | Windows, Linux, macOS | LGPLv2+ | [Website](https://www.freecad.org/) |
 | [Geany](docs/tools/geany.md) | Code IDE | Linux, macOS, Windows | GPL-2.0 | [Website](https://www.geany.org/) |
+| [GHDL](docs/tools/ghdl.md) | Digital Simulation | Linux, Windows, macOS | GPL-2.0 | [Website](https://ghdl.github.io/ghdl/) |
 | [GTKWave](docs/tools/gtkwave.md) | Digital Simulation | Windows, Linux, macOS | GPLv2 | [Website](https://gtkwave.github.io/gtkwave/) |
 | [Icestudio](docs/tools/icestudio.md) | Digital Design | Windows, Linux, macOS | GPLv2 | [Website](https://icestudio.io) |
 | [KiCad](docs/tools/kicad.md) | PCB Design | Windows, macOS, Linux, Docker | GPLv3 | [Website](https://www.kicad.org) |
 | [LibrePCB](docs/tools/librepcb.md) | PCB Design | Windows, Linux, macOS | GPLv3 | [Website](https://librepcb.org/) |
 | [Mu Editor](docs/tools/mu-editor.md) | Code IDE | Windows, Linux, macOS, Raspberry Pi | GPL-3.0 | [Website](https://codewith.mu/) |
 | [Ngspice](docs/tools/ngspice.md) | Circuit Simulation | Linux, Windows, macOS | BSD-3-Clause | [Website](https://ngspice.sourceforge.io/) |
+| [OpenOCD](docs/tools/openocd.md) | Debugging & Programming | Linux, Windows, macOS | GPL-2.0 | [Website](https://openocd.org/) |
+| [OpenROAD](docs/tools/openroad.md) | ASIC Design | Linux, Docker, macOS | BSD-3-Clause | [Website](https://theopenroadproject.org/) |
+| [PlatformIO](docs/tools/platformio.md) | Embedded Development | Windows, Linux, macOS | Apache-2.0 | [Website](https://platformio.org/) |
 | [PulseView](docs/tools/pulseview.md) | Signal Analysis | Windows, Linux, macOS | GPL-3.0 | [Website](https://sigrok.org/wiki/PulseView) |
 | [Qucs](docs/tools/qucs.md) | Circuit Simulation | Linux, Windows, macOS | GPL-2.0 | [Website](https://qucs.sourceforge.net/) |
+| [Renode](docs/tools/renode.md) | Emulation | Linux, Windows, macOS | MIT | [Website](https://renode.io/) |
 | [sigrok-cli](docs/tools/sigrok-cli.md) | Signal Analysis | Linux, macOS, Windows | GPL-3.0 | [Website](https://sigrok.org/wiki/Sigrok-cli) |
 | [Thonny](docs/tools/thonny.md) | IDE | Windows, Linux, macOS, Raspberry Pi | MIT | [Website](https://thonny.org/) |
+| [Verilator](docs/tools/verilator.md) | Digital Simulation | Linux, macOS, Windows | LGPL-3.0 | [Website](https://verilator.org/) |
 | [Visual Studio Code](docs/tools/visual-studio-code.md) | Code Editor | Windows, Linux, macOS | MIT | [Website](https://code.visualstudio.com/) |
 | [Xschem](docs/tools/xschem.md) | Electronics Design | Linux, macOS, Windows | GPL-2.0 | [Website](https://xschem.sourceforge.io/stefan/index.html) |
+| [Yosys](docs/tools/yosys.md) | Digital Synthesis | Linux, Windows, macOS | ISC | [Website](https://yosyshq.net/yosys/) |
 <!-- TOOLLIST:END -->
 
 ## 📜 License
