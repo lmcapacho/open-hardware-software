@@ -74,7 +74,12 @@
                 </div>
                 <div class="level-right">
                   <figure class="image is-64x64 ml-2">
-                    <img :src="tool.logo_url" :alt="tool.name + ' logo'" style="max-height: 64px; object-fit: contain;">
+                    <img
+                      :src="tool._logoError ? fallbackLogo(tool.name) : tool.logo_url"
+                      :alt="tool.name + ' logo'"
+                      @error="tool._logoError = true"
+                      style="max-height: 64px; object-fit: contain;"
+                    >
                   </figure>
                 </div>
               </div>
@@ -144,6 +149,16 @@
           } finally {
             this.loading = false;
           }
+        },
+        fallbackLogo(name) {
+          const initials = (name || 'Tool')
+            .split(/\s+/)
+            .filter(Boolean)
+            .slice(0, 2)
+            .map(part => part[0].toUpperCase())
+            .join('');
+          const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64"><rect width="100%" height="100%" fill="#f0f3f6"/><text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" fill="#4a4a4a">${initials}</text></svg>`;
+          return `data:image/svg+xml;utf8,${encodeURIComponent(svg)}`;
         }
       }));
     });
