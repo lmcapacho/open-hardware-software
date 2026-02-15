@@ -15,7 +15,7 @@
     <!-- Search -->
     <div class="columns is-variable is-4 mb-5">
       <!-- Search box -->
-      <div class="column is-two-thirds">
+      <div class="column is-half">
         <input class="input" type="text" placeholder="Search tools..." x-model="query" />
       </div>
 
@@ -28,6 +28,37 @@
             </template>
           </select>
         </div>
+      </div>
+
+      <!-- Platform filter -->
+      <div class="column">
+        <div class="select is-fullwidth">
+          <select x-model="selectedPlatform">
+            <template x-for="platform in platforms" :key="platform">
+              <option x-text="platform"></option>
+            </template>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <div class="columns is-variable is-4 mb-4">
+      <div class="column">
+        <div class="select is-fullwidth">
+          <select x-model="sortBy">
+            <option value="name-asc">Sort: Name (A-Z)</option>
+            <option value="name-desc">Sort: Name (Z-A)</option>
+            <option value="release-desc">Sort: Release date (newest)</option>
+            <option value="release-asc">Sort: Release date (oldest)</option>
+          </select>
+        </div>
+      </div>
+      <div class="column is-two-thirds">
+        <article class="message is-info">
+          <div class="message-body py-2">
+            <strong x-text="filteredTools.length"></strong> tools found
+          </div>
+        </article>
       </div>
     </div>
 
@@ -59,6 +90,12 @@
         </div>
       </template>
     </div>
+
+    <article class="message is-warning" x-show="!loading && filteredTools.length === 0">
+      <div class="message-body">
+        No tools match your current filters.
+      </div>
+    </article>
   </div>
 
   <script>
@@ -66,26 +103,47 @@
       Alpine.data('app', () => ({
         query: '',
         selectedCategory: 'All',
+        selectedPlatform: 'All',
+        sortBy: 'name-asc',
+        loading: true,
         tools: [],
         get categories() {
           const allCategories = this.tools.map(tool => tool.category);
           return ['All', ...new Set(allCategories)];
         },
+        get platforms() {
+          const allPlatforms = this.tools.flatMap(tool => tool.platforms || []);
+          return ['All', ...new Set(allPlatforms)];
+        },
         get filteredTools() {
           const q = this.query.toLowerCase();
-          return this.tools.filter(tool => {
+          const filtered = this.tools.filter(tool => {
             const matchesText =
               tool.name.toLowerCase().includes(q) ||
               tool.description.toLowerCase().includes(q) ||
               tool.tags.some(tag => tag.toLowerCase().includes(q));
             const matchesCategory =
               this.selectedCategory === 'All' || tool.category === this.selectedCategory;
-            return matchesText && matchesCategory;
+            const matchesPlatform =
+              this.selectedPlatform === 'All' ||
+              (tool.platforms || []).includes(this.selectedPlatform);
+            return matchesText && matchesCategory && matchesPlatform;
           });
+
+          const sorted = [...filtered];
+          if (this.sortBy === 'name-asc') sorted.sort((a, b) => a.name.localeCompare(b.name));
+          if (this.sortBy === 'name-desc') sorted.sort((a, b) => b.name.localeCompare(a.name));
+          if (this.sortBy === 'release-desc') sorted.sort((a, b) => (b.release_date || '').localeCompare(a.release_date || ''));
+          if (this.sortBy === 'release-asc') sorted.sort((a, b) => (a.release_date || '').localeCompare(b.release_date || ''));
+          return sorted;
         },
         async init() {
-          const res = await fetch('index.json');
-          this.tools = await res.json();
+          try {
+            const res = await fetch('index.json');
+            this.tools = await res.json();
+          } finally {
+            this.loading = false;
+          }
         }
       }));
     });

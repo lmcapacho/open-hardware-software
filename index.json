@@ -609,5 +609,279 @@
       "Open-source and extensible architecture",
       "Ideal for analog, digital, and mixed-signal IC design projects"
     ]
+  },
+  {
+    "name": "GHDL",
+    "slug": "ghdl",
+    "description": "An open-source VHDL simulator and synthesis frontend used for verification and digital design workflows.",
+    "version": "5.1.1",
+    "release_date": "2025-06-18",
+    "platforms": [
+      "Linux",
+      "Windows",
+      "macOS"
+    ],
+    "license": "GPL-2.0",
+    "license_url": "https://github.com/ghdl/ghdl/blob/master/LICENSE",
+    "category": "Digital Simulation",
+    "website": "https://ghdl.github.io/ghdl/",
+    "download_url": "https://github.com/ghdl/ghdl/releases",
+    "repository_url": "https://github.com/ghdl/ghdl",
+    "documentation_url": "https://ghdl.github.io/ghdl/using/",
+    "screenshot_url": "https://ghdl.github.io/ghdl/_static/ghdl-logo.png",
+    "logo_url": "https://ghdl.github.io/ghdl/_static/logo.png",
+    "tags": [
+      "vhdl",
+      "simulation",
+      "verification",
+      "hdl"
+    ],
+    "language": [
+      "Ada",
+      "VHDL"
+    ],
+    "status": "active",
+    "features": [
+      "VHDL-87/93/2008 support for simulation",
+      "CLI-based flow ideal for CI and automation",
+      "Can integrate with GTKWave for waveform viewing",
+      "Supports multiple backends for analysis and execution",
+      "Useful for both learning and professional verification workflows"
+    ]
+  },
+  {
+    "name": "OpenOCD",
+    "slug": "openocd",
+    "description": "A debugger and in-system programmer for embedded targets using JTAG and SWD interfaces.",
+    "version": "0.12.0",
+    "release_date": "2023-01-30",
+    "platforms": [
+      "Linux",
+      "Windows",
+      "macOS"
+    ],
+    "license": "GPL-2.0",
+    "license_url": "https://github.com/openocd-org/openocd/blob/master/COPYING",
+    "category": "Debugging & Programming",
+    "website": "https://openocd.org/",
+    "download_url": "https://openocd.org/pages/getting-openocd.html",
+    "repository_url": "https://github.com/openocd-org/openocd",
+    "documentation_url": "https://openocd.org/doc-release/html/index.html",
+    "screenshot_url": "https://upload.wikimedia.org/wikipedia/commons/1/1a/OpenOCD_console_example.png",
+    "logo_url": "https://raw.githubusercontent.com/openocd-org/openocd/master/contrib/logo/openocd-logo.svg",
+    "tags": [
+      "jtag",
+      "swd",
+      "debug",
+      "firmware",
+      "embedded"
+    ],
+    "language": [
+      "C"
+    ],
+    "status": "active",
+    "features": [
+      "On-chip debugging via JTAG and SWD",
+      "Flash programming for many MCU families",
+      "Integrates with GDB-based debug workflows",
+      "Scriptable target and interface configuration",
+      "Widely used in open embedded toolchains"
+    ]
+  },
+  {
+    "name": "OpenROAD",
+    "slug": "openroad",
+    "description": "An autonomous, open-source RTL-to-GDS flow and physical design toolset for digital ASIC implementation.",
+    "version": "v0.9.0-beta",
+    "release_date": "2025-07-06",
+    "platforms": [
+      "Linux",
+      "Docker",
+      "macOS"
+    ],
+    "license": "BSD-3-Clause",
+    "license_url": "https://github.com/The-OpenROAD-Project/OpenROAD/blob/master/LICENSE",
+    "category": "ASIC Design",
+    "website": "https://theopenroadproject.org/",
+    "download_url": "https://github.com/The-OpenROAD-Project/OpenROAD/releases",
+    "repository_url": "https://github.com/The-OpenROAD-Project/OpenROAD",
+    "documentation_url": "https://openroad.readthedocs.io/",
+    "screenshot_url": "https://openroad.readthedocs.io/en/latest/_images/gui.webp",
+    "logo_url": "https://theopenroadproject.org/wp-content/uploads/2021/03/OpenROAD_logo.png",
+    "tags": [
+      "asic",
+      "physical-design",
+      "eda",
+      "rtl-to-gds"
+    ],
+    "language": [
+      "C++",
+      "Tcl",
+      "Python"
+    ],
+    "status": "active",
+    "features": [
+      "Integrated digital place-and-route flow",
+      "Timing-driven optimization and analysis",
+      "Automated floorplanning, CTS and routing",
+      "Scriptable flow for research and production",
+      "Active ecosystem with OpenLane integration"
+    ]
+  },
+  {
+    "name": "PlatformIO",
+    "slug": "platformio",
+    "description": "A cross-platform ecosystem for embedded development with project management, builds, and device programming.",
+    "version": "6.1.19",
+    "release_date": "2026-02-04",
+    "platforms": [
+      "Windows",
+      "Linux",
+      "macOS"
+    ],
+    "license": "Apache-2.0",
+    "license_url": "https://github.com/platformio/platformio-core/blob/develop/LICENSE",
+    "category": "Embedded Development",
+    "website": "https://platformio.org/",
+    "download_url": "https://pypi.org/project/platformio/",
+    "repository_url": "https://github.com/platformio/platformio-core",
+    "documentation_url": "https://docs.platformio.org/",
+    "screenshot_url": "https://docs.platformio.org/en/latest/_images/pio-home-ide.png",
+    "logo_url": "https://upload.wikimedia.org/wikipedia/commons/c/cd/PlatformIO_logo.svg",
+    "tags": [
+      "embedded",
+      "firmware",
+      "build-system",
+      "iot"
+    ],
+    "language": [
+      "Python",
+      "C/C++"
+    ],
+    "status": "active",
+    "features": [
+      "Unified workflow for multiple MCU platforms",
+      "CLI and IDE integrations including VS Code",
+      "Dependency management for embedded libraries",
+      "Integrated serial monitor and upload tools",
+      "Test and CI support for firmware projects"
+    ]
+  },
+  {
+    "name": "Renode",
+    "slug": "renode",
+    "description": "A development framework for multi-node embedded systems that enables hardware emulation for firmware testing.",
+    "version": "1.16.0",
+    "release_date": "2025-08-03",
+    "platforms": [
+      "Linux",
+      "Windows",
+      "macOS"
+    ],
+    "license": "MIT",
+    "license_url": "https://github.com/renode/renode/blob/master/LICENSE",
+    "category": "Emulation",
+    "website": "https://renode.io/",
+    "download_url": "https://github.com/renode/renode/releases",
+    "repository_url": "https://github.com/renode/renode",
+    "documentation_url": "https://renode.readthedocs.io/",
+    "screenshot_url": "https://renode.io/images/renode-main-window.png",
+    "logo_url": "https://renode.io/images/renode-logo.svg",
+    "tags": [
+      "emulation",
+      "embedded",
+      "firmware-testing",
+      "risc-v",
+      "arm"
+    ],
+    "language": [
+      "C#",
+      ".NET"
+    ],
+    "status": "active",
+    "features": [
+      "Deterministic hardware emulation for firmware",
+      "Supports many architectures and peripherals",
+      "Scriptable test scenarios and automation",
+      "Multi-node simulation for system-level testing",
+      "Strong integration with CI pipelines"
+    ]
+  },
+  {
+    "name": "Verilator",
+    "slug": "verilator",
+    "description": "A fast open-source SystemVerilog simulator and lint tool that compiles HDL models into C++ or SystemC.",
+    "version": "5.042",
+    "release_date": "2025-11-02",
+    "platforms": [
+      "Linux",
+      "macOS",
+      "Windows"
+    ],
+    "license": "LGPL-3.0",
+    "license_url": "https://github.com/verilator/verilator/blob/master/LICENSE",
+    "category": "Digital Simulation",
+    "website": "https://verilator.org/",
+    "download_url": "https://github.com/verilator/verilator/releases",
+    "repository_url": "https://github.com/verilator/verilator",
+    "documentation_url": "https://verilator.org/guide/latest/",
+    "screenshot_url": "https://verilator.org/guide/latest/_static/verilator.png",
+    "logo_url": "https://avatars.githubusercontent.com/u/8874357?s=200&v=4",
+    "tags": [
+      "systemverilog",
+      "simulation",
+      "lint",
+      "verification"
+    ],
+    "language": [
+      "C++",
+      "SystemVerilog"
+    ],
+    "status": "active",
+    "features": [
+      "High-performance compiled simulation",
+      "Linting and static analysis for HDL code",
+      "Generates C++/SystemC models",
+      "Widely used in open-source and industry flows",
+      "Works well with waveform and test frameworks"
+    ]
+  },
+  {
+    "name": "Yosys",
+    "slug": "yosys",
+    "description": "An open-source framework for RTL synthesis and formal verification preparation in digital design flows.",
+    "version": "0.59.1",
+    "release_date": "2025-11-11",
+    "platforms": [
+      "Linux",
+      "Windows",
+      "macOS"
+    ],
+    "license": "ISC",
+    "license_url": "https://github.com/YosysHQ/yosys/blob/main/COPYING",
+    "category": "Digital Synthesis",
+    "website": "https://yosyshq.net/yosys/",
+    "download_url": "https://github.com/YosysHQ/yosys/releases",
+    "repository_url": "https://github.com/YosysHQ/yosys",
+    "documentation_url": "https://yosyshq.readthedocs.io/projects/yosys/en/latest/",
+    "screenshot_url": "https://yosyshq.readthedocs.io/projects/yosys/en/latest/_images/yosys_flow.svg",
+    "logo_url": "https://yosyshq.net/images/yosys-logo.png",
+    "tags": [
+      "rtl",
+      "synthesis",
+      "fpga",
+      "formal"
+    ],
+    "language": [
+      "C++"
+    ],
+    "status": "active",
+    "features": [
+      "RTL synthesis for Verilog-based designs",
+      "Backends for multiple FPGA and ASIC flows",
+      "Extensible pass-based architecture",
+      "Commonly paired with nextpnr and OpenROAD",
+      "Useful frontend for formal verification pipelines"
+    ]
   }
 ]
