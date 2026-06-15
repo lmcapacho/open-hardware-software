@@ -563,44 +563,46 @@
     ]
   },
   {
-    "name": "Qucs",
-    "slug": "qucs",
-    "description": "Qucs (Quite Universal Circuit Simulator) is an open-source circuit simulation and analysis software with a graphical user interface, supporting DC, AC, S-parameter, harmonic balance, noise analysis, and more.",
-    "version": "0.0.20",
-    "release_date": "2024-06-09",
+    "name": "Qucs-S",
+    "slug": "qucs-s",
+    "description": "A Qt-based circuit design and simulation environment that combines the Qucs GUI with SPICE-compatible backends such as Ngspice, Xyce, SpiceOpus, and QucsatorRF.",
+    "version": "26.1.1",
+    "release_date": "2026-04-26",
     "platforms": [
       "Linux",
       "Windows",
-      "macOS"
+      "macOS",
+      "FreeBSD"
     ],
     "license": "GPL-2.0",
-    "license_url": "https://www.gnu.org/licenses/old-licenses/gpl-2.0.html",
+    "license_url": "https://github.com/ra3xdh/qucs_s/blob/master/COPYING",
     "category": "Circuit Simulation",
-    "website": "https://qucs.sourceforge.net/",
-    "download_url": "https://sourceforge.net/projects/qucs/files/",
-    "repository_url": "https://github.com/Qucs/qucs",
-    "documentation_url": "https://qucs.sourceforge.net/docs.html",
-    "screenshot_url": "https://qucs.sourceforge.net/images/qucs-qt4.png",
-    "logo_url": "https://github.com/Qucs/qucs/wiki/images/qucs.png",
+    "website": "https://ra3xdh.github.io/",
+    "download_url": "https://github.com/ra3xdh/qucs_s/releases/tag/26.1.1",
+    "repository_url": "https://github.com/ra3xdh/qucs_s",
+    "documentation_url": "https://ra3xdh.github.io/",
+    "screenshot_url": "https://ra3xdh.github.io/ne5532.png",
+    "logo_url": "https://github.com/ra3xdh.png",
     "tags": [
+      "spice",
       "circuit-simulation",
-      "analog",
+      "ngspice",
+      "xyce",
       "rf",
-      "gui",
-      "open-source"
+      "schematic-capture"
     ],
     "language": [
       "C++",
-      "Qt"
+      "Qt",
+      "CMake"
     ],
     "status": "active",
     "features": [
-      "Graphical user interface for circuit design and simulation",
-      "DC, AC, transient, S-parameter, and noise analysis",
-      "Harmonic balance for RF applications",
-      "Component library with schematic capture",
-      "Integrated equation solver and data display",
-      "Open-source and cross-platform"
+      "Unified GUI for multiple simulation kernels including Ngspice, Xyce, SpiceOpus, and QucsatorRF",
+      "Supports AC, DC, transient, S-parameter, FFT, distortion, pole-zero, and parametric sweep analyses",
+      "Direct integration of SPICE models from component datasheets",
+      "Quick switching between simulation backends without restarting the application",
+      "Includes RF-oriented capabilities such as QucsatorRF integration and tuner simulation mode"
     ]
   },
   {

@@ -53,7 +53,7 @@ Or open an [Issue](https://github.com/lmcapacho/open-hardware-software/issues) t
 | [OpenROAD](docs/tools/openroad.md) | ASIC Design | Linux, Docker, macOS | BSD-3-Clause | [Website](https://theopenroadproject.org/) |
 | [PlatformIO](docs/tools/platformio.md) | Embedded Development | Windows, Linux, macOS | Apache-2.0 | [Website](https://platformio.org/) |
 | [PulseView](docs/tools/pulseview.md) | Signal Analysis | Windows, Linux, macOS | GPL-3.0 | [Website](https://sigrok.org/wiki/PulseView) |
-| [Qucs](docs/tools/qucs.md) | Circuit Simulation | Linux, Windows, macOS | GPL-2.0 | [Website](https://qucs.sourceforge.net/) |
+| [Qucs-S](docs/tools/qucs-s.md) | Circuit Simulation | Linux, Windows, macOS, FreeBSD | GPL-2.0 | [Website](https://ra3xdh.github.io/) |
 | [Renode](docs/tools/renode.md) | Emulation | Linux, Windows, macOS | MIT | [Website](https://renode.io/) |
 | [sigrok-cli](docs/tools/sigrok-cli.md) | Signal Analysis | Linux, macOS, Windows | GPL-3.0 | [Website](https://sigrok.org/wiki/Sigrok-cli) |
 | [Thonny](docs/tools/thonny.md) | IDE | Windows, Linux, macOS, Raspberry Pi | MIT | [Website](https://thonny.org/) |
