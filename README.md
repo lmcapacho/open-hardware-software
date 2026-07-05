@@ -40,6 +40,7 @@ Or open an [Issue](https://github.com/lmcapacho/open-hardware-software/issues) t
 | Tool | Category | Platforms | License | Details |
 |------|----------|-----------|---------|---------|
 | [Arduino IDE](docs/tools/arduino-ide.md) | Embedded Development | Windows, Linux, macOS | AGPL-3.0 | [Website](https://www.arduino.cc/en/software/) |
+| [Falstad Circuit Simulator](docs/tools/falstad-circuit-simulator.md) | Circuit Simulation | Web, Windows, Linux, macOS | GPL-2.0 | [Website](https://www.falstad.com/circuit/) |
 | [FreeCAD](docs/tools/freecad.md) | 3D CAD | Windows, Linux, macOS | LGPLv2+ | [Website](https://www.freecad.org/) |
 | [Geany](docs/tools/geany.md) | Code IDE | Linux, macOS, Windows | GPL-2.0 | [Website](https://www.geany.org/) |
 | [GHDL](docs/tools/ghdl.md) | Digital Simulation | Linux, Windows, macOS | GPL-2.0 | [Website](https://ghdl.github.io/ghdl/) |
