@@ -59,8 +59,8 @@
     "download_url": "https://www.falstad.com/circuit/offline/",
     "repository_url": "https://github.com/pfalstad/circuitjs1",
     "documentation_url": "https://www.falstad.com/circuit/",
-    "screenshot_url": "https://opengraph.githubassets.com/1/pfalstad/circuitjs1",
-    "logo_url": "https://github.com/pfalstad.png",
+    "screenshot_url": "assets/falstad-circuit-simulator.png",
+    "logo_url": "https://raw.githubusercontent.com/pfalstad/circuitjs1/master/war/icon128.png",
     "tags": [
       "circuit-simulation",
       "analog",
