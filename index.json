@@ -885,5 +885,48 @@
       "Commonly paired with nextpnr and OpenROAD",
       "Useful frontend for formal verification pipelines"
     ]
+  },
+  {
+    "name": "Falstad Circuit Simulator",
+    "slug": "falstad-circuit-simulator",
+    "description": "An interactive browser-based electronic circuit simulator for analog, digital, and mixed-signal experiments, widely used for teaching, quick prototyping, and visual exploration of circuit behavior.",
+    "version": "4.1.2",
+    "release_date": "2026-05-23",
+    "platforms": [
+      "Web",
+      "Windows",
+      "Linux",
+      "macOS"
+    ],
+    "license": "GPL-2.0",
+    "license_url": "https://github.com/pfalstad/circuitjs1/blob/master/COPYING.txt",
+    "category": "Circuit Simulation",
+    "website": "https://www.falstad.com/circuit/",
+    "download_url": "https://www.falstad.com/circuit/offline/",
+    "repository_url": "https://github.com/pfalstad/circuitjs1",
+    "documentation_url": "https://www.falstad.com/circuit/",
+    "screenshot_url": "https://opengraph.githubassets.com/1/pfalstad/circuitjs1",
+    "logo_url": "https://github.com/pfalstad.png",
+    "tags": [
+      "circuit-simulation",
+      "analog",
+      "digital",
+      "education",
+      "browser",
+      "mixed-signal"
+    ],
+    "language": [
+      "Java",
+      "JavaScript",
+      "GWT"
+    ],
+    "status": "active",
+    "features": [
+      "Interactive schematic simulation directly in the browser",
+      "Covers analog, digital, logic, and mixed-signal examples",
+      "Animated visualization of voltage, current, and dynamic circuit behavior",
+      "Large built-in library of sample circuits for learning and experimentation",
+      "Offline desktop packages available for Windows, Linux, and macOS"
+    ]
   }
 ]
