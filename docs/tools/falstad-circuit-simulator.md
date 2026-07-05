@@ -1,6 +1,6 @@
 # Falstad Circuit Simulator
 
-<img src="https://github.com/pfalstad.png" alt="Falstad Circuit Simulator Logo" style="height: 96px;" />
+<img src="https://raw.githubusercontent.com/pfalstad/circuitjs1/master/war/icon128.png" alt="Falstad Circuit Simulator Logo" style="height: 96px;" />
 
 **Version:** 4.1.2  
 **Release Date:** 2026-05-23  
@@ -38,7 +38,7 @@ An interactive browser-based electronic circuit simulator for analog, digital, a
 
 ## 🖼️ Screenshot
 
-![Screenshot](https://opengraph.githubassets.com/1/pfalstad/circuitjs1)
+![Screenshot](assets/falstad-circuit-simulator.png)
 
 ---
 
