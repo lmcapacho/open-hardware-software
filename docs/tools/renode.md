@@ -2,8 +2,8 @@
 
 <img src="https://github.com/renode.png" alt="Renode Logo" style="height: 96px;" />
 
-**Version:** 1.16.0  
-**Release Date:** 2025-08-03  
+**Version:** 1.16.1  
+**Release Date:** 2026-02-16  
 **License:** [MIT](https://github.com/renode/renode/blob/master/LICENSE)  
 **Platforms:** Linux, Windows, macOS  
 

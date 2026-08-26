@@ -2,8 +2,8 @@
 
 <img src="https://ghdl.github.io/ghdl/_static/logo.png" alt="GHDL Logo" style="height: 96px;" />
 
-**Version:** 5.1.1  
-**Release Date:** 2025-06-18  
+**Version:** 6.0.0  
+**Release Date:** 2026-03-07  
 **License:** [GPL-2.0](https://github.com/ghdl/ghdl/blob/master/LICENSE)  
 **Platforms:** Linux, Windows, macOS  
 

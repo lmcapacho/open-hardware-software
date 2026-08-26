@@ -2,8 +2,8 @@
 
 <img src="https://www.kicad.org/img/kicad_logo_small.png" alt="KiCad Logo" style="height: 96px;" />
 
-**Version:** 9.0.3  
-**Release Date:** 2025-07-07  
+**Version:** 10.0.5  
+**Release Date:** 2026-07-22  
 **License:** [GPLv3](https://www.kicad.org/about/licenses/)  
 **Platforms:** Windows, macOS, Linux, Docker  
 

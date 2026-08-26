@@ -2,8 +2,8 @@
 
 <img src="https://github.com/verilator.png" alt="Verilator Logo" style="height: 96px;" />
 
-**Version:** 5.042  
-**Release Date:** 2025-11-02  
+**Version:** 5.050  
+**Release Date:** 2026-07-01  
 **License:** [LGPL-3.0](https://github.com/verilator/verilator/blob/master/LICENSE)  
 **Platforms:** Linux, macOS, Windows  
 

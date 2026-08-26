@@ -2,8 +2,8 @@
 
 <img src="https://raw.githubusercontent.com/pfalstad/circuitjs1/master/war/icon128.png" alt="Falstad Circuit Simulator Logo" style="height: 96px;" />
 
-**Version:** 4.1.2  
-**Release Date:** 2026-05-23  
+**Version:** 4.1.4  
+**Release Date:** 2026-08-02  
 **License:** [GPL-2.0](https://github.com/pfalstad/circuitjs1/blob/master/COPYING.txt)  
 **Platforms:** Web, Windows, Linux, macOS  
 

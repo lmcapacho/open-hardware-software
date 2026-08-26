@@ -2,8 +2,8 @@
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Visual_Studio_Code_1.35_icon.svg" alt="Visual Studio Code Logo" style="height: 96px;" />
 
-**Version:** 1.102  
-**Release Date:** 2025-07-09  
+**Version:** 1.134.0  
+**Release Date:** 2026-08-19  
 **License:** [MIT](https://github.com/microsoft/vscode/blob/main/LICENSE.txt)  
 **Platforms:** Windows, Linux, macOS  
 

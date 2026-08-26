@@ -2,8 +2,8 @@
 
 <img src="https://ngspice.sourceforge.io/images/nglogo.jpg" alt="Ngspice Logo" style="height: 96px;" />
 
-**Version:** 45  
-**Release Date:** 2025-09-06  
+**Version:** 47  
+**Release Date:** 2026-08-11  
 **License:** [BSD-3-Clause](https://sourceforge.net/p/ngspice/ngspice/ci/master/tree/COPYING)  
 **Platforms:** Linux, Windows, macOS  
 

@@ -2,8 +2,8 @@
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/7/73/Arduino_IDE_logo.svg" alt="Arduino IDE Logo" style="height: 96px;" />
 
-**Version:** 2.3.6  
-**Release Date:** 2025-04-09  
+**Version:** 2.3.10  
+**Release Date:** 2026-06-09  
 **License:** [AGPL-3.0](https://github.com/arduino/arduino-ide/blob/main/LICENSE.txt)  
 **Platforms:** Windows, Linux, macOS  
 

@@ -2,8 +2,8 @@
 
 <img src="https://librepcb.org/img/librepcb.png" alt="LibrePCB Logo" style="height: 96px;" />
 
-**Version:** 1.3.0  
-**Release Date:** 2025-03-24  
+**Version:** 2.1.1  
+**Release Date:** 2026-06-12  
 **License:** [GPLv3](https://librepcb.org/license/)  
 **Platforms:** Windows, Linux, macOS  
 

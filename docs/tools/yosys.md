@@ -2,8 +2,8 @@
 
 <img src="https://github.com/YosysHQ.png" alt="Yosys Logo" style="height: 96px;" />
 
-**Version:** 0.59.1  
-**Release Date:** 2025-11-11  
+**Version:** 0.68  
+**Release Date:** 2026-08-05  
 **License:** [ISC](https://github.com/YosysHQ/yosys/blob/main/COPYING)  
 **Platforms:** Linux, Windows, macOS  
 
