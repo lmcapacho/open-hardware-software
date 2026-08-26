@@ -38,7 +38,7 @@ A development framework for multi-node embedded systems that enables hardware em
 
 ## 🖼️ Screenshot
 
-![Screenshot](https://renode.io/images/renode-main-window.png)
+![Screenshot](https://raw.githubusercontent.com/renode/renode/master/images/renode-screencast.svg)
 
 ---
 

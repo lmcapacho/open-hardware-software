@@ -38,7 +38,7 @@ A fast open-source SystemVerilog simulator and lint tool that compiles HDL model
 
 ## 🖼️ Screenshot
 
-![Screenshot](https://verilator.org/guide/latest/_static/verilator.png)
+![Screenshot](https://raw.githubusercontent.com/verilator/verilator/master/docs/guide/figures/fig_gantt_min.png)
 
 ---
 

@@ -38,7 +38,7 @@ An open-source framework for RTL synthesis and formal verification preparation i
 
 ## 🖼️ Screenshot
 
-![Screenshot](https://yosyshq.readthedocs.io/projects/yosys/en/latest/_images/yosys_flow.svg)
+![Screenshot](https://raw.githubusercontent.com/YosysHQ/yosys/main/docs/source/_static/logo.png)
 
 ---
 

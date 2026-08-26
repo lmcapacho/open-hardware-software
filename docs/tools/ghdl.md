@@ -38,7 +38,7 @@ An open-source VHDL simulator and synthesis frontend used for verification and d
 
 ## 🖼️ Screenshot
 
-![Screenshot](https://ghdl.github.io/ghdl/_static/ghdl-logo.png)
+![Screenshot](https://raw.githubusercontent.com/ghdl/ghdl/master/doc/_static/internals.png)
 
 ---
 

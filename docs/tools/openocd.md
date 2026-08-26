@@ -38,7 +38,7 @@ A debugger and in-system programmer for embedded targets using JTAG and SWD inte
 
 ## 🖼️ Screenshot
 
-![Screenshot](https://upload.wikimedia.org/wikipedia/commons/1/1a/OpenOCD_console_example.png)
+![Screenshot](https://raw.githubusercontent.com/openocd-org/openocd/master/doc/manual/images/jtag-state-machine-large.png)
 
 ---
 

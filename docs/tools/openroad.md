@@ -38,7 +38,7 @@ An autonomous, open-source RTL-to-GDS flow and physical design toolset for digit
 
 ## 🖼️ Screenshot
 
-![Screenshot](https://openroad.readthedocs.io/en/latest/_images/gui.webp)
+![Screenshot](https://raw.githubusercontent.com/The-OpenROAD-Project/OpenROAD/master/docs/images/ibex_routing.webp)
 
 ---
 

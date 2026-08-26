@@ -39,7 +39,7 @@ The open-source development environment for Arduino boards and compatible hardwa
 
 ## 🖼️ Screenshot
 
-![Screenshot](https://docs.arduino.cc/static/e534053def4bc0eb97a3b6ba9cf31853/a6d36/ide-2-overview.png)
+![Screenshot](https://raw.githubusercontent.com/arduino/arduino-ide/main/static/screenshot.png)
 
 ---
 

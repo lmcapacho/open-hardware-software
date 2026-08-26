@@ -38,7 +38,7 @@ A cross-platform ecosystem for embedded development with project management, bui
 
 ## 🖼️ Screenshot
 
-![Screenshot](https://docs.platformio.org/en/latest/_images/pio-home-ide.png)
+![Screenshot](https://raw.githubusercontent.com/platformio/platformio-docs/develop/_static/images/home/pio-home-welcome.png)
 
 ---
 
