@@ -40,16 +40,23 @@ Or open an [Issue](https://github.com/lmcapacho/open-hardware-software/issues) t
 | Tool | Category | Platforms | License | Details |
 |------|----------|-----------|---------|---------|
 | [Arduino IDE](docs/tools/arduino-ide.md) | Embedded Development | Windows, Linux, macOS | AGPL-3.0 | [Website](https://www.arduino.cc/en/software/) |
+| [AVRDUDE](docs/tools/avrdude.md) | Debugging & Programming | Windows, Linux, macOS | GPL-2.0 | [Website](https://avrdudes.github.io/avrdude/) |
+| [esptool](docs/tools/esptool.md) | Debugging & Programming | Windows, Linux, macOS | GPL-2.0 | [Website](https://docs.espressif.com/projects/esptool/en/latest/) |
 | [Falstad Circuit Simulator](docs/tools/falstad-circuit-simulator.md) | Circuit Simulation | Web, Windows, Linux, macOS | GPL-2.0 | [Website](https://www.falstad.com/circuit/) |
 | [FreeCAD](docs/tools/freecad.md) | 3D CAD | Windows, Linux, macOS | LGPLv2+ | [Website](https://www.freecad.org/) |
+| [Fritzing](docs/tools/fritzing.md) | PCB Design | Windows, Linux, macOS | GPL-3.0 | [Website](https://fritzing.org/) |
 | [Geany](docs/tools/geany.md) | Code IDE | Linux, macOS, Windows | GPL-2.0 | [Website](https://www.geany.org/) |
 | [GHDL](docs/tools/ghdl.md) | Digital Simulation | Linux, Windows, macOS | GPL-2.0 | [Website](https://ghdl.github.io/ghdl/) |
 | [GTKWave](docs/tools/gtkwave.md) | Digital Simulation | Windows, Linux, macOS | GPLv2 | [Website](https://gtkwave.github.io/gtkwave/) |
 | [Icestudio](docs/tools/icestudio.md) | Digital Design | Windows, Linux, macOS | GPLv2 | [Website](https://icestudio.io) |
 | [KiCad](docs/tools/kicad.md) | PCB Design | Windows, macOS, Linux, Docker | GPLv3 | [Website](https://www.kicad.org) |
+| [KLayout](docs/tools/klayout.md) | IC Layout | Windows, Linux, macOS | GPL-3.0 | [Website](https://www.klayout.de/) |
 | [LibrePCB](docs/tools/librepcb.md) | PCB Design | Windows, Linux, macOS | GPLv3 | [Website](https://librepcb.org/) |
+| [Logisim-evolution](docs/tools/logisim-evolution.md) | Digital Simulation | Windows, Linux, macOS | GPL-3.0 | [Website](https://github.com/logisim-evolution/logisim-evolution) |
 | [Mu Editor](docs/tools/mu-editor.md) | Code IDE | Windows, Linux, macOS, Raspberry Pi | GPL-3.0 | [Website](https://codewith.mu/) |
+| [nextpnr](docs/tools/nextpnr.md) | FPGA Development | Windows, Linux, macOS | ISC | [Website](https://github.com/YosysHQ/nextpnr) |
 | [Ngspice](docs/tools/ngspice.md) | Circuit Simulation | Linux, Windows, macOS | BSD-3-Clause | [Website](https://ngspice.sourceforge.io/) |
+| [OpenLane](docs/tools/openlane.md) | ASIC Design | Linux, Docker, macOS, Windows | Apache-2.0 | [Website](https://openlane2.readthedocs.io/en/latest/) |
 | [OpenOCD](docs/tools/openocd.md) | Debugging & Programming | Linux, Windows, macOS | GPL-2.0 | [Website](https://openocd.org/) |
 | [OpenROAD](docs/tools/openroad.md) | ASIC Design | Linux, Docker, macOS | BSD-3-Clause | [Website](https://theopenroadproject.org/) |
 | [PlatformIO](docs/tools/platformio.md) | Embedded Development | Windows, Linux, macOS | Apache-2.0 | [Website](https://platformio.org/) |
@@ -57,6 +64,7 @@ Or open an [Issue](https://github.com/lmcapacho/open-hardware-software/issues) t
 | [Qucs-S](docs/tools/qucs-s.md) | Circuit Simulation | Linux, Windows, macOS, FreeBSD | GPL-2.0 | [Website](https://ra3xdh.github.io/) |
 | [Renode](docs/tools/renode.md) | Emulation | Linux, Windows, macOS | MIT | [Website](https://renode.io/) |
 | [sigrok-cli](docs/tools/sigrok-cli.md) | Signal Analysis | Linux, macOS, Windows | GPL-3.0 | [Website](https://sigrok.org/wiki/Sigrok-cli) |
+| [SymbiYosys](docs/tools/symbiyosys.md) | Formal Verification | Linux, Windows, macOS | ISC | [Website](https://symbiyosys.readthedocs.io/) |
 | [Thonny](docs/tools/thonny.md) | IDE | Windows, Linux, macOS, Raspberry Pi | MIT | [Website](https://thonny.org/) |
 | [Verilator](docs/tools/verilator.md) | Digital Simulation | Linux, macOS, Windows | LGPL-3.0 | [Website](https://verilator.org/) |
 | [Visual Studio Code](docs/tools/visual-studio-code.md) | Code Editor | Windows, Linux, macOS | MIT | [Website](https://code.visualstudio.com/) |
