@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Tool Viewer</title>
+  <title>Open Hardware &amp; Software Repository</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css" />
   <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
@@ -22,6 +22,23 @@
     const path = `tools/${toolId}.md`;
 
     renderMarkdownFile("content", path);
+
+    async function setPageTitle() {
+      if (!toolId) return;
+
+      try {
+        const response = await fetch("index.json");
+        if (!response.ok) throw new Error("Failed to load tool catalog");
+
+        const tools = await response.json();
+        const tool = tools.find((item) => item.slug === toolId);
+        if (tool) document.title = tool.name;
+      } catch (error) {
+        console.error(error);
+      }
+    }
+
+    setPageTitle();
   </script>
 
 </body>
