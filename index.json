@@ -928,5 +928,326 @@
       "Commonly paired with nextpnr and OpenROAD",
       "Useful frontend for formal verification pipelines"
     ]
+  },
+  {
+    "name": "KLayout",
+    "slug": "klayout",
+    "description": "An open-source layout viewer and editor for GDSII and OASIS files, with scripting and verification capabilities for integrated-circuit design.",
+    "version": "0.30.11",
+    "release_date": "2026-08-24",
+    "platforms": [
+      "Windows",
+      "Linux",
+      "macOS"
+    ],
+    "license": "GPL-3.0",
+    "license_url": "https://github.com/KLayout/klayout/blob/master/LICENSE",
+    "category": "IC Layout",
+    "website": "https://www.klayout.de/",
+    "download_url": "https://github.com/KLayout/klayout/releases/tag/v0.30.11",
+    "repository_url": "https://github.com/KLayout/klayout",
+    "documentation_url": "https://www.klayout.de/doc.html",
+    "screenshot_url": "https://raw.githubusercontent.com/KLayout/klayout/master/src/doc/doc/about/25d_screenshot.png",
+    "logo_url": "https://raw.githubusercontent.com/KLayout/klayout/master/etc/logo.png",
+    "tags": [
+      "gdsii",
+      "oasis",
+      "ic-layout",
+      "drc",
+      "vlsi"
+    ],
+    "language": [
+      "C++",
+      "Ruby",
+      "Python"
+    ],
+    "status": "active",
+    "features": [
+      "View and edit GDSII and OASIS layouts",
+      "Hierarchical layout browsing and layer management",
+      "Ruby and Python scripting APIs",
+      "Built-in DRC and layout manipulation tools",
+      "Cross-platform binary packages"
+    ]
+  },
+  {
+    "name": "nextpnr",
+    "slug": "nextpnr",
+    "description": "A portable, vendor-neutral, timing-driven FPGA place-and-route tool for several open FPGA architectures.",
+    "version": "0.11.1",
+    "release_date": "2026-08-11",
+    "platforms": [
+      "Windows",
+      "Linux",
+      "macOS"
+    ],
+    "license": "ISC",
+    "license_url": "https://github.com/YosysHQ/nextpnr/blob/main/COPYING",
+    "category": "FPGA Development",
+    "website": "https://github.com/YosysHQ/nextpnr",
+    "download_url": "https://github.com/YosysHQ/nextpnr/releases/tag/nextpnr-0.11.1",
+    "repository_url": "https://github.com/YosysHQ/nextpnr",
+    "documentation_url": "https://github.com/YosysHQ/nextpnr#readme",
+    "screenshot_url": "https://i.imgur.com/0spmlBa.png",
+    "logo_url": "https://github.com/YosysHQ.png",
+    "tags": [
+      "fpga",
+      "place-and-route",
+      "timing-driven",
+      "ice40",
+      "ecp5"
+    ],
+    "language": [
+      "C++",
+      "Python"
+    ],
+    "status": "active",
+    "features": [
+      "Timing-driven FPGA place and route",
+      "Support for iCE40, ECP5, Nexus, Gowin and other architectures",
+      "Vendor-neutral architecture API",
+      "Interactive graphical user interface",
+      "Integrates with Yosys synthesis flows"
+    ]
+  },
+  {
+    "name": "Logisim-evolution",
+    "slug": "logisim-evolution",
+    "description": "A cross-platform educational tool for designing, simulating, and analyzing digital logic circuits.",
+    "version": "4.1.0",
+    "release_date": "2026-02-15",
+    "platforms": [
+      "Windows",
+      "Linux",
+      "macOS"
+    ],
+    "license": "GPL-3.0",
+    "license_url": "https://github.com/logisim-evolution/logisim-evolution/blob/main/LICENSE",
+    "category": "Digital Simulation",
+    "website": "https://github.com/logisim-evolution/logisim-evolution",
+    "download_url": "https://github.com/logisim-evolution/logisim-evolution/releases/tag/v4.1.0",
+    "repository_url": "https://github.com/logisim-evolution/logisim-evolution",
+    "documentation_url": "https://github.com/logisim-evolution/logisim-evolution#readme",
+    "screenshot_url": "https://raw.githubusercontent.com/logisim-evolution/logisim-evolution/main/src/main/resources/doc/en/img-guide/analyze-build.png",
+    "logo_url": "https://raw.githubusercontent.com/logisim-evolution/logisim-evolution/main/artwork/logisim-evolution-logo.svg",
+    "tags": [
+      "digital-logic",
+      "simulation",
+      "education",
+      "verilog",
+      "vhdl"
+    ],
+    "language": [
+      "Java"
+    ],
+    "status": "active",
+    "features": [
+      "Interactive digital circuit editor and simulator",
+      "Combinational and sequential logic components",
+      "Circuit analysis and truth-table tools",
+      "Timing diagrams and FPGA-oriented features",
+      "Suitable for teaching digital design"
+    ]
+  },
+  {
+    "name": "Fritzing",
+    "slug": "fritzing",
+    "description": "An open-source electronics design tool for documenting prototypes with breadboard, schematic, and PCB views.",
+    "version": "1.0.8",
+    "release_date": "2026-08-12",
+    "platforms": [
+      "Windows",
+      "Linux",
+      "macOS"
+    ],
+    "license": "GPL-3.0",
+    "license_url": "https://github.com/fritzing/fritzing-app/blob/develop/LICENSE.GPL3",
+    "category": "PCB Design",
+    "website": "https://fritzing.org/",
+    "download_url": "https://fritzing.org/download/",
+    "repository_url": "https://github.com/fritzing/fritzing-app",
+    "documentation_url": "https://fritzing.org/learning/",
+    "screenshot_url": "https://raw.githubusercontent.com/fritzing/fritzing-app/develop/help/images/start.png",
+    "logo_url": "https://raw.githubusercontent.com/fritzing/fritzing-app/develop/resources/images/AboutBoxLogoShield.png",
+    "tags": [
+      "breadboard",
+      "schematic",
+      "pcb",
+      "prototyping",
+      "education"
+    ],
+    "language": [
+      "C++",
+      "Qt"
+    ],
+    "status": "active",
+    "features": [
+      "Breadboard view for accessible prototyping",
+      "Schematic and PCB layout views",
+      "Component library for maker hardware",
+      "PCB export for manufacturing workflows",
+      "Cross-platform desktop application"
+    ]
+  },
+  {
+    "name": "AVRDUDE",
+    "slug": "avrdude",
+    "description": "A command-line utility for programming, reading, and configuring AVR microcontrollers through ISP, UPDI, JTAG, and compatible programmers.",
+    "version": "8.2",
+    "release_date": "2026-07-11",
+    "platforms": [
+      "Windows",
+      "Linux",
+      "macOS"
+    ],
+    "license": "GPL-2.0",
+    "license_url": "https://github.com/avrdudes/avrdude/blob/main/COPYING",
+    "category": "Debugging & Programming",
+    "website": "https://avrdudes.github.io/avrdude/",
+    "download_url": "https://github.com/avrdudes/avrdude/releases/tag/v8.2",
+    "repository_url": "https://github.com/avrdudes/avrdude",
+    "documentation_url": "https://avrdudes.github.io/avrdude/",
+    "screenshot_url": "https://github.com/avrdudes.png",
+    "logo_url": "https://github.com/avrdudes.png",
+    "tags": [
+      "avr",
+      "programmer",
+      "isp",
+      "updi",
+      "firmware"
+    ],
+    "language": [
+      "C",
+      "C++"
+    ],
+    "status": "active",
+    "features": [
+      "Flash, EEPROM, fuse, and lock-bit management",
+      "Support for ISP, UPDI, JTAG, and many programmer adapters",
+      "Compatible with classic and modern AVR devices",
+      "Command-line automation for production workflows",
+      "Official binaries for Windows, Linux, and macOS"
+    ]
+  },
+  {
+    "name": "esptool",
+    "slug": "esptool",
+    "description": "A Python-based serial utility for flashing, provisioning, and interacting with Espressif SoCs.",
+    "version": "5.3.1",
+    "release_date": "2026-06-29",
+    "platforms": [
+      "Windows",
+      "Linux",
+      "macOS"
+    ],
+    "license": "GPL-2.0",
+    "license_url": "https://github.com/espressif/esptool/blob/master/LICENSE",
+    "category": "Debugging & Programming",
+    "website": "https://docs.espressif.com/projects/esptool/en/latest/",
+    "download_url": "https://github.com/espressif/esptool/releases/tag/v5.3.1",
+    "repository_url": "https://github.com/espressif/esptool",
+    "documentation_url": "https://docs.espressif.com/projects/esptool/en/latest/",
+    "screenshot_url": "https://github.com/espressif.png",
+    "logo_url": "https://github.com/espressif.png",
+    "tags": [
+      "esp32",
+      "espressif",
+      "flashing",
+      "serial",
+      "firmware"
+    ],
+    "language": [
+      "Python"
+    ],
+    "status": "active",
+    "features": [
+      "Flash firmware to Espressif SoCs over serial",
+      "Read, erase, and verify flash memory",
+      "Provisioning and security configuration utilities",
+      "Works with ESP32 and related Espressif families",
+      "Cross-platform Python command-line tool"
+    ]
+  },
+  {
+    "name": "SymbiYosys",
+    "slug": "symbiyosys",
+    "description": "A front-end for Yosys-based formal verification flows, supporting bounded model checking, induction, and equivalence checking.",
+    "version": "0.47",
+    "release_date": "2024-11-05",
+    "platforms": [
+      "Linux",
+      "Windows",
+      "macOS"
+    ],
+    "license": "ISC",
+    "license_url": "https://github.com/YosysHQ/sby/blob/main/COPYING",
+    "category": "Formal Verification",
+    "website": "https://symbiyosys.readthedocs.io/",
+    "download_url": "https://github.com/YosysHQ/sby/archive/refs/tags/yosys-0.47.tar.gz",
+    "repository_url": "https://github.com/YosysHQ/sby",
+    "documentation_url": "https://symbiyosys.readthedocs.io/en/latest/",
+    "screenshot_url": "https://raw.githubusercontent.com/YosysHQ/sby/main/docs/source/media/gtkwave_coverskip.png",
+    "logo_url": "https://github.com/YosysHQ.png",
+    "tags": [
+      "formal-verification",
+      "model-checking",
+      "yosys",
+      "fpga",
+      "rtl"
+    ],
+    "language": [
+      "Python",
+      "Shell"
+    ],
+    "status": "active",
+    "features": [
+      "Bounded model checking and temporal induction",
+      "Cover and equivalence verification modes",
+      "Configurable SMT and SAT solver backends",
+      "Simple project configuration with SBY files",
+      "Integrates with Yosys and GTKWave"
+    ]
+  },
+  {
+    "name": "OpenLane",
+    "slug": "openlane",
+    "description": "An open-source RTL-to-GDSII ASIC implementation flow built from tools including OpenROAD, Yosys, Magic, Netgen, and KLayout.",
+    "version": "2.3.10",
+    "release_date": "2025-02-21",
+    "platforms": [
+      "Linux",
+      "Docker",
+      "macOS",
+      "Windows"
+    ],
+    "license": "Apache-2.0",
+    "license_url": "https://github.com/chipfoundry/openlane2/blob/main/License",
+    "category": "ASIC Design",
+    "website": "https://openlane2.readthedocs.io/en/latest/",
+    "download_url": "https://pypi.org/project/openlane/2.3.10/",
+    "repository_url": "https://github.com/chipfoundry/openlane2",
+    "documentation_url": "https://openlane2.readthedocs.io/en/latest/getting_started/",
+    "screenshot_url": "https://raw.githubusercontent.com/chipfoundry/openlane2/main/docs/source/getting_started/newcomers/flow.webp",
+    "logo_url": "https://github.com/chipfoundry.png",
+    "tags": [
+      "asic",
+      "rtl-to-gdsii",
+      "physical-design",
+      "sky130",
+      "open-pdk"
+    ],
+    "language": [
+      "Python",
+      "Tcl",
+      "Shell"
+    ],
+    "status": "active",
+    "features": [
+      "Reference RTL-to-GDSII implementation flow",
+      "Integrates synthesis, timing, routing, DRC, and LVS tools",
+      "Docker and Nix installation options",
+      "Support for open PDK-based ASIC design flows",
+      "Configurable and scriptable design exploration"
+    ]
   }
 ]
