@@ -17,7 +17,7 @@
     "download_url": "https://www.arduino.cc/en/software/",
     "repository_url": "https://github.com/arduino/arduino-ide",
     "documentation_url": "https://docs.arduino.cc/software/ide-v2",
-    "screenshot_url": "https://docs.arduino.cc/static/e534053def4bc0eb97a3b6ba9cf31853/a6d36/ide-2-overview.png",
+    "screenshot_url": "https://raw.githubusercontent.com/arduino/arduino-ide/main/static/screenshot.png",
     "logo_url": "https://upload.wikimedia.org/wikipedia/commons/7/73/Arduino_IDE_logo.svg",
     "tags": [
       "microcontroller",
@@ -180,7 +180,7 @@
     "download_url": "https://github.com/ghdl/ghdl/releases",
     "repository_url": "https://github.com/ghdl/ghdl",
     "documentation_url": "https://ghdl.github.io/ghdl/using/",
-    "screenshot_url": "https://ghdl.github.io/ghdl/_static/ghdl-logo.png",
+    "screenshot_url": "https://raw.githubusercontent.com/ghdl/ghdl/master/doc/_static/internals.png",
     "logo_url": "https://ghdl.github.io/ghdl/_static/logo.png",
     "tags": [
       "vhdl",
@@ -462,7 +462,7 @@
     "download_url": "https://openocd.org/pages/getting-openocd.html",
     "repository_url": "https://github.com/openocd-org/openocd",
     "documentation_url": "https://openocd.org/doc-release/html/index.html",
-    "screenshot_url": "https://upload.wikimedia.org/wikipedia/commons/1/1a/OpenOCD_console_example.png",
+    "screenshot_url": "https://raw.githubusercontent.com/openocd-org/openocd/master/doc/manual/images/jtag-state-machine-large.png",
     "logo_url": "https://github.com/openocd-org.png",
     "tags": [
       "jtag",
@@ -501,7 +501,7 @@
     "download_url": "https://github.com/The-OpenROAD-Project/OpenROAD/releases",
     "repository_url": "https://github.com/The-OpenROAD-Project/OpenROAD",
     "documentation_url": "https://openroad.readthedocs.io/",
-    "screenshot_url": "https://openroad.readthedocs.io/en/latest/_images/gui.webp",
+    "screenshot_url": "https://raw.githubusercontent.com/The-OpenROAD-Project/OpenROAD/master/docs/images/ibex_routing.webp",
     "logo_url": "https://github.com/The-OpenROAD-Project.png",
     "tags": [
       "asic",
@@ -541,7 +541,7 @@
     "download_url": "https://pypi.org/project/platformio/",
     "repository_url": "https://github.com/platformio/platformio-core",
     "documentation_url": "https://docs.platformio.org/",
-    "screenshot_url": "https://docs.platformio.org/en/latest/_images/pio-home-ide.png",
+    "screenshot_url": "https://raw.githubusercontent.com/platformio/platformio-docs/develop/_static/images/home/pio-home-welcome.png",
     "logo_url": "https://github.com/platformio.png",
     "tags": [
       "embedded",
@@ -666,7 +666,7 @@
     "download_url": "https://github.com/renode/renode/releases",
     "repository_url": "https://github.com/renode/renode",
     "documentation_url": "https://renode.readthedocs.io/",
-    "screenshot_url": "https://renode.io/images/renode-main-window.png",
+    "screenshot_url": "https://raw.githubusercontent.com/renode/renode/master/images/renode-screencast.svg",
     "logo_url": "https://github.com/renode.png",
     "tags": [
       "emulation",
@@ -789,7 +789,7 @@
     "download_url": "https://github.com/verilator/verilator/releases",
     "repository_url": "https://github.com/verilator/verilator",
     "documentation_url": "https://verilator.org/guide/latest/",
-    "screenshot_url": "https://verilator.org/guide/latest/_static/verilator.png",
+    "screenshot_url": "https://raw.githubusercontent.com/verilator/verilator/master/docs/guide/figures/fig_gantt_min.png",
     "logo_url": "https://github.com/verilator.png",
     "tags": [
       "systemverilog",
@@ -909,7 +909,7 @@
     "download_url": "https://github.com/YosysHQ/yosys/releases",
     "repository_url": "https://github.com/YosysHQ/yosys",
     "documentation_url": "https://yosyshq.readthedocs.io/projects/yosys/en/latest/",
-    "screenshot_url": "https://yosyshq.readthedocs.io/projects/yosys/en/latest/_images/yosys_flow.svg",
+    "screenshot_url": "https://raw.githubusercontent.com/YosysHQ/yosys/main/docs/source/_static/logo.png",
     "logo_url": "https://github.com/YosysHQ.png",
     "tags": [
       "rtl",
