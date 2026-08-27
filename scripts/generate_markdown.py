@@ -9,6 +9,7 @@ import json
 import os
 import re
 import shutil
+from html import escape
 
 FEATURES_START = "<!-- FEATURES:START -->"
 FEATURES_END = "<!-- FEATURES:END -->"
@@ -142,34 +143,53 @@ def generate_full_content(tool, features_block):
 - **Status:** {tool["status"]}
 """
 
-def format_tool_list(tools):
+def format_tool_table(tools):
     """
-    Generates a Markdown table from the tools list for the README.
+    Generates a Markdown table for a category in the README.
+
     Args:
         tools (list): List of tool dictionaries.
 
     Returns:
-        str: Markdown formatted table of tools.
+        str: Markdown formatted table for one category.
     """
-    header = "| Tool | Category | Platforms | License | Details |\n"
-    divider = "|------|----------|-----------|---------|---------|\n"
+    header = "| Tool | Platforms | License | Details |\n"
+    divider = "|------|-----------|---------|---------|\n"
     rows = []
     for tool in tools:
         name = tool["name"]
-        category = tool["category"]
         platforms = ", ".join(tool["platforms"])
         license_ = tool["license"]
         link = f"[Website]({tool['website']})"
         md_link = f"[{name}](docs/tools/{tool['slug']}.md)"
-        rows.append(f"| {md_link} | {category} | {platforms} | {license_} | {link} |")
+        rows.append(f"| {md_link} | {platforms} | {license_} | {link} |")
 
-    return (
-        "<!-- TOOLLIST:START -->\n"
-        + header
-        + divider
-        + "\n".join(rows)
-        + "\n<!-- TOOLLIST:END -->"
-    )
+    return header + divider + "\n".join(rows)
+
+
+def format_tool_list(tools):
+    """Generates collapsible, category-based tool tables for the README."""
+    categories = {}
+    for tool in tools:
+        categories.setdefault(tool["category"], []).append(tool)
+
+    sections = ["<!-- TOOLLIST:START -->"]
+    for category in sorted(categories):
+        category_tools = categories[category]
+        sections.extend(
+            [
+                "<details>",
+                f"<summary><strong>{escape(category)}</strong> ({len(category_tools)} tools)</summary>",
+                "",
+                format_tool_table(category_tools),
+                "",
+                "</details>",
+                "",
+            ]
+        )
+
+    sections.append("<!-- TOOLLIST:END -->")
+    return "\n".join(sections)
 
 def update_tool_list_in_readme(tools, readme_path="README.md"):
     """
