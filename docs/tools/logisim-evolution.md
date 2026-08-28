@@ -38,7 +38,7 @@ A cross-platform educational tool for designing, simulating, and analyzing digit
 
 ## 🖼️ Screenshot
 
-![Screenshot](https://raw.githubusercontent.com/logisim-evolution/logisim-evolution/main/src/main/resources/doc/en/img-guide/analyze-build.png)
+![Screenshot](https://github.com/logisim-evolution/logisim-evolution/blob/main/docs/img/logisim-evolution-01.png?raw=true)
 
 ---
 
