@@ -622,7 +622,7 @@
     "download_url": "https://github.com/logisim-evolution/logisim-evolution/releases/tag/v4.1.0",
     "repository_url": "https://github.com/logisim-evolution/logisim-evolution",
     "documentation_url": "https://github.com/logisim-evolution/logisim-evolution#readme",
-    "screenshot_url": "https://raw.githubusercontent.com/logisim-evolution/logisim-evolution/main/src/main/resources/doc/en/img-guide/analyze-build.png",
+    "screenshot_url": "https://github.com/logisim-evolution/logisim-evolution/blob/main/docs/img/logisim-evolution-01.png?raw=true",
     "logo_url": "https://raw.githubusercontent.com/logisim-evolution/logisim-evolution/main/artwork/logisim-evolution-logo.svg",
     "tags": [
       "digital-logic",
