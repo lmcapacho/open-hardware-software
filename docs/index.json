@@ -321,6 +321,86 @@
     ]
   },
   {
+    "name": "GNU Octave",
+    "slug": "gnu-octave",
+    "description": "A high-level programming language and interactive environment for numerical computation, data analysis, visualization, and engineering workflows.",
+    "version": "11.3.0",
+    "release_date": "2026-06-01",
+    "platforms": [
+      "Windows",
+      "Linux",
+      "macOS"
+    ],
+    "license": "GPL-3.0",
+    "license_url": "https://github.com/gnu-octave/octave/blob/default/COPYING",
+    "category": "Scientific Computing & Modeling",
+    "website": "https://octave.org/",
+    "download_url": "https://octave.org/download",
+    "repository_url": "https://github.com/gnu-octave/octave",
+    "documentation_url": "https://docs.octave.org/latest/",
+    "screenshot_url": "https://raw.githubusercontent.com/gnu-octave/octave/default/etc/icons/octave-logo.svg",
+    "logo_url": "https://raw.githubusercontent.com/gnu-octave/octave/default/etc/icons/octave-logo.svg",
+    "tags": [
+      "numerical-computing",
+      "data-analysis",
+      "signal-processing",
+      "control-systems",
+      "matlab-compatible"
+    ],
+    "language": [
+      "C++",
+      "Octave"
+    ],
+    "status": "active",
+    "features": [
+      "Interactive numerical computing environment",
+      "Matrix-oriented language compatible with many MATLAB workflows",
+      "Data visualization and plotting tools",
+      "Packages for signal processing, control, and statistics",
+      "Graphical IDE and command-line interface"
+    ]
+  },
+  {
+    "name": "GNU Radio",
+    "slug": "gnu-radio",
+    "description": "A free and open-source software development toolkit for software-defined radio, digital signal processing, and wireless communication experiments.",
+    "version": "3.10.12.0",
+    "release_date": "2025-02-20",
+    "platforms": [
+      "Windows",
+      "Linux",
+      "macOS"
+    ],
+    "license": "GPL-3.0",
+    "license_url": "https://github.com/gnuradio/gnuradio/blob/main/COPYING",
+    "category": "Signal Analysis",
+    "website": "https://www.gnuradio.org/",
+    "download_url": "https://github.com/gnuradio/gnuradio/releases/tag/v3.10.12.0",
+    "repository_url": "https://github.com/gnuradio/gnuradio",
+    "documentation_url": "https://github.com/gnuradio/gnuradio#how-to-install-gnu-radio",
+    "screenshot_url": "https://raw.githubusercontent.com/gnuradio/gnuradio/main/docs/gnuradio.png",
+    "logo_url": "https://raw.githubusercontent.com/gnuradio/gnuradio/main/docs/doxygen/images/gnuradio-logo.svg",
+    "tags": [
+      "sdr",
+      "signal-processing",
+      "wireless",
+      "radio",
+      "dsp"
+    ],
+    "language": [
+      "C++",
+      "Python"
+    ],
+    "status": "active",
+    "features": [
+      "Graphical flowgraph development with GNU Radio Companion",
+      "Real-time digital signal processing blocks",
+      "Software-defined radio hardware integration",
+      "Python and C++ APIs for custom signal-processing applications",
+      "Tools for wireless communication and spectrum experimentation"
+    ]
+  },
+  {
     "name": "GTKWave",
     "slug": "gtkwave",
     "description": "A wave viewer for VCD and LXT2 trace files used in digital design simulation.",
@@ -726,6 +806,47 @@
     ]
   },
   {
+    "name": "OpenModelica",
+    "slug": "openmodelica",
+    "description": "An open-source Modelica-based environment for modeling, simulating, optimizing, and analyzing complex dynamic systems.",
+    "version": "1.27.0",
+    "release_date": "2026-07-07",
+    "platforms": [
+      "Windows",
+      "Linux",
+      "macOS"
+    ],
+    "license": "OSMC-PL-1.8 OR AGPL-3.0",
+    "license_url": "https://github.com/OpenModelica/OpenModelica/blob/master/OSMC-License.txt",
+    "category": "Scientific Computing & Modeling",
+    "website": "https://openmodelica.org/",
+    "download_url": "https://openmodelica.org/download/",
+    "repository_url": "https://github.com/OpenModelica/OpenModelica",
+    "documentation_url": "https://openmodelica.org/doc/OpenModelicaUsersGuide/latest/",
+    "screenshot_url": "https://openmodelica.org/images/om.jpg",
+    "logo_url": "https://openmodelica.org/images/logo-small.svg",
+    "tags": [
+      "modelica",
+      "system-modeling",
+      "simulation",
+      "multiphysics",
+      "fmi"
+    ],
+    "language": [
+      "MetaModelica",
+      "C++",
+      "Qt"
+    ],
+    "status": "active",
+    "features": [
+      "Equation-based modeling with Modelica",
+      "Simulation and analysis of multidomain dynamic systems",
+      "Graphical OMEdit modeling environment",
+      "FMU import and export through FMI support",
+      "Open-source Modelica library ecosystem"
+    ]
+  },
+  {
     "name": "OpenOCD",
     "slug": "openocd",
     "description": "A debugger and in-system programmer for embedded targets using JTAG and SWD interfaces.",
@@ -967,6 +1088,46 @@
       "Scriptable test scenarios and automation",
       "Multi-node simulation for system-level testing",
       "Strong integration with CI pipelines"
+    ]
+  },
+  {
+    "name": "Scilab",
+    "slug": "scilab",
+    "description": "An open-source platform for numerical computation, data visualization, algorithm development, and dynamic-system modeling.",
+    "version": "2026.1.0",
+    "release_date": "2026-05-19",
+    "platforms": [
+      "Windows",
+      "Linux",
+      "macOS"
+    ],
+    "license": "GPL-2.0",
+    "license_url": "https://gitlab.com/scilab/scilab/-/blob/main/scilab/modules/helptools/license.txt",
+    "category": "Scientific Computing & Modeling",
+    "website": "https://www.scilab.org/",
+    "download_url": "https://www.scilab.org/download",
+    "repository_url": "https://gitlab.com/scilab/scilab",
+    "documentation_url": "https://help.scilab.org/",
+    "screenshot_url": "https://www.scilab.org/themes/bs43ds/img/home-scilab-2025.1.0-height-250px.png",
+    "logo_url": "https://www.scilab.org/themes/bs43ds/img/scilab-logo.png?v20201103",
+    "tags": [
+      "numerical-computing",
+      "data-visualization",
+      "modeling",
+      "simulation",
+      "xcos"
+    ],
+    "language": [
+      "C++",
+      "Scilab"
+    ],
+    "status": "active",
+    "features": [
+      "Numerical computing and matrix-based programming",
+      "2D and 3D data visualization",
+      "Xcos block-diagram modeling and simulation",
+      "Toolboxes for engineering and scientific workflows",
+      "Cross-platform desktop environment"
     ]
   },
   {

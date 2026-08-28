@@ -99,10 +99,22 @@ Or open an [Issue](https://github.com/lmcapacho/open-hardware-software/issues) t
 </details>
 
 <details>
-<summary><strong>Signal Analysis</strong> (2 tools)</summary>
+<summary><strong>Scientific Computing &amp; Modeling</strong> (3 tools)</summary>
 
 | Tool | Platforms | License | Details |
 |------|-----------|---------|---------|
+| [GNU Octave](docs/tools/gnu-octave.md) | Windows, Linux, macOS | GPL-3.0 | [Website](https://octave.org/) |
+| [OpenModelica](docs/tools/openmodelica.md) | Windows, Linux, macOS | OSMC-PL-1.8 OR AGPL-3.0 | [Website](https://openmodelica.org/) |
+| [Scilab](docs/tools/scilab.md) | Windows, Linux, macOS | GPL-2.0 | [Website](https://www.scilab.org/) |
+
+</details>
+
+<details>
+<summary><strong>Signal Analysis</strong> (3 tools)</summary>
+
+| Tool | Platforms | License | Details |
+|------|-----------|---------|---------|
+| [GNU Radio](docs/tools/gnu-radio.md) | Windows, Linux, macOS | GPL-3.0 | [Website](https://www.gnuradio.org/) |
 | [PulseView](docs/tools/pulseview.md) | Windows, Linux, macOS | GPL-3.0 | [Website](https://sigrok.org/wiki/PulseView) |
 | [sigrok-cli](docs/tools/sigrok-cli.md) | Linux, macOS, Windows | GPL-3.0 | [Website](https://sigrok.org/wiki/Sigrok-cli) |
 
