@@ -38,7 +38,7 @@ A high-level programming language and interactive environment for numerical comp
 
 ## 🖼️ Screenshot
 
-![Screenshot](https://raw.githubusercontent.com/gnu-octave/octave/default/etc/icons/octave-logo.svg)
+![Screenshot](https://wiki.octave.org/wiki/images/f/f3/GNU_Octave_screenshot.png)
 
 ---
 
