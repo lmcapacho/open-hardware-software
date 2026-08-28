@@ -338,7 +338,7 @@
     "download_url": "https://octave.org/download",
     "repository_url": "https://github.com/gnu-octave/octave",
     "documentation_url": "https://docs.octave.org/latest/",
-    "screenshot_url": "https://raw.githubusercontent.com/gnu-octave/octave/default/etc/icons/octave-logo.svg",
+    "screenshot_url": "https://wiki.octave.org/wiki/images/f/f3/GNU_Octave_screenshot.png",
     "logo_url": "https://raw.githubusercontent.com/gnu-octave/octave/default/etc/icons/octave-logo.svg",
     "tags": [
       "numerical-computing",
