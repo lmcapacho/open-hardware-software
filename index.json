@@ -163,6 +163,50 @@
     ]
   },
   {
+    "name": "FPGALab",
+    "slug": "fpga-lab",
+    "description": "An interactive virtual FPGA laboratory for Verilog and Icestudio designs that connects native Verilator models to a PyQt6 desktop workbench.",
+    "version": "0.1.0rc4",
+    "release_date": "2026-09-24",
+    "platforms": [
+      "Windows",
+      "Linux",
+      "macOS"
+    ],
+    "license": "AGPL-3.0",
+    "license_url": "https://github.com/lmcapacho/FPGALab/blob/main/LICENSE",
+    "category": "Digital Design & FPGA",
+    "website": "https://lmcapacho.github.io/FPGALab/",
+    "download_url": "https://github.com/lmcapacho/FPGALab/releases/tag/v0.1.0rc4",
+    "repository_url": "https://github.com/lmcapacho/FPGALab",
+    "documentation_url": "https://lmcapacho.github.io/FPGALab/en/",
+    "screenshot_url": "https://raw.githubusercontent.com/lmcapacho/FPGALab/main/docs/images/fpgalab-workbench.png",
+    "logo_url": "https://raw.githubusercontent.com/lmcapacho/FPGALab/main/fpga_lab/assets/icons/fpgalab.svg",
+    "tags": [
+      "fpga",
+      "virtual-lab",
+      "verilog",
+      "verilator",
+      "icestudio",
+      "alhambra-ii"
+    ],
+    "language": [
+      "Python",
+      "PyQt6",
+      "Verilog",
+      "C++"
+    ],
+    "status": "active",
+    "features": [
+      "Interactive virtual FPGA board and peripheral workbench",
+      "Icestudio project import with Verilog and PCF discovery",
+      "Native Verilator simulation with incremental build caching",
+      "Alhambra II LED, switch, reset, and GPIO mapping",
+      "Reusable virtual peripherals including displays, sensors, and VGA monitors",
+      "English and Spanish user interface"
+    ]
+  },
+  {
     "name": "FreeCAD",
     "slug": "freecad",
     "description": "A parametric 3D modeler made primarily to design real-life objects of any size.",
@@ -1409,51 +1453,6 @@
       "Extensible pass-based architecture",
       "Commonly paired with nextpnr and OpenROAD",
       "Useful frontend for formal verification pipelines"
-    ]
-  }
-,
-  {
-    "name": "FPGALab",
-    "slug": "fpga-lab",
-    "description": "An interactive virtual FPGA laboratory for Verilog and Icestudio designs that connects native Verilator models to a PyQt6 desktop workbench.",
-    "version": "0.1.0rc4",
-    "release_date": "2026-09-24",
-    "platforms": [
-      "Windows",
-      "Linux",
-      "macOS"
-    ],
-    "license": "AGPL-3.0",
-    "license_url": "https://github.com/lmcapacho/FPGALab/blob/main/LICENSE",
-    "category": "Digital Design & FPGA",
-    "website": "https://lmcapacho.github.io/FPGALab/",
-    "download_url": "https://github.com/lmcapacho/FPGALab/releases/tag/v0.1.0rc4",
-    "repository_url": "https://github.com/lmcapacho/FPGALab",
-    "documentation_url": "https://lmcapacho.github.io/FPGALab/en/",
-    "screenshot_url": "https://raw.githubusercontent.com/lmcapacho/FPGALab/main/docs/images/fpgalab-workbench.png",
-    "logo_url": "https://raw.githubusercontent.com/lmcapacho/FPGALab/main/fpga_lab/assets/icons/fpgalab.svg",
-    "tags": [
-      "fpga",
-      "virtual-lab",
-      "verilog",
-      "verilator",
-      "icestudio",
-      "alhambra-ii"
-    ],
-    "language": [
-      "Python",
-      "PyQt6",
-      "Verilog",
-      "C++"
-    ],
-    "status": "active",
-    "features": [
-      "Interactive virtual FPGA board and peripheral workbench",
-      "Icestudio project import with Verilog and PCF discovery",
-      "Native Verilator simulation with incremental build caching",
-      "Alhambra II LED, switch, reset, and GPIO mapping",
-      "Reusable virtual peripherals including displays, sensors, and VGA monitors",
-      "English and Spanish user interface"
     ]
   }
 ]
