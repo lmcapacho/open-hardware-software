@@ -24,6 +24,15 @@ This repository also includes a visual, searchable catalog:
 
 Use the search bar to filter tools, and click "View details" to read full descriptions.
 
+## 🔄 Catalog Maintenance
+
+GitHub Actions keeps catalog quality under review without changing entries automatically:
+
+- **Validate Catalog** runs every Monday and on relevant pull requests. It checks required data, local screenshots, and public links.
+- **Check GitHub Releases** runs every Monday and compares stable GitHub releases with the recorded version and release date.
+- **Discover GitHub Software** runs monthly and proposes active, open-source GitHub projects that are not already listed.
+- Validation and release workflows update one tracking issue and close it once the report is clean. Discovery keeps one review issue with the latest candidates. All workflows can also be started manually from the Actions tab.
+
 ## 🤝 Contributing
 
 Want to add a tool or improve descriptions?

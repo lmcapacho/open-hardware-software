@@ -1,0 +1,60 @@
+name: Discover GitHub Software
+
+on:
+  schedule:
+    - cron: '47 6 1 * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Find catalog candidates
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: python scripts/discover_github_software.py --report github-software-candidates.json
+
+      - name: Create or update discovery issue
+        uses: actions/github-script@v7
+        env:
+          REPORT_FILE: github-software-candidates.json
+        with:
+          script: |
+            const fs = require('fs');
+            const report = JSON.parse(fs.readFileSync(process.env.REPORT_FILE, 'utf8'));
+            const marker = '<!-- catalog-health:github-discovery -->';
+            const title = 'Catalog software discovery review';
+            const { owner, repo } = context.repo;
+            const issues = await github.paginate(github.rest.issues.listForRepo, {
+              owner, repo, state: 'all', per_page: 100
+            });
+            const existing = issues.find(issue => issue.title === title && issue.body?.includes(marker));
+            const lines = [
+              marker,
+              `Searched ${report.tool_count} catalog entries for active GitHub projects with an open-source license, at least ${report.minimum_stars} stars, and activity during the last ${report.active_within_days} days.`,
+              '',
+              'Review each candidate before adding it to `index.json`.'
+            ];
+            for (const candidate of report.candidates) {
+              lines.push(`- [**${candidate.name}**](${candidate.url}) (${candidate.license}, ${candidate.stars} stars, pushed ${candidate.pushed_at}; topics: ${candidate.topics.join(', ')}) — ${candidate.description}`);
+            }
+            for (const error of report.errors) {
+              lines.push(`- Search failed for \`${error.topic}\`: ${error.message}`);
+            }
+            const body = lines.join('\n');
+            if (existing?.state === 'open') {
+              await github.rest.issues.update({ owner, repo, issue_number: existing.number, body });
+            } else {
+              await github.rest.issues.create({ owner, repo, title, body });
+            }

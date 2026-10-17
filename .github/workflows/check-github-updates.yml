@@ -1,0 +1,67 @@
+name: Check GitHub Releases
+
+on:
+  schedule:
+    - cron: '31 6 * * 1'
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - 'index.json'
+      - 'scripts/check_github_updates.py'
+      - '.github/workflows/check-github-updates.yml'
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  check-releases:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Check published GitHub releases
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: python scripts/check_github_updates.py --report github-release-updates.json
+
+      - name: Create or update release review issue
+        if: github.event_name != 'pull_request'
+        uses: actions/github-script@v7
+        env:
+          REPORT_FILE: github-release-updates.json
+        with:
+          script: |
+            const fs = require('fs');
+            const report = JSON.parse(fs.readFileSync(process.env.REPORT_FILE, 'utf8'));
+            const marker = '<!-- catalog-health:github-releases -->';
+            const title = 'Catalog GitHub release review';
+            const { owner, repo } = context.repo;
+            const issues = await github.paginate(github.rest.issues.listForRepo, {
+              owner, repo, state: 'all', per_page: 100
+            });
+            const existing = issues.find(issue => issue.title === title && issue.body?.includes(marker));
+            const lines = [marker, `Checked ${report.checked_repositories} GitHub repositories from ${report.tool_count} catalog entries.`];
+            for (const update of report.updates) {
+              lines.push(`- **${update.tool}**: \`${update.recorded_version}\` -> [\`${update.latest_version}\`](${update.url}) (${update.published_at})`);
+            }
+            for (const error of report.errors) {
+              lines.push(`- **${error.tool}**: could not check \`${error.repository}\` (${error.message})`);
+            }
+            const body = lines.join('\n');
+            if (!report.has_updates && report.errors.length === 0) {
+              if (existing?.state === 'open') {
+                await github.rest.issues.update({ owner, repo, issue_number: existing.number, state: 'closed', body: `${body}\n\nResolved by the latest scheduled release check.` });
+              }
+              return;
+            }
+            if (existing?.state === 'open') {
+              await github.rest.issues.update({ owner, repo, issue_number: existing.number, body });
+            } else {
+              await github.rest.issues.create({ owner, repo, title, body });
+            }
