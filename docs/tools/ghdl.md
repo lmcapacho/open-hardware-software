@@ -4,7 +4,7 @@
 
 **Version:** 6.0.0  
 **Release Date:** 2026-03-07  
-**License:** [GPL-2.0](https://github.com/ghdl/ghdl/blob/master/LICENSE)  
+**License:** [GPL-2.0](https://github.com/ghdl/ghdl/blob/master/COPYING.md)  
 **Platforms:** Linux, Windows, macOS  
 
 ---
@@ -31,7 +31,7 @@ An open-source VHDL simulator and synthesis frontend used for verification and d
 
 - 🔗 Website: [https://ghdl.github.io/ghdl/](https://ghdl.github.io/ghdl/)
 - 📥 Download: [https://github.com/ghdl/ghdl/releases](https://github.com/ghdl/ghdl/releases)
-- 📚 Documentation: [https://ghdl.github.io/ghdl/using/](https://ghdl.github.io/ghdl/using/)
+- 📚 Documentation: [https://ghdl.github.io/ghdl/quick_start/index.html](https://ghdl.github.io/ghdl/quick_start/index.html)
 - 💻 Source Code: [https://github.com/ghdl/ghdl](https://github.com/ghdl/ghdl)
 
 ---

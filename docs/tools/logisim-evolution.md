@@ -4,7 +4,7 @@
 
 **Version:** 4.1.0  
 **Release Date:** 2026-02-15  
-**License:** [GPL-3.0](https://github.com/logisim-evolution/logisim-evolution/blob/main/LICENSE)  
+**License:** [GPL-3.0](https://github.com/logisim-evolution/logisim-evolution/blob/main/LICENSE.md)  
 **Platforms:** Windows, Linux, macOS  
 
 ---

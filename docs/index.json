@@ -337,12 +337,12 @@
       "macOS"
     ],
     "license": "GPL-2.0",
-    "license_url": "https://github.com/ghdl/ghdl/blob/master/LICENSE",
+    "license_url": "https://github.com/ghdl/ghdl/blob/master/COPYING.md",
     "category": "Simulation & Emulation",
     "website": "https://ghdl.github.io/ghdl/",
     "download_url": "https://github.com/ghdl/ghdl/releases",
     "repository_url": "https://github.com/ghdl/ghdl",
-    "documentation_url": "https://ghdl.github.io/ghdl/using/",
+    "documentation_url": "https://ghdl.github.io/ghdl/quick_start/index.html",
     "screenshot_url": "https://raw.githubusercontent.com/ghdl/ghdl/master/doc/_static/internals.png",
     "logo_url": "https://ghdl.github.io/ghdl/_static/logo.png",
     "tags": [
@@ -660,7 +660,7 @@
       "macOS"
     ],
     "license": "GPL-3.0",
-    "license_url": "https://github.com/logisim-evolution/logisim-evolution/blob/main/LICENSE",
+    "license_url": "https://github.com/logisim-evolution/logisim-evolution/blob/main/LICENSE.md",
     "category": "Simulation & Emulation",
     "website": "https://github.com/logisim-evolution/logisim-evolution",
     "download_url": "https://github.com/logisim-evolution/logisim-evolution/releases/tag/v4.1.0",
