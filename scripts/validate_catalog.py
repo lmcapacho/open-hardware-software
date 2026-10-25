@@ -117,29 +117,36 @@ def validate_structure(catalog: list[dict], repository_root: Path) -> list[dict]
     return issues
 
 
-def check_url(url: str, timeout: int) -> tuple[bool, str]:
+def classify_error(error: HTTPError | URLError | TimeoutError) -> tuple[str, str]:
+    if isinstance(error, HTTPError):
+        message = f"HTTP {error.code}"
+        return ("error" if error.code in {404, 410} else "warning", message)
+    return "warning", str(error.reason if isinstance(error, URLError) else error)
+
+
+def check_url(url: str, timeout: int) -> tuple[str, str]:
     request = Request(url, headers={"User-Agent": USER_AGENT}, method="HEAD")
     try:
         with urlopen(request, timeout=timeout) as response:
-            return 200 <= response.status < 400, f"HTTP {response.status}"
+            return ("valid" if 200 <= response.status < 400 else "warning"), f"HTTP {response.status}"
     except HTTPError as error:
         # Several valid hosts reject HEAD requests; retry with a small GET request.
-        if error.code not in {403, 405, 501}:
-            return False, f"HTTP {error.code}"
+        if error.code in {404, 410}:
+            return "error", f"HTTP {error.code}"
     except (URLError, TimeoutError) as error:
-        return False, str(error.reason if isinstance(error, URLError) else error)
+        return classify_error(error)
 
     request = Request(url, headers={"User-Agent": USER_AGENT, "Range": "bytes=0-0"})
     try:
         with urlopen(request, timeout=timeout) as response:
-            return 200 <= response.status < 400, f"HTTP {response.status}"
+            return ("valid" if 200 <= response.status < 400 else "warning"), f"HTTP {response.status}"
     except HTTPError as error:
-        return False, f"HTTP {error.code}"
+        return classify_error(error)
     except (URLError, TimeoutError) as error:
-        return False, str(error.reason if isinstance(error, URLError) else error)
+        return classify_error(error)
 
 
-def validate_urls(catalog: list[dict], timeout: int) -> list[dict]:
+def validate_urls(catalog: list[dict], timeout: int) -> tuple[list[dict], list[dict]]:
     checks = [
         (tool.get("name", "[unknown]"), field, tool[field])
         for tool in catalog
@@ -147,15 +154,19 @@ def validate_urls(catalog: list[dict], timeout: int) -> list[dict]:
         for field in URL_FIELDS
         if isinstance(tool.get(field), str) and URL_PATTERN.match(tool[field])
     ]
-    issues = []
+    errors = []
+    warnings = []
     with concurrent.futures.ThreadPoolExecutor(max_workers=12) as executor:
         futures = {executor.submit(check_url, url, timeout): (tool, field, url) for tool, field, url in checks}
         for future in concurrent.futures.as_completed(futures):
             tool, field, url = futures[future]
-            valid, result = future.result()
-            if not valid:
-                issues.append({"tool": tool, "field": field, "message": result, "url": url})
-    return sorted(issues, key=lambda issue: (issue["tool"].casefold(), issue["field"]))
+            status, result = future.result()
+            if status == "error":
+                errors.append({"tool": tool, "field": field, "message": result, "url": url})
+            elif status == "warning":
+                warnings.append({"tool": tool, "field": field, "message": result, "url": url})
+    sort_key = lambda issue: (issue["tool"].casefold(), issue["field"])
+    return sorted(errors, key=sort_key), sorted(warnings, key=sort_key)
 
 
 def main() -> int:
@@ -169,19 +180,24 @@ def main() -> int:
     try:
         catalog = load_catalog(args.catalog)
         structural_issues = validate_structure(catalog, args.catalog.resolve().parent)
-        link_issues = [] if args.skip_links else validate_urls(catalog, args.timeout)
+        link_issues, link_warnings = ([], []) if args.skip_links else validate_urls(catalog, args.timeout)
         report = {
             "has_errors": bool(structural_issues or link_issues),
             "tool_count": len(catalog),
             "structural_issues": structural_issues,
             "link_issues": link_issues,
+            "link_warnings": link_warnings,
         }
     except (OSError, ValueError, json.JSONDecodeError) as error:
-        report = {"has_errors": True, "tool_count": 0, "structural_issues": [{"tool": "catalog", "field": "index.json", "message": str(error)}], "link_issues": []}
+        report = {"has_errors": True, "tool_count": 0, "structural_issues": [{"tool": "catalog", "field": "index.json", "message": str(error)}], "link_issues": [], "link_warnings": []}
 
     args.report.parent.mkdir(parents=True, exist_ok=True)
     args.report.write_text(json.dumps(report, indent=2) + "\n", encoding="utf-8")
-    print(f"Validated {report['tool_count']} tools; found {len(report['structural_issues']) + len(report['link_issues'])} issue(s).")
+    print(
+        f"Validated {report['tool_count']} tools; found "
+        f"{len(report['structural_issues']) + len(report['link_issues'])} error(s) and "
+        f"{len(report['link_warnings'])} warning(s)."
+    )
     return 0
 
 

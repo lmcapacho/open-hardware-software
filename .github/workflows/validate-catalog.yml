@@ -51,6 +51,9 @@ jobs:
             for (const issue of report.link_issues) {
               lines.push(`- **${issue.tool}** \`${issue.field}\`: ${issue.message} (${issue.url})`);
             }
+            for (const warning of report.link_warnings) {
+              lines.push(`- Warning: **${warning.tool}** \`${warning.field}\`: ${warning.message} (${warning.url})`);
+            }
             const body = lines.join('\n');
             if (!report.has_errors) {
               if (existing?.state === 'open') {
