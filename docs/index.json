@@ -1,5 +1,44 @@
 [
   {
+    "name": "AgentFEM",
+    "slug": "agentfem",
+    "description": "Open-source finite-element platform for readable Python simulation workflows, AI-agent operation, and reproducible engineering studies. Alpha maturity; requires a compatible FEniCSx/PETSc/MPI runtime.",
+    "version": "0.4.4",
+    "release_date": "2026-10-27",
+    "platforms": [
+      "Linux",
+      "macOS",
+      "Windows (WSL2)"
+    ],
+    "license": "Apache-2.0",
+    "license_url": "https://github.com/haoming-luo/agentfem/blob/main/LICENSE",
+    "category": "Scientific Computing & Modeling",
+    "website": "https://haoming-luo.github.io/agentfem/",
+    "download_url": "https://github.com/haoming-luo/agentfem/releases/latest",
+    "repository_url": "https://github.com/haoming-luo/agentfem",
+    "documentation_url": "https://haoming-luo.github.io/agentfem/get_started/",
+    "screenshot_url": "https://raw.githubusercontent.com/haoming-luo/agentfem/main/docs/assets/imperfect_column_paths.png",
+    "logo_url": "https://raw.githubusercontent.com/haoming-luo/agentfem/main/docs/assets/images/AgentFEM_logo_transparent.png",
+    "tags": [
+      "finite-element",
+      "computational-mechanics",
+      "scientific-computing",
+      "simulation",
+      "AI-agents"
+    ],
+    "language": [
+      "Python"
+    ],
+    "status": "active",
+    "features": [
+      "Editable Python models with materials, loads, solution steps, and verification",
+      "Solid mechanics, heat transfer, modal analysis, and dynamic response workflows",
+      "CLI and AI-agent interfaces for checking, running, and inspecting simulations",
+      "Parameter campaigns, recorded results, and simulation-to-learning workflows",
+      "FEniCSx/DOLFINx, PETSc, and MPI numerical foundation"
+    ]
+  },
+  {
     "name": "Arduino IDE",
     "slug": "arduino-ide",
     "description": "The open-source development environment for Arduino boards and compatible hardware.",

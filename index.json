@@ -5,7 +5,11 @@
     "description": "Open-source finite-element platform for readable Python simulation workflows, AI-agent operation, and reproducible engineering studies. Alpha maturity; requires a compatible FEniCSx/PETSc/MPI runtime.",
     "version": "0.4.4",
     "release_date": "2026-10-27",
-    "platforms": ["Linux", "macOS", "Windows (WSL2)"],
+    "platforms": [
+      "Linux",
+      "macOS",
+      "Windows (WSL2)"
+    ],
     "license": "Apache-2.0",
     "license_url": "https://github.com/haoming-luo/agentfem/blob/main/LICENSE",
     "category": "Scientific Computing & Modeling",
@@ -15,8 +19,16 @@
     "documentation_url": "https://haoming-luo.github.io/agentfem/get_started/",
     "screenshot_url": "https://raw.githubusercontent.com/haoming-luo/agentfem/main/docs/assets/imperfect_column_paths.png",
     "logo_url": "https://raw.githubusercontent.com/haoming-luo/agentfem/main/docs/assets/images/AgentFEM_logo_transparent.png",
-    "tags": ["finite-element", "computational-mechanics", "scientific-computing", "simulation", "AI-agents"],
-    "language": ["Python"],
+    "tags": [
+      "finite-element",
+      "computational-mechanics",
+      "scientific-computing",
+      "simulation",
+      "AI-agents"
+    ],
+    "language": [
+      "Python"
+    ],
     "status": "active",
     "features": [
       "Editable Python models with materials, loads, solution steps, and verification",
