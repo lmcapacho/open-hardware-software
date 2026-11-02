@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Find active, open-source GitHub repositories that are not in the catalog yet."""
+"""Find maintained, end-user circuit-simulation applications for the catalog."""
 
 from __future__ import annotations
 
@@ -12,29 +12,24 @@ from urllib.parse import urlencode
 from urllib.request import Request, urlopen
 
 
-SEARCH_TOPICS = (
-    "fpga",
-    "eda",
-    "electronics",
-    "microcontroller",
-    "verilog",
-    "open-hardware",
-    "circuit-simulation",
-)
-RELEVANCE_TERMS = (
-    "circuit",
-    "electronic",
-    "fpga",
-    "gpio",
-    "hardware",
-    "hdl",
-    "microcontroller",
-    "pcb",
-    "schematic",
-    "simulation",
-    "synthesis",
-    "verilog",
-    "vhdl",
+SEARCH_TOPICS = ("circuit-simulation", "eda")
+SIMULATION_TERMS = ("simulator", "simulation")
+EXCLUDED_TERMS = (
+    "agent",
+    "board",
+    "bom",
+    "component library",
+    "compact model",
+    "core",
+    "firmware",
+    "hardware description language",
+    "mcp",
+    "model-context-protocol",
+    "plugin",
+    "roadmap",
+    "skill",
+    "tutorial",
+    "verilog-a",
 )
 MINIMUM_STARS = 10
 MAXIMUM_CANDIDATES = 20
@@ -66,7 +61,7 @@ def catalog_repositories(catalog: list[dict]) -> set[str]:
 def search_topic(topic: str, token: str | None) -> list[dict]:
     query = f"topic:{topic} archived:false fork:false stars:>={MINIMUM_STARS}"
     url = "https://api.github.com/search/repositories?" + urlencode(
-        {"q": query, "sort": "updated", "order": "desc", "per_page": 30}
+        {"q": query, "sort": "updated", "order": "desc", "per_page": 20}
     )
     response = github_request(url, token)
     return response.get("items", [])
@@ -84,7 +79,17 @@ def is_active(repository: dict, cutoff: dt.datetime) -> bool:
 
 def is_relevant(repository: dict) -> bool:
     text = " ".join([repository.get("full_name", ""), repository.get("description") or ""]).casefold()
-    return any(term in text for term in RELEVANCE_TERMS)
+    return any(term in text for term in SIMULATION_TERMS) and not any(term in text for term in EXCLUDED_TERMS)
+
+
+def latest_stable_release(repository: str, token: str | None) -> dict | None:
+    try:
+        release = github_request(f"https://api.github.com/repos/{repository}/releases/latest", token)
+    except Exception:
+        return None
+    if release.get("prerelease") or not release.get("published_at"):
+        return None
+    return release
 
 
 def main() -> int:
@@ -110,6 +115,9 @@ def main() -> int:
             html_url = repository["html_url"].rstrip("/")
             if html_url.lower() in existing or not is_active(repository, cutoff) or not is_relevant(repository):
                 continue
+            release = latest_stable_release(repository["full_name"], token)
+            if release is None or release["published_at"][:10] < cutoff.date().isoformat():
+                continue
             candidate = candidates.setdefault(
                 html_url.lower(),
                 {
@@ -119,6 +127,8 @@ def main() -> int:
                     "license": repository["license"].get("spdx_id", "NOASSERTION"),
                     "stars": repository["stargazers_count"],
                     "pushed_at": repository["pushed_at"][:10],
+                    "version": release["tag_name"],
+                    "release_date": release["published_at"][:10],
                     "topics": set(),
                 },
             )
