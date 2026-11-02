@@ -1,4 +1,4 @@
-name: Discover GitHub Software
+name: Discover Software
 
 on:
   schedule:
@@ -42,15 +42,15 @@ jobs:
             const existing = issues.find(issue => issue.title === title && issue.body?.includes(marker));
             const lines = [
               marker,
-              `Searched for maintained, end-user circuit-simulation applications with an open-source license, at least ${report.minimum_stars} stars, activity during the last ${report.active_within_days} days, and a recent stable release.`,
+              `Searched GitHub, GitLab, and Codeberg for maintained, end-user circuit-simulation applications with an open-source license, at least ${report.minimum_stars} stars, activity during the last ${report.active_within_days} days, and a recent stable release.`,
               '',
               'Review each candidate before adding it to `index.json`.'
             ];
             for (const candidate of report.candidates) {
-              lines.push(`- [**${candidate.name}**](${candidate.url}) (${candidate.license}, ${candidate.version}, released ${candidate.release_date}, ${candidate.stars} stars; topics: ${candidate.topics.join(', ')}) — ${candidate.description}`);
+              lines.push(`- [**${candidate.name}**](${candidate.url}) (${candidate.license}, ${candidate.version}, released ${candidate.release_date}, ${candidate.stars} stars; sources: ${candidate.sources.join(', ')}; queries: ${candidate.topics.join(', ')}) — ${candidate.description}`);
             }
             for (const error of report.errors) {
-              lines.push(`- Search failed for \`${error.topic}\`: ${error.message}`);
+              lines.push(`- ${error.source || 'GitHub'} search failed for \`${error.topic}\`: ${error.message}`);
             }
             const body = lines.join('\n');
             if (report.candidates.length === 0 && report.errors.length === 0) {

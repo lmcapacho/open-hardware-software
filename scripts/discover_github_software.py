@@ -13,6 +13,7 @@ from urllib.request import Request, urlopen
 
 
 SEARCH_TOPICS = ("circuit-simulation", "eda")
+SEARCH_TERMS = ("circuit simulator", "rf simulator", "electromagnetic simulator")
 SIMULATION_TERMS = ("simulator", "simulation")
 EXCLUDED_TERMS = (
     "agent",
@@ -53,7 +54,7 @@ def catalog_repositories(catalog: list[dict]) -> set[str]:
     repositories = set()
     for tool in catalog:
         url = tool.get("repository_url", "").rstrip("/")
-        if "github.com/" in url.lower():
+        if url:
             repositories.add(url.lower())
     return repositories
 
@@ -65,6 +66,20 @@ def search_topic(topic: str, token: str | None) -> list[dict]:
     )
     response = github_request(url, token)
     return response.get("items", [])
+
+
+def search_gitlab(term: str) -> list[dict]:
+    url = "https://gitlab.com/api/v4/projects?" + urlencode(
+        {"search": term, "simple": "true", "order_by": "last_activity_at", "sort": "desc", "per_page": 20}
+    )
+    with urlopen(Request(url, headers={"User-Agent": USER_AGENT}), timeout=30) as response:
+        return json.load(response)
+
+
+def search_codeberg(term: str) -> list[dict]:
+    url = "https://codeberg.org/api/v1/repos/search?" + urlencode({"q": term, "limit": 20})
+    with urlopen(Request(url, headers={"User-Agent": USER_AGENT}), timeout=30) as response:
+        return json.load(response).get("data", [])
 
 
 def is_active(repository: dict, cutoff: dt.datetime) -> bool:
@@ -90,6 +105,60 @@ def latest_stable_release(repository: str, token: str | None) -> dict | None:
     if release.get("prerelease") or not release.get("published_at"):
         return None
     return release
+
+
+def gitlab_latest_release(project_id: int) -> dict | None:
+    url = f"https://gitlab.com/api/v4/projects/{project_id}/releases/permalink/latest"
+    try:
+        with urlopen(Request(url, headers={"User-Agent": USER_AGENT}), timeout=30) as response:
+            release = json.load(response)
+    except Exception:
+        return None
+    if release.get("upcoming_release") or not release.get("released_at"):
+        return None
+    return {"tag_name": release["tag_name"], "published_at": release["released_at"]}
+
+
+def codeberg_project(full_name: str) -> dict | None:
+    url = f"https://codeberg.org/api/v1/repos/{full_name}"
+    try:
+        with urlopen(Request(url, headers={"User-Agent": USER_AGENT}), timeout=30) as response:
+            return json.load(response)
+    except Exception:
+        return None
+
+
+def codeberg_latest_release(full_name: str) -> dict | None:
+    url = f"https://codeberg.org/api/v1/repos/{full_name}/releases/latest"
+    try:
+        with urlopen(Request(url, headers={"User-Agent": USER_AGENT}), timeout=30) as response:
+            release = json.load(response)
+    except Exception:
+        return None
+    if release.get("prerelease") or not release.get("published_at"):
+        return None
+    return {"tag_name": release["tag_name"], "published_at": release["published_at"]}
+
+
+def add_candidate(candidates: dict[str, dict], repository: dict, release: dict, source: str, topic: str) -> None:
+    url = repository["html_url"].rstrip("/")
+    candidate = candidates.setdefault(
+        url.lower(),
+        {
+            "name": repository["full_name"],
+            "url": url,
+            "description": repository.get("description") or "No description provided.",
+            "license": repository["license"]["spdx_id"],
+            "stars": repository["stargazers_count"],
+            "pushed_at": repository["pushed_at"][:10],
+            "version": release["tag_name"],
+            "release_date": release["published_at"][:10],
+            "sources": set(),
+            "topics": set(),
+        },
+    )
+    candidate["sources"].add(source)
+    candidate["topics"].add(topic)
 
 
 def main() -> int:
@@ -118,24 +187,71 @@ def main() -> int:
             release = latest_stable_release(repository["full_name"], token)
             if release is None or release["published_at"][:10] < cutoff.date().isoformat():
                 continue
-            candidate = candidates.setdefault(
-                html_url.lower(),
-                {
-                    "name": repository["full_name"],
-                    "url": html_url,
-                    "description": repository.get("description") or "No description provided.",
-                    "license": repository["license"].get("spdx_id", "NOASSERTION"),
-                    "stars": repository["stargazers_count"],
-                    "pushed_at": repository["pushed_at"][:10],
-                    "version": release["tag_name"],
-                    "release_date": release["published_at"][:10],
-                    "topics": set(),
-                },
-            )
-            candidate["topics"].add(topic)
+            add_candidate(candidates, repository, release, "GitHub", topic)
+
+    for term in SEARCH_TERMS:
+        try:
+            projects = search_gitlab(term)
+        except Exception as error:
+            errors.append({"source": "GitLab", "topic": term, "message": str(error)})
+            continue
+        for project in projects:
+            license_info = project.get("license") or {}
+            repository = {
+                "full_name": project["path_with_namespace"],
+                "html_url": project["web_url"],
+                "description": project.get("description"),
+                "license": {"spdx_id": license_info.get("key", "NOASSERTION")},
+                "stargazers_count": project.get("star_count", 0),
+                "pushed_at": project.get("last_activity_at"),
+            }
+            if (
+                repository["html_url"].lower() in existing
+                or repository["stargazers_count"] < MINIMUM_STARS
+                or not is_active(repository, cutoff)
+                or not is_relevant(repository)
+            ):
+                continue
+            release = gitlab_latest_release(project["id"])
+            if release is None or release["published_at"][:10] < cutoff.date().isoformat():
+                continue
+            add_candidate(candidates, repository, release, "GitLab", term)
+
+    for term in SEARCH_TERMS:
+        try:
+            results = search_codeberg(term)
+        except Exception as error:
+            errors.append({"source": "Codeberg", "topic": term, "message": str(error)})
+            continue
+        for result in results:
+            if result.get("stars_count", 0) < MINIMUM_STARS:
+                continue
+            project = codeberg_project(result["full_name"])
+            if project is None:
+                continue
+            license_info = project.get("license") or {}
+            repository = {
+                "full_name": project["full_name"],
+                "html_url": project["html_url"],
+                "description": project.get("description"),
+                "license": {"spdx_id": license_info.get("key", "NOASSERTION")},
+                "stargazers_count": project.get("stars_count", 0),
+                "pushed_at": project.get("updated_at"),
+            }
+            if (
+                repository["html_url"].lower() in existing
+                or not is_active(repository, cutoff)
+                or not is_relevant(repository)
+            ):
+                continue
+            release = codeberg_latest_release(project["full_name"])
+            if release is None or release["published_at"][:10] < cutoff.date().isoformat():
+                continue
+            add_candidate(candidates, repository, release, "Codeberg", term)
 
     ranked_candidates = sorted(candidates.values(), key=lambda item: (-item["stars"], item["name"].casefold()))
     for candidate in ranked_candidates:
+        candidate["sources"] = sorted(candidate["sources"])
         candidate["topics"] = sorted(candidate["topics"])
 
     report = {
@@ -147,7 +263,7 @@ def main() -> int:
     }
     args.report.parent.mkdir(parents=True, exist_ok=True)
     args.report.write_text(json.dumps(report, indent=2) + "\n", encoding="utf-8")
-    print(f"Found {len(report['candidates'])} candidate(s) from {len(SEARCH_TOPICS)} topic searches.")
+    print(f"Found {len(report['candidates'])} candidate(s) from {len(SEARCH_TOPICS)} topics and {len(SEARCH_TERMS)} cross-forge searches.")
     return 0
 
 

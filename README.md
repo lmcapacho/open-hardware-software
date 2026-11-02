@@ -30,7 +30,7 @@ GitHub Actions keeps catalog quality under review without changing entries autom
 
 - **Validate Catalog** runs every Monday and on relevant pull requests. It checks required data, local screenshots, and public links.
 - **Check GitHub Releases** runs every Monday and compares stable GitHub releases with the recorded version and release date.
-- **Discover GitHub Software** runs monthly and proposes maintained, open-source circuit-simulation applications that are not already listed.
+- **Discover Software** runs monthly across GitHub, GitLab, and Codeberg, proposing maintained open-source circuit-simulation applications that are not already listed.
 - Validation and release workflows update one tracking issue and close it once the report is clean. Discovery keeps one review issue with the latest candidates. All workflows can also be started manually from the Actions tab.
 
 ## 🤝 Contributing
