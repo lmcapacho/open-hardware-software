@@ -23,23 +23,24 @@ jobs:
       - name: Find catalog candidates
         env:
           GITHUB_TOKEN: ${{ github.token }}
-        run: python scripts/discover_github_software.py --report github-software-candidates.json
+        run: python scripts/discover_software.py --report software-candidates.json
 
       - name: Create or update discovery issue
         uses: actions/github-script@v9
         env:
-          REPORT_FILE: github-software-candidates.json
+          REPORT_FILE: software-candidates.json
         with:
           script: |
             const fs = require('fs');
             const report = JSON.parse(fs.readFileSync(process.env.REPORT_FILE, 'utf8'));
-            const marker = '<!-- catalog-health:github-discovery -->';
+            const marker = '<!-- catalog-health:software-discovery -->';
+            const legacyMarker = '<!-- catalog-health:github-discovery -->';
             const title = 'Catalog software discovery review';
             const { owner, repo } = context.repo;
             const issues = await github.paginate(github.rest.issues.listForRepo, {
               owner, repo, state: 'all', per_page: 100
             });
-            const existing = issues.find(issue => issue.title === title && issue.body?.includes(marker));
+            const existing = issues.find(issue => issue.title === title && (issue.body?.includes(marker) || issue.body?.includes(legacyMarker)));
             const lines = [
               marker,
               `Searched GitHub, GitLab, and Codeberg for maintained, end-user circuit-simulation applications with an open-source license, at least ${report.minimum_stars} stars, activity during the last ${report.active_within_days} days, and a recent stable release.`,
