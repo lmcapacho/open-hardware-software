@@ -72,10 +72,11 @@ Or open an [Issue](https://github.com/lmcapacho/open-hardware-software/issues) t
 </details>
 
 <details>
-<summary><strong>Digital Design &amp; FPGA</strong> (5 tools)</summary>
+<summary><strong>Digital Design &amp; FPGA</strong> (6 tools)</summary>
 
 | Tool | Platforms | License | Details |
 |------|-----------|---------|---------|
+| [Digital](docs/tools/digital.md) | Windows, Linux, macOS | GPL-3.0 | [Website](https://github.com/hneemann/Digital) |
 | [FPGALab](docs/tools/fpga-lab.md) | Windows, Linux, macOS | AGPL-3.0 | [Website](https://lmcapacho.github.io/FPGALab/) |
 | [Icestudio](docs/tools/icestudio.md) | Windows, Linux, macOS | GPLv2 | [Website](https://icestudio.io) |
 | [nextpnr](docs/tools/nextpnr.md) | Windows, Linux, macOS | ISC | [Website](https://github.com/YosysHQ/nextpnr) |

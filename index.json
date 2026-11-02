@@ -161,6 +161,48 @@
     ]
   },
   {
+    "name": "Digital",
+    "slug": "digital",
+    "description": "An educational digital logic designer and event-driven circuit simulator for building, testing, and exporting combinational and sequential circuits.",
+    "version": "0.31",
+    "release_date": "2024-09-03",
+    "platforms": [
+      "Windows",
+      "Linux",
+      "macOS"
+    ],
+    "license": "GPL-3.0",
+    "license_url": "https://github.com/hneemann/Digital/blob/master/LICENSE",
+    "category": "Digital Design & FPGA",
+    "website": "https://github.com/hneemann/Digital",
+    "download_url": "https://github.com/hneemann/Digital/releases/latest/download/Digital.zip",
+    "repository_url": "https://github.com/hneemann/Digital",
+    "documentation_url": "https://github.com/hneemann/Digital/releases/latest",
+    "screenshot_url": "https://raw.githubusercontent.com/hneemann/Digital/master/distribution/screenshot.png",
+    "logo_url": "https://raw.githubusercontent.com/hneemann/Digital/master/src/main/resources/icons/icon128.png",
+    "tags": [
+      "digital-logic",
+      "circuit-simulation",
+      "logic-gates",
+      "fsm",
+      "verilog",
+      "vhdl",
+      "education"
+    ],
+    "language": [
+      "Java"
+    ],
+    "status": "active",
+    "features": [
+      "Interactive design and event-driven simulation of digital logic circuits",
+      "Finite-state machine editor with state tables and circuit generation",
+      "74xx integrated-circuit library and hierarchical custom components",
+      "Truth-table analysis and combinational or sequential circuit synthesis",
+      "VHDL and Verilog component simulation with external simulators",
+      "Circuit export to SVG, VHDL, and Verilog"
+    ]
+  },
+  {
     "name": "esptool",
     "slug": "esptool",
     "description": "A Python-based serial utility for flashing, provisioning, and interacting with Espressif SoCs.",
@@ -1533,49 +1575,6 @@
       "Extensible pass-based architecture",
       "Commonly paired with nextpnr and OpenROAD",
       "Useful frontend for formal verification pipelines"
-    ]
-  }
-,
-  {
-    "name": "Digital",
-    "slug": "digital",
-    "description": "An educational digital logic designer and event-driven circuit simulator for building, testing, and exporting combinational and sequential circuits.",
-    "version": "0.31",
-    "release_date": "2024-09-03",
-    "platforms": [
-      "Windows",
-      "Linux",
-      "macOS"
-    ],
-    "license": "GPL-3.0",
-    "license_url": "https://github.com/hneemann/Digital/blob/master/LICENSE",
-    "category": "Digital Design & FPGA",
-    "website": "https://github.com/hneemann/Digital",
-    "download_url": "https://github.com/hneemann/Digital/releases/latest/download/Digital.zip",
-    "repository_url": "https://github.com/hneemann/Digital",
-    "documentation_url": "https://github.com/hneemann/Digital/releases/latest",
-    "screenshot_url": "https://raw.githubusercontent.com/hneemann/Digital/master/distribution/screenshot.png",
-    "logo_url": "https://raw.githubusercontent.com/hneemann/Digital/master/src/main/resources/icons/icon128.png",
-    "tags": [
-      "digital-logic",
-      "circuit-simulation",
-      "logic-gates",
-      "fsm",
-      "verilog",
-      "vhdl",
-      "education"
-    ],
-    "language": [
-      "Java"
-    ],
-    "status": "active",
-    "features": [
-      "Interactive design and event-driven simulation of digital logic circuits",
-      "Finite-state machine editor with state tables and circuit generation",
-      "74xx integrated-circuit library and hierarchical custom components",
-      "Truth-table analysis and combinational or sequential circuit synthesis",
-      "VHDL and Verilog component simulation with external simulators",
-      "Circuit export to SVG, VHDL, and Verilog"
     ]
   }
 ]
