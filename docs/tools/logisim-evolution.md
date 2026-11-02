@@ -2,8 +2,8 @@
 
 <img src="https://raw.githubusercontent.com/logisim-evolution/logisim-evolution/main/artwork/logisim-evolution-logo.svg" alt="Logisim-evolution Logo" style="height: 96px;" />
 
-**Version:** 4.1.0  
-**Release Date:** 2026-02-15  
+**Version:** 5.0.0  
+**Release Date:** 2026-09-12  
 **License:** [GPL-3.0](https://github.com/logisim-evolution/logisim-evolution/blob/main/LICENSE.md)  
 **Platforms:** Windows, Linux, macOS  
 
@@ -30,7 +30,7 @@ A cross-platform educational tool for designing, simulating, and analyzing digit
 ## 🌐 Official Links
 
 - 🔗 Website: [https://github.com/logisim-evolution/logisim-evolution](https://github.com/logisim-evolution/logisim-evolution)
-- 📥 Download: [https://github.com/logisim-evolution/logisim-evolution/releases/tag/v4.1.0](https://github.com/logisim-evolution/logisim-evolution/releases/tag/v4.1.0)
+- 📥 Download: [https://github.com/logisim-evolution/logisim-evolution/releases/tag/v5.0.0](https://github.com/logisim-evolution/logisim-evolution/releases/tag/v5.0.0)
 - 📚 Documentation: [https://github.com/logisim-evolution/logisim-evolution#readme](https://github.com/logisim-evolution/logisim-evolution#readme)
 - 💻 Source Code: [https://github.com/logisim-evolution/logisim-evolution](https://github.com/logisim-evolution/logisim-evolution)
 

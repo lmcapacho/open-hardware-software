@@ -2,8 +2,8 @@
 
 <img src="https://openmodelica.org/images/logo-small.svg" alt="OpenModelica Logo" style="height: 96px;" />
 
-**Version:** 1.27.0  
-**Release Date:** 2026-07-07  
+**Version:** 1.27.2  
+**Release Date:** 2026-10-30  
 **License:** [OSMC-PL-1.8 OR AGPL-3.0](https://github.com/OpenModelica/OpenModelica/blob/master/OSMC-License.txt)  
 **Platforms:** Windows, Linux, macOS  
 

@@ -2,8 +2,8 @@
 
 <img src="https://github.com/platformio.png" alt="PlatformIO Logo" style="height: 96px;" />
 
-**Version:** 6.1.19  
-**Release Date:** 2026-02-04  
+**Version:** 6.2.0  
+**Release Date:** 2026-09-05  
 **License:** [Apache-2.0](https://github.com/platformio/platformio-core/blob/develop/LICENSE)  
 **Platforms:** Windows, Linux, macOS  
 

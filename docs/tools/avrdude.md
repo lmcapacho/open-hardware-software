@@ -2,8 +2,8 @@
 
 <img src="https://github.com/avrdudes.png" alt="AVRDUDE Logo" style="height: 96px;" />
 
-**Version:** 8.2  
-**Release Date:** 2026-07-11  
+**Version:** 8.3  
+**Release Date:** 2026-09-11  
 **License:** [GPL-2.0](https://github.com/avrdudes/avrdude/blob/main/COPYING)  
 **Platforms:** Windows, Linux, macOS  
 
@@ -30,7 +30,7 @@ A command-line utility for programming, reading, and configuring AVR microcontro
 ## 🌐 Official Links
 
 - 🔗 Website: [https://avrdudes.github.io/avrdude/](https://avrdudes.github.io/avrdude/)
-- 📥 Download: [https://github.com/avrdudes/avrdude/releases/tag/v8.2](https://github.com/avrdudes/avrdude/releases/tag/v8.2)
+- 📥 Download: [https://github.com/avrdudes/avrdude/releases/tag/v8.3](https://github.com/avrdudes/avrdude/releases/tag/v8.3)
 - 📚 Documentation: [https://avrdudes.github.io/avrdude/](https://avrdudes.github.io/avrdude/)
 - 💻 Source Code: [https://github.com/avrdudes/avrdude](https://github.com/avrdudes/avrdude)
 

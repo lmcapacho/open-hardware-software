@@ -2,8 +2,8 @@
 
 <img src="https://raw.githubusercontent.com/KLayout/klayout/master/etc/logo.png" alt="KLayout Logo" style="height: 96px;" />
 
-**Version:** 0.30.11  
-**Release Date:** 2026-08-24  
+**Version:** 0.30.12  
+**Release Date:** 2026-08-26  
 **License:** [GPL-3.0](https://github.com/KLayout/klayout/blob/master/LICENSE)  
 **Platforms:** Windows, Linux, macOS  
 
@@ -30,7 +30,7 @@ An open-source layout viewer and editor for GDSII and OASIS files, with scriptin
 ## 🌐 Official Links
 
 - 🔗 Website: [https://www.klayout.de/](https://www.klayout.de/)
-- 📥 Download: [https://github.com/KLayout/klayout/releases/tag/v0.30.11](https://github.com/KLayout/klayout/releases/tag/v0.30.11)
+- 📥 Download: [https://github.com/KLayout/klayout/releases/tag/v0.30.12](https://github.com/KLayout/klayout/releases/tag/v0.30.12)
 - 📚 Documentation: [https://www.klayout.de/doc.html](https://www.klayout.de/doc.html)
 - 💻 Source Code: [https://github.com/KLayout/klayout](https://github.com/KLayout/klayout)
 

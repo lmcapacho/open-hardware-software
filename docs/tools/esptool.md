@@ -2,8 +2,8 @@
 
 <img src="https://github.com/espressif.png" alt="esptool Logo" style="height: 96px;" />
 
-**Version:** 5.3.1  
-**Release Date:** 2026-06-29  
+**Version:** 5.6.0  
+**Release Date:** 2026-10-15  
 **License:** [GPL-2.0](https://github.com/espressif/esptool/blob/master/LICENSE)  
 **Platforms:** Windows, Linux, macOS  
 
@@ -30,7 +30,7 @@ A Python-based serial utility for flashing, provisioning, and interacting with E
 ## 🌐 Official Links
 
 - 🔗 Website: [https://docs.espressif.com/projects/esptool/en/latest/](https://docs.espressif.com/projects/esptool/en/latest/)
-- 📥 Download: [https://github.com/espressif/esptool/releases/tag/v5.3.1](https://github.com/espressif/esptool/releases/tag/v5.3.1)
+- 📥 Download: [https://github.com/espressif/esptool/releases/tag/v5.6.0](https://github.com/espressif/esptool/releases/tag/v5.6.0)
 - 📚 Documentation: [https://docs.espressif.com/projects/esptool/en/latest/](https://docs.espressif.com/projects/esptool/en/latest/)
 - 💻 Source Code: [https://github.com/espressif/esptool](https://github.com/espressif/esptool)
 

@@ -2,8 +2,8 @@
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/e/e2/Thonny_logo.png?20181127113433" alt="Thonny Logo" style="height: 96px;" />
 
-**Version:** 5.0.0  
-**Release Date:** 2026-04-25  
+**Version:** 5.0.1  
+**Release Date:** 2026-10-28  
 **License:** [MIT](https://github.com/thonny/thonny/blob/master/LICENSE.txt)  
 **Platforms:** Windows, Linux, macOS, Raspberry Pi  
 
