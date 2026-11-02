@@ -132,10 +132,11 @@ Or open an [Issue](https://github.com/lmcapacho/open-hardware-software/issues) t
 </details>
 
 <details>
-<summary><strong>Simulation &amp; Emulation</strong> (8 tools)</summary>
+<summary><strong>Simulation &amp; Emulation</strong> (9 tools)</summary>
 
 | Tool | Platforms | License | Details |
 |------|-----------|---------|---------|
+| [circuitRF](docs/tools/circuit-rf.md) | Windows, Linux, macOS | MIT | [Website](https://potatobeanradio.github.io/circuitRF/) |
 | [Falstad Circuit Simulator](docs/tools/falstad-circuit-simulator.md) | Web, Windows, Linux, macOS | GPL-2.0 | [Website](https://www.falstad.com/circuit/) |
 | [GHDL](docs/tools/ghdl.md) | Linux, Windows, macOS | GPL-2.0 | [Website](https://ghdl.github.io/ghdl/) |
 | [GTKWave](docs/tools/gtkwave.md) | Windows, Linux, macOS | GPLv2 | [Website](https://gtkwave.github.io/gtkwave/) |
