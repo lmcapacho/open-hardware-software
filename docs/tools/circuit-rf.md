@@ -2,8 +2,8 @@
 
 <img src="https://raw.githubusercontent.com/potatobeanradio/circuitRF/main/docs/user/assets/img/circuitRF-logo-color.svg" alt="circuitRF Logo" style="height: 96px;" />
 
-**Version:** 1.6.4  
-**Release Date:** 2026-11-02  
+**Version:** 1.9.4  
+**Release Date:** 2026-11-22  
 **License:** [MIT](https://github.com/potatobeanradio/circuitRF/blob/main/LICENSE)  
 **Platforms:** Windows, Linux, macOS  
 
@@ -30,7 +30,7 @@ An open-source RF circuit and electromagnetic simulator with schematic and layou
 ## 🌐 Official Links
 
 - 🔗 Website: [https://potatobeanradio.github.io/circuitRF/](https://potatobeanradio.github.io/circuitRF/)
-- 📥 Download: [https://github.com/potatobeanradio/circuitRF/releases/tag/1.6.4](https://github.com/potatobeanradio/circuitRF/releases/tag/1.6.4)
+- 📥 Download: [https://github.com/potatobeanradio/circuitRF/releases/tag/1.9.4](https://github.com/potatobeanradio/circuitRF/releases/tag/1.9.4)
 - 📚 Documentation: [https://potatobeanradio.github.io/circuitRF/](https://potatobeanradio.github.io/circuitRF/)
 - 💻 Source Code: [https://github.com/potatobeanradio/circuitRF](https://github.com/potatobeanradio/circuitRF)
 

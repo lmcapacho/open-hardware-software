@@ -2,8 +2,8 @@
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Visual_Studio_Code_1.35_icon.svg" alt="Visual Studio Code Logo" style="height: 96px;" />
 
-**Version:** 1.144.0  
-**Release Date:** 2026-10-28  
+**Version:** 1.147.0  
+**Release Date:** 2026-11-18  
 **License:** [MIT](https://github.com/microsoft/vscode/blob/main/LICENSE.txt)  
 **Platforms:** Windows, Linux, macOS  
 
@@ -38,7 +38,7 @@ A lightweight but powerful open‑source code editor and development environment
 
 ## 🖼️ Screenshot
 
-![Screenshot](https://code.visualstudio.com/assets/home/swimlane-anywhere.png)
+![Screenshot](https://code.visualstudio.com/assets/images/product-screenshot.png)
 
 ---
 
